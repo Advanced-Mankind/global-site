@@ -1,86 +1,75 @@
-import React from 'react'
-import { graphql } from 'gatsby'
-import get from 'lodash/get'
-import Helmet from 'react-helmet'
-import Hero from '../components/hero'
-import Layout from '../components/layout'
-import ArticlePreview from '../components/article-preview'
+// App.js
+import React from "react";
+import { ThemeProvider } from "styled-components";
+import { useDarkMode } from "../theme/useDarkMode";
+import { lightTheme, darkTheme } from "../theme/theme";
+import { GlobalStyles } from "../theme/global";
+import Header from "../components/Header";
+import "bootstrap/dist/css/bootstrap.css";
+import "normalize.css";
+import Phone from "../svgs/phone";
+import Email from "../svgs/email";
+import styles from "../theme/index.module.css";
+import Footer from "../components/footer";
+function App() {
+  const [theme, componentMounted] = useDarkMode();
 
-class RootIndex extends React.Component {
-  render() {
-    const siteTitle = get(this, 'props.data.site.siteMetadata.title')
-    const posts = get(this, 'props.data.allContentfulBlogPost.edges')
-    const [author] = get(this, 'props.data.allContentfulPerson.edges')
+  const themeMode = theme === "dark" ? lightTheme : darkTheme;
 
-    return (
-      <Layout location={this.props.location}>
-        <div style={{ background: '#fff' }}>
-          <Helmet title={siteTitle} />
-          <Hero data={author.node} />
-          <div className="wrapper">
-            <h2 className="section-headline">Recent articles</h2>
-            <ul className="article-list">
-              {posts.map(({ node }) => {
-                return (
-                  <li key={node.slug}>
-                    <ArticlePreview article={node} />
-                  </li>
-                )
-              })}
-            </ul>
+  if (!componentMounted) {
+    return <div />;
+  }
+
+  return (
+    <ThemeProvider theme={themeMode}>
+      <div className="container">
+        <GlobalStyles />
+        {/* <Toggle theme={theme} toggleTheme={toggleTheme} /> */}
+        <Header> </Header>
+        <div className="row">
+          <div className="col-12 col-sm-6">
+            <div className="row">
+              <div className="col-12 mt-5">
+                <h1 className={styles.title}>
+                  Sit tight we are working on it!{" "}
+                </h1>
+              </div>
+              <div className="col-12">
+                <p className={(styles.subTitle, "mb-0")}>
+                  We can’ t wait to show you what we have created for our own
+                  website, but we need a little more time.If you would like to
+                  connect with us feel free to email or call and we will get
+                  back to you shortly!Stay safe!
+                </p>
+              </div>
+            </div>
+            <div className="mt-4 mb-4">
+              <div className="row">
+                <Phone />
+                <div className="col">
+                  <span className={styles.subTitle}>
+                    hello @advancedmankind.com{" "}
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div className="row">
+              <Email />
+              <div className="col">
+                <span className={styles.subTitle}>
+                  (617) - 996 - 1338 x 0001
+                </span>
+              </div>
+            </div>
+          </div>
+          <div className="d-none d-sm-block col-6">
+            IMAGEN
           </div>
         </div>
-      </Layout>
-    )
-  }
+      </div>
+      <Footer />
+    </ThemeProvider>
+  );
 }
 
-export default RootIndex
-
-export const pageQuery = graphql`
-  query HomeQuery {
-    allContentfulBlogPost(sort: { fields: [publishDate], order: DESC }) {
-      edges {
-        node {
-          title
-          slug
-          publishDate(formatString: "MMMM Do, YYYY")
-          tags
-          heroImage {
-            fluid(maxWidth: 350, maxHeight: 196, resizingBehavior: SCALE) {
-              ...GatsbyContentfulFluid_tracedSVG
-            }
-          }
-          description {
-            childMarkdownRemark {
-              html
-            }
-          }
-        }
-      }
-    }
-    allContentfulPerson(
-      filter: { contentful_id: { eq: "15jwOBqpxqSAOy2eOO4S0m" } }
-    ) {
-      edges {
-        node {
-          name
-          shortBio {
-            shortBio
-          }
-          title
-          heroImage: image {
-            fluid(
-              maxWidth: 1180
-              maxHeight: 480
-              resizingBehavior: PAD
-              background: "rgb:000000"
-            ) {
-              ...GatsbyContentfulFluid_tracedSVG
-            }
-          }
-        }
-      }
-    }
-  }
-`
+export default App;
