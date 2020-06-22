@@ -4,7 +4,7 @@ import Logo from "../svgs/logo";
 export default class Footer extends Component {
   render() {
     return (
-      <footer className={styles.footer}> 
+      <footer className={styles.footer, 'px-3'}> 
         <div className="row">
           <hr class={(styles.separator, "col mx-4")}></hr>
         </div>

@@ -4,7 +4,7 @@ import { ReactSVG } from "react-svg";
 export default class Header extends Component {
   render() {
     return (
-      <div>
+      <div className='px-3'>
         <ReactSVG
           src="svg.svg"
           afterInjection={(error, svg) => {

@@ -2,7 +2,7 @@
 import React from "react";
 import { ThemeProvider } from "styled-components";
 import { useDarkMode } from "../theme/useDarkMode";
-import { lightTheme, darkTheme } from "../theme/theme";
+import { lightTheme } from "../theme/theme";
 import { GlobalStyles } from "../theme/global";
 import Header from "../components/Header";
 import "bootstrap/dist/css/bootstrap.css";
@@ -14,20 +14,22 @@ import Footer from "../components/footer";
 function App() {
   const [theme, componentMounted] = useDarkMode();
 
-  const themeMode = theme === "dark" ? lightTheme : darkTheme;
-
+  //const themeMode = theme === "dark" ? lightTheme : darkTheme;
+  const themeMode = theme === "dark" ? lightTheme : lightTheme;
   if (!componentMounted) {
     return <div />;
   }
 
   return (
     <ThemeProvider theme={themeMode}>
-      <div className="container">
+      <div className="container p-0">
         <GlobalStyles />
         {/* <Toggle theme={theme} toggleTheme={toggleTheme} /> */}
         <Header> </Header>
         <div className="row">
           <div className="col-12 col-sm-6">
+            
+            <div className='px-3'>
             <div className="row">
               <div className="col-12 mt-5">
                 <h1 className={styles.title}>
@@ -61,9 +63,12 @@ function App() {
                 </span>
               </div>
             </div>
+            </div>
+            <img className={styles.background_mobile} src={require('../../static/background_mobile.png')} alt='' />
           </div>
+
           <div className="d-none d-sm-block col-6">
-            IMAGEN
+            <img src={require("../../static/background.png")} alt="" />
           </div>
         </div>
       </div>
