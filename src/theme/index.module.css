@@ -1,9 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
-.background_mobile{
+.body {
+  min-height: 83vh;
+  position: relative;
+}
+.leftContent {
+  padding: 0px 15px;
+}
+.header{
+  margin: 15px;
+}
+.background_mobile {
   max-width: 100%;
   position: relative;
-  left: -15px;
   top: -11vh;
 }
 .title {
@@ -14,8 +23,11 @@
   letter-spacing: 0;
   line-height: 40px;
 }
-.footer{
-  margin-top: auto; 
+.footer {
+  padding: 0px 15px;
+  height: 13vh;
+  position: absolute;
+  width: 100%;
 }
 .subTitle {
   font-size: 15px;
@@ -36,9 +48,18 @@
   line-height: 16px;
   align-items: center !important;
 }
-.logoFooter{
+.logoHeader {
+  width: 135px;
+  height: 42px;
+}
+.logoFooter {
   width: 40px;
   height: 40px;
+}
+
+.background_tablet {
+  max-width: 100%;
+  position: relative;
 }
 /* 
 // Extra small devices (portrait phones, less than 576px)
@@ -46,7 +67,14 @@
 
 // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-  
+  .background_mobile {
+    display: none;
+  }
+  .background_tablet {
+    max-width: 100%;
+    position: relative;
+    float: right;
+  }
 }
 /* 
 // Medium devices (tablets, 768px and up) */
@@ -54,15 +82,26 @@
   .footerText {
     text-align: right;
   }
-  
 }
 /* 
 // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  .header{
+    margin: 40px;
+    margin-bottom: 0px;
+  }
+  .logoHeader {
+    width: 200px;
+    height: 42px;
+  }
+
+  .footer {
+    padding: 0px 40px;
+  }
   .footerText {
     text-align: right;
   }
-  .logoFooter{
+  .logoFooter {
     width: 60px;
     height: 60px;
   }
@@ -70,6 +109,18 @@
 /* 
 // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+  .title {
+    font-size: 36px;
+  }
+  .leftContent {
+    width: 54%;
+    margin: auto;
+  }
+  .background_tablet {
+    max-width: 80%;
+    position: relative;
+    float: right;
+  }
   .footerText {
     text-align: right;
   }

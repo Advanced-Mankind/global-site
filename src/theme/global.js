@@ -9,7 +9,9 @@ export const GlobalStyles = createGlobalStyle `
     background: ${({ theme }) => theme.body};
     color: ${({ theme }) => theme.text};
     transition: all 0.25s linear;
-    padding: 18px 0px;
+    padding: 0px;
+    padding-bottom:13vh;
+    min-height: 83vh;
     font-family: 'Open Sans', sans-serif;
     
   }`
