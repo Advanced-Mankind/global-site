@@ -5,6 +5,7 @@
   position: relative;
 }
 .leftContent {
+  z-index: 10;
   padding: 0px 15px;
 }
 .header{
@@ -61,7 +62,12 @@
   height: 40px;
 }
 
+.background_mobile {
+  z-index: -1;
+}
+
 .background_tablet {
+  z-index: 10;
   max-width: 100%;
   position: relative;
 }

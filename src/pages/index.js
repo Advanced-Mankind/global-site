@@ -27,7 +27,7 @@ function App() {
         {/* <Toggle theme={theme} toggleTheme={toggleTheme} /> */}
         <Header />
         <div className="row align-items-center m-0">
-          <div className="col col-sm-6 pr-0">
+          <div className="col col-sm-6 p-0">
             <div className={`${styles.leftContent}`}>
               <div className="row">
                 <div className="col-12 mt-3">
@@ -48,7 +48,7 @@ function App() {
                 <div className="row">
                   <Email />
                   <div className="col">
-                    <a href="mailto:name@email.com" className={styles.subTitle}>
+                    <a href="mailto:hello@advancedmankind.com" className={styles.subTitle}>
                       hello@advancedmankind.com
                     </a>
                   </div>
