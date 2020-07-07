@@ -13,5 +13,5 @@ export const GlobalStyles = createGlobalStyle `
     padding-bottom:13vh;
     min-height: 83vh;
     font-family: 'Open Sans', sans-serif;
-    
+    max-width: 100vw;
   }`

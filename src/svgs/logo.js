@@ -18,7 +18,7 @@ export default class Logo extends Component {
           svg.classList.add(styles.logoFooter);
         }}
         wrapper="div"
-        className="col-4 col-lg-8"
+        className="col-4 col-lg-6"
       />
     );
   }

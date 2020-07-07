@@ -10,6 +10,9 @@
 .header{
   margin: 15px;
 }
+.footer-Text{
+  float: right;
+}
 .background_mobile {
   max-width: 100%;
   position: relative;
@@ -33,6 +36,7 @@
   font-size: 15px;
   letter-spacing: 0;
   line-height: 20px;
+  color: #222b45;
 }
 
 .separator {
