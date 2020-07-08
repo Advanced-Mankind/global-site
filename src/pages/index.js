@@ -37,6 +37,7 @@ function App() {
                 </div>
                 <div className="col-12">
                   <p className={`${styles.subTitle} mb-0`}>
+                    
                     We can’ t wait to show you what we have created for our own
                     website, but we need a little more time. If you would like
                     to connect with us feel free to email or call and we will
