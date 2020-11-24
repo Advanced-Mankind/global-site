@@ -10,9 +10,6 @@ import "normalize.css";
 import styles from "../theme/index.module.css";
 import MainPageCard from '../components/MainPageCard';
 import Footer from "../components/footer";
-import CaseStudyCard from "../components/CaseStudyCard";
-import StartsWithWhy from "../components/StartsWithWhy";
-import Partners from "../components/Partners";
 
 const App = () => {
   const [theme, componentMounted] = useDarkMode();
@@ -64,9 +61,9 @@ const App = () => {
         </div>
         <div className={styles.curveBackground}>
           <div className={styles.yourDreamContainer}>
-            <h1>Solving Your Digital Needs One Pixel at a Time</h1>
-            <p>We are unique, like you. Here's how we deliver.</p>
-            <div className={styles.cardContainer}>
+          <h1>Solving Your Digital Needs One Pixel at a Time</h1>
+          <p>We are unique, like you. Here's how we deliver</p>
+          <div className={styles.cardContainer}>
               <MainPageCard
                 title="LOOK SHARP"
                 subtitle="Web Design & E-Commerce"
@@ -86,26 +83,6 @@ const App = () => {
                 info="Digital search, illustrations, ad creative-our growth tools create your's brand digital framework for performance."
               />
             </div>
-          </div>
-        </div>
-        <div className={styles.caseStudiesSection}>
-          <div className={styles.caseStudiesContainer}>
-            <div>
-              <CaseStudyCard width={555} height={631} imgs={[require('../../static/Image.png')]} />
-            </div>
-            <div style={{ display: 'flex', justifyContent: 'space-between', flexDirection: 'column' }}>
-              <CaseStudyCard width={555} height={303} imgs={[require('../../static/Moto_desktop.png')]} />
-              <CaseStudyCard width={555} height={303} imgs={[require('../../static/Iphone 1.png'), require('../../static/Iphone 2.png'), require('../../static/Image_Laptop.png')]} />
-            </div>
-          </div>
-        </div>
-        <div className={styles.StartsWithWhySection}>
-          <StartsWithWhy />
-        </div>
-        <div className={styles.PartnerSection}>
-          <div className={styles.PartnerContainer}>
-            <Partners imgs={[require('../../static/Hyundai.png'), require('../../static/Canon.png'), require('../../static/Motorola.png'), require('../../static/E.png'),
-            require('../../static/ACS.png'),require('../../static/Core Logic.png'), require('../../static/Hyundai Copy.png'), require('../../static/Canon Copy.png')]} />
           </div>
         </div>
       </div>

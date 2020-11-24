@@ -223,52 +223,6 @@
     line-height: 20px;
     text-align: center;
   }
-
-  .caseStudiesSection{
-    height: 700px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .caseStudiesContainer{
-    width: 1141px;
-    height: 631px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .hoverImg:hover{
-    opacity: 0.35;
-    background-color: black;
-  }
-
-  .StartsWithWhySection{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .PartnerSection{
-    /* background-color: royalblue; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 1500px;
-  }
-
-  .PartnerContainer{
-    display: flex;
-    flex-direction: row;
-    /* flex-direction: column;
-    flex-wrap: wrap;*/
-    align-items: center;
-    justify-content: center; 
-    /* height: 1200px;
-    width: 100vw; */
-    /* background-color: rgb(104, 95, 114); */
-  }
 }
 /* 
 // Extra large devices (large desktops, 1200px and up) */
