@@ -13,6 +13,7 @@ export default class Header extends Component {
             console.error(error);
             return;
           }
+          console.log(svg);
         }}
         beforeInjection={(svg) => {
           svg.classList.add(styles.logoHeader);

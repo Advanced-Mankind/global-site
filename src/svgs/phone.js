@@ -11,6 +11,7 @@ export default class Phone extends Component {
             console.error(error);
             return;
           }
+          console.log(svg);
         }}
         beforeInjection={(svg) => {
           svg.classList.add("svg-icon");

@@ -4,7 +4,6 @@
   min-height: 83vh;
   position: relative;
 }
-
 .leftContent {
   z-index: 10;
   padding: 0px 15px;
@@ -21,14 +20,12 @@
   top: -11vh;
 }
 .title {
-  height: 144px;
-  width: 457px;
-  color: #222B45;
+  color: #222b45;
   font-family: "Open Sans";
-  font-size: 36px;
+  font-size: 30px;
   font-weight: bold;
   letter-spacing: 0;
-  line-height: 48px;
+  line-height: 40px;
 }
 .footer {
   padding: 0px 15px;
@@ -37,13 +34,10 @@
   width: 100%;
 }
 .subTitle {
-  height: 80px;
-  width: 360px;
-  color: #222B45;
-  font-family: "Open Sans";
   font-size: 15px;
   letter-spacing: 0;
   line-height: 20px;
+  color: #222b45;
 }
 
 .separator {
@@ -103,23 +97,9 @@
 // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   .header{
-    display: flex;
-    flex-direction:row;
     margin: 40px;
     margin-bottom: 0px;
   }
-
-  .navigator{
-    display: flex;
-    justify-content: space-evenly;
-    font-family: "Open Sans";
-    font-size: 12px;
-    /* color: red; */
-    width: 531px;
-    height: 16px;
-    /* background-color: chartreuse; */
-  }
-  
   .logoHeader {
     width: 200px;
     height: 42px;
@@ -128,100 +108,12 @@
   .footer {
     padding: 0px 40px;
   }
-  
   .footerText {
     text-align: right;
   }
-
   .logoFooter {
     width: 60px;
     height: 60px;
-  }
-
-  .titleContainer{
-    height: 250px;
-    width: 457px;
-  }
-
-  .curveBackground{
-    background-image: url('../../static/curveBackground.png');
-    background-position: center;
-    background-repeat: no-repeat; 
-    background-size: cover;
-    height: 700px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-  
-  .yourDreamContainer{
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    height: 554px;  
-  }
-
-  .cardContainer{
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 1140px;
-  }
-
-  .cardBox{
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    height: 440px;
-    width: 360px;
-    border: 1px solid #FBFBFB;
-    border-radius: 10px;
-    background-color: #FFFFFF;
-    box-shadow: 0 10px 20px 0 rgba(35,35,35,0.08);
-    align-items: center;
-    justify-content: space-evenly;
-    
-  }
-
-  .cardTitle{
-    height: 16px;
-    color: #222B45;
-    font-family: "Open Sans";
-    font-size: 12px;
-    letter-spacing: 0;
-    line-height: 16px;
-    text-align: center;
-    /* margin-top: 40px; */
-  }
-
-  .cardSubtitle{
-    height: 24px;
-    width: 240px;
-    color: #222B45;
-    font-family: "Open Sans";
-    font-size: 18px;
-    font-weight: bold;
-    letter-spacing: 0;
-    line-height: 24px;
-    text-align: center;
-  }
-
-  .cardImg{
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-
-  .cardInfo{
-    height: 80px;
-    width: 280px;
-    color: #222B45;
-    font-family: "Open Sans";
-    font-size: 15px;
-    letter-spacing: 0;
-    line-height: 20px;
-    text-align: center;
   }
 }
 /* 
