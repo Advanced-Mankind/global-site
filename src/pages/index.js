@@ -8,12 +8,11 @@ import Header from "../components/Header";
 import { Container, Row, Col } from 'react-bootstrap';
 import "bootstrap/dist/css/bootstrap.css";
 import "normalize.css";
-import Phone from "../svgs/phone";
-import Email from "../svgs/email";
 import styles from "../theme/index.module.css";
 import Footer from "../components/footer";
 import YourDreamCards from "../components/YourDreamCard/YourDreamsCard";
 import CaseStudyCard from "../components/CaseStudyCard/CaseStudyCard";
+import StartsWithWhy from "../components/StartsWithWhy/StartsWithWhy";
 function App() {
   const [theme, componentMounted] = useDarkMode();
 
@@ -29,52 +28,31 @@ function App() {
         <GlobalStyles />
         {/* <Toggle theme={theme} toggleTheme={toggleTheme} /> */}
         <Header />
-        <div className="row align-items-center m-0">
+        <div className="row align-items-center m-0 ">
           <div className="col col-sm-6 p-0">
             <div className={`${styles.leftContent}`}>
-              <div className="row">
+              <div className={styles.titleContainer}>
                 <div className="col-12 mt-3">
                   <h1 className={styles.title}>
-                    Sit tight we are working on it!{" "}
+                    We deliver tranformative interfaces{" "}
                   </h1>
                 </div>
                 <div className="col-12">
                   <p className={`${styles.subTitle} mb-0`}>
-
-                    We can’ t wait to show you what we have created for our own
-                    website, but we need a little more time. If you would like
-                    to connect with us feel free to email or call and we will
-                    get back to you shortly Stay safe!
-                  </p>
-                </div>
-              </div>
-              <div className="mt-4 mb-4">
-                <div className="row">
-                  <Email />
-                  <div className="col">
-                    <a href="mailto:hello@advancedmankind.com" className={styles.subTitle}>
-                      hello@advancedmankind.com
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="row">
-                <Phone />
-                <div className="col">
-                  <a href="tel:617 996 1338" className={styles.subTitle}>
-                    (617) - 996 - 1338
-                    </a>
-
+                    We harness UX design principles with imaginative
+                    problem solving to deliver tomorrow's digital
+                    experiences. We inspire, innovate, and inform,
+                    leaving mediocre and boring behind.
+                                    </p>
                 </div>
               </div>
             </div>
             <img
               className={styles.background_mobile}
               src={require("../../static/background_mobile.png")}
-              alt=""
+              alt="backgroundImage"
             />
           </div>
-
           <div className="d-none d-sm-block col-sm-6 p-0 align-self-end">
             <img
               src={require("../../static/background.png")}
@@ -121,7 +99,7 @@ function App() {
               </Row>
             </Container>
           </div>
-          <div style={{marginTop: '5%'}}>
+          <div style={{ marginTop: '5%' }}>
             <Container>
               <Row className="justify-content-evenly">
                 <Col sm="12" md="6" lg="6" className="justify-content-center">
@@ -135,14 +113,17 @@ function App() {
                   </Row>
                   <Row className="justify-content-center">
                     <Col sm="12" md="6" lg="12" >
-                      <CaseStudyCard imgsDesktop={[require('../../static/phone1.png'), require('../../static/phone2.png'), require('../../static/laptopImageDesktop.png')]} 
-                      imgsTablet={[require('../../static/phone1Tablet.png'), require('../../static/phone2Tablet.png'), require('../../static/laptopImageTablet.png')]}
+                      <CaseStudyCard imgsDesktop={[require('../../static/phone1.png'), require('../../static/phone2.png'), require('../../static/laptopImageDesktop.png')]}
+                        imgsTablet={[require('../../static/phone1Tablet.png'), require('../../static/phone2Tablet.png'), require('../../static/laptopImageTablet.png')]}
                       />
                     </Col>
                   </Row>
                 </Col>
               </Row>
             </Container>
+          </div>
+          <div style={{marginTop:'5%'}}>
+          <StartsWithWhy />
           </div>
         </div>
       </div>
