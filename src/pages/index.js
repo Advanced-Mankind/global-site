@@ -13,6 +13,7 @@ import Email from "../svgs/email";
 import styles from "../theme/index.module.css";
 import Footer from "../components/footer";
 import YourDreamCards from "../components/YourDreamCard/YourDreamsCard";
+import CaseStudyCard from "../components/CaseStudyCard/CaseStudyCard";
 function App() {
   const [theme, componentMounted] = useDarkMode();
 
@@ -116,6 +117,29 @@ function App() {
                     imgTablet={require('../../static/increaseArrowTablet.png')}
                     info="Digital search, illustrations, ad creative-our growth tools create your's brand digital framework for performance."
                   />
+                </Col>
+              </Row>
+            </Container>
+          </div>
+          <div style={{marginTop: '5%'}}>
+            <Container>
+              <Row className="justify-content-evenly">
+                <Col sm="12" md="6" lg="6" className="justify-content-center">
+                  <CaseStudyCard imgsDesktop={[require('../../static/ImageChedrahuiDesktop.png')]} imgsTablet={[require('../../static/imageChedrahuiTablet.png')]} />
+                </Col>
+                <Col sm="12" md="6" lg="6" className="justify-content-center">
+                  <Row className="justify-content-center">
+                    <Col sm="12" md="6" lg="12" >
+                      <CaseStudyCard imgsDesktop={[require('../../static/motoDesktop.png')]} imgsTablet={[require('../../static/motoTablet.png')]} />
+                    </Col>
+                  </Row>
+                  <Row className="justify-content-center">
+                    <Col sm="12" md="6" lg="12" >
+                      <CaseStudyCard imgsDesktop={[require('../../static/phone1.png'), require('../../static/phone2.png'), require('../../static/laptopImageDesktop.png')]} 
+                      imgsTablet={[require('../../static/phone1Tablet.png'), require('../../static/phone2Tablet.png'), require('../../static/laptopImageTablet.png')]}
+                      />
+                    </Col>
+                  </Row>
                 </Col>
               </Row>
             </Container>
