@@ -13,6 +13,8 @@ import Footer from "../components/footer";
 import YourDreamCards from "../components/YourDreamCard/YourDreamsCard";
 import CaseStudyCard from "../components/CaseStudyCard/CaseStudyCard";
 import StartsWithWhy from "../components/StartsWithWhy/StartsWithWhy";
+import Partners from "../components/Partners/Partners";
+import WereHiring from "../components/WereHiring/WereHiring";
 function App() {
   const [theme, componentMounted] = useDarkMode();
 
@@ -21,6 +23,10 @@ function App() {
   if (!componentMounted) {
     return <div />;
   }
+
+  // Esta es la linea que hay que copiar en la parte de los partners linea 134
+  // <Partners imgs={[require('../../static/Hyundai.png'), require('../../static/Canon.png'), require('../../static/Motorola.png'), require('../../static/ACS.png'),
+  //           require('../../static/E.png'), require('../../static/coreLogic.png'), require('../../static/coxmedia.png'), require('../../static/chedrahui.png')]} />
 
   return (
     <ThemeProvider theme={themeMode}>
@@ -122,8 +128,14 @@ function App() {
               </Row>
             </Container>
           </div>
-          <div style={{marginTop:'5%'}}>
-          <StartsWithWhy />
+          <div style={{ marginTop: '5%' }}>
+            <StartsWithWhy />
+          </div>
+          <div style={{ marginTop: '5%' }}>
+
+          </div>
+          <div>
+            <WereHiring />
           </div>
         </div>
       </div>
