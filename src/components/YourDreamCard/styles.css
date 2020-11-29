@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+.cardBox{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 100%; 
+    border: 1px solid #FBFBFB;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    box-shadow: 0 10px 20px 0 rgba(35,35,35,0.08);
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10% 10%; 
+}
+
+.cardTitle{
+color: #222B45;
+font-family: "Open Sans";
+font-size: 12px;
+letter-spacing: 0;
+line-height: 16px;
+text-align: center;
+}
+.cardSubtitle{
+color: #222B45;
+font-family: "Open Sans";
+font-size: 18px;
+font-weight: bold;
+letter-spacing: 0;
+line-height: 24px;
+text-align: center;
+}
+
+.cardInfo{
+color: #222B45;
+font-family: "Open Sans";
+font-size: 15px;
+letter-spacing: 0;
+line-height: 20px;
+text-align: center;
+}
+
+.cardImgDesktop{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.cardImgTablet{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: none;
+}
+
+/* 
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+}
+/* 
+// Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .cardImgDesktop{
+        display: none;
+    }
+    .cardImgTablet{
+        display: flex;
+    }
+}
+/* 
+// Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .cardImgDesktop{
+        display: flex;
+    }
+    .cardImgTablet{
+        display: none;
+    }
+}
+/* 
+// Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
