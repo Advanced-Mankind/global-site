@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
-.StartsWithWhyContainerMobile{
+.StartsWithWhyContainer{
     background-color: #3333FF;
     border-radius: 10px;
     display: flex;
@@ -71,14 +71,14 @@
 /* 
 // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+    .imageTablet{
+        display: flex;
+    }
     .imageMobile{
         display: none;
     }
     .imageDesktop{
         display: none;
-    }
-    .imageTablet{
-        display: flex;
     }
 }
 /* 

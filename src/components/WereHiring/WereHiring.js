@@ -16,9 +16,6 @@ const WereHiring = () => {
             <Container className="wereHiringTablet">
                 <Content />
             </Container>
-            <Container className="wereHiringTablet">
-                <Content />
-            </Container>
         </div>
     )
 }

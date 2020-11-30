@@ -27,6 +27,15 @@
   letter-spacing: 0;
   line-height: 40px;
 }
+.title32px{
+  color: #222B45;
+  font-family: "Open Sans";
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 40px;
+  text-align: center;
+}
 .footer {
   padding: 0px 15px;
   height: 13vh;
@@ -38,6 +47,7 @@
   letter-spacing: 0;
   line-height: 20px;
   color: #222b45;
+  text-align: center;
 }
 
 .separator {

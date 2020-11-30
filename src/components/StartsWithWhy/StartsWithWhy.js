@@ -7,7 +7,7 @@ import './styles.css'
 const StartsWithWhy = () => {
     return (
         <div>
-            <Container fluid className="StartsWithWhyContainerMobile">
+            <Container fluid className="StartsWithWhyContainer">
                 <Row>
                     <ContentLeft />
                     <Col sm="12" md="5" lg="4" style={{ display: 'flex', alignItems: 'center', justifyContent:'center' }}>

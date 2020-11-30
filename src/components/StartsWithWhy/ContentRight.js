@@ -3,7 +3,7 @@ import './styles.css'
 
 const ContentRight = () => {
     return (
-        <div className="stylesContentRightDesktop">
+        <div>
             <h2 className="Title">We believe. We dream. We build.</h2>
             <p className="Paragraph">Why do we approach our work with gut feelings, efficient methods, and creative problem solving? We do it because we aim to harness tomorrow’s technology our business partners need and their users want.</p>
             <button className="Button">LEARN MORE</button>

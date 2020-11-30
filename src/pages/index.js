@@ -13,8 +13,10 @@ import Footer from "../components/footer";
 import YourDreamCards from "../components/YourDreamCard/YourDreamsCard";
 import CaseStudyCard from "../components/CaseStudyCard/CaseStudyCard";
 import StartsWithWhy from "../components/StartsWithWhy/StartsWithWhy";
-import Partners from "../components/Partners/Partners";
-import WereHiring from "../components/WereHiring/WereHiring";
+import HaveAChallenge from "../components/HaveAChallenge/HaveAChallenge";
+import GetStarted from "../components/GetStarted/GetStarted";
+// import Partners from "../components/Partners/Partners";
+// import WereHiring from "../components/WereHiring/WereHiring";
 function App() {
   const [theme, componentMounted] = useDarkMode();
 
@@ -108,7 +110,7 @@ function App() {
           <div style={{ marginTop: '5%' }}>
             <Container>
               <Row className="justify-content-evenly">
-                <Col sm="12" md="6" lg="6" className="justify-content-center">
+                <Col sm="12" md="6" lg="6"   >
                   <CaseStudyCard imgsDesktop={[require('../../static/ImageChedrahuiDesktop.png')]} imgsTablet={[require('../../static/imageChedrahuiTablet.png')]} />
                 </Col>
                 <Col sm="12" md="6" lg="6" className="justify-content-center">
@@ -132,10 +134,26 @@ function App() {
             <StartsWithWhy />
           </div>
           <div style={{ marginTop: '5%' }}>
-
+            <Container>
+              <Row className="justify-content-center">
+                <h1 className={styles.title32px}>Simple, smart, stellar work.</h1>
+                <p className={styles.subTitle}>Our formula isn’t complicated. Design Sprints + Lean Startup Methodology = Making Digital Dreams a Reality.</p>
+              </Row>
+              <Row>
+                <Col sm="12" md="4" lg="4">
+                  <HaveAChallenge icon={require('../../static/people.png')} caption={'Emotional'} headline={'Audience Connection'} paragraph={'We know the critical importance of tapping into your own brand ambassadors. Let’s focus on the intrinsic values that make people care about your brand.'} />
+                </Col>
+                <Col sm="12" md="4" lg="4">
+                  <HaveAChallenge icon={require('../../static/browser.png')} caption={'Adaptable'} headline={'Tomorrow’s Tech'} paragraph={'We are passionate about leveraging future-ready technology stacks for adaptable, agile e-commerce capabilities.'} />
+                </Col>
+                <Col sm="12" md="4" lg="4">
+                  <HaveAChallenge icon={require('../../static/award.png')} caption={'Exceptional'} headline={'Game-changing Results'} paragraph={'We are driven by the goal of building new experiences that users care about and that create brand value for our partners.'} />
+                </Col>
+              </Row>
+            </Container>
           </div>
-          <div>
-            <WereHiring />
+          <div style={{ marginTop: '5%' }}>
+            <GetStarted />
           </div>
         </div>
       </div>
