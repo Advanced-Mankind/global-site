@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+.title{
+    color: #222B45;
+    font-family: "Open Sans";
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 48px;
+}
+
+.paragraph{
+    color: #222B45;
+    font-family: "Open Sans";
+    font-size: 15px;
+    letter-spacing: 0;
+    line-height: 20px;
+    text-align: start;
+}
+
+.imageContainer{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    display: none;
+}
+
+.cardContainer{
+    box-sizing: border-box;
+    border: 1px solid #FBFBFB;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    box-shadow: 0 10px 20px 0 rgba(35,35,35,0.08);
+    padding: 10% 8%;
+    height: 85%;
+    display: flex;
+    align-items: flex-start;
+}
+
+.cardTitle{
+    color: #222B45;
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 24px
+}
+
+.cardParagraph{
+    color: #222B45;
+    font-family: "Open Sans";
+    font-size: 15px;
+    letter-spacing: 0;
+    line-height: 20px;
+}
+/* 
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+/* 
+// Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .imageContainer{
+        display: flex;
+    }
+}
+/* 
+// Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+/* 
+// Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
