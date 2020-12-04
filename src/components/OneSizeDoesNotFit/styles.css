@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+.backgroundContainer{
+    background-color: white;
+    height: 100%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.colContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.title{
+    color: #222B45;
+    font-family: "Open Sans";
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 48px;
+}
+
+.paragraph{
+    color: #222B45;
+    font-family: "Open Sans";
+    font-size: 15px;
+    letter-spacing: 0;
+    line-height: 20px;
+}
+
+.stylesMobile{
+    display: flex;
+}
+
+.stylesTablet{
+    display:none;
+}
+
+.stylesDesktop{
+    display: none;
+}
+
+/* 
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+/* 
+// Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .stylesMobile{
+        display: none   ;
+    }
+    .stylesTablet{
+        display:flex;
+    }
+}
+/* 
+// Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .stylesMobile{
+        display: none;
+    }
+    .stylesTablet{
+        display: none;
+    }
+    .stylesDesktop{
+        display: flex;
+    }
+}
+/* 
+// Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}

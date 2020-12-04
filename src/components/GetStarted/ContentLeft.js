@@ -11,7 +11,7 @@ const ContentLeft = () => {
             <p className="subtitle">
                 We’re ready to dig in and do great work for you. Submit our quick form to see for yourself.
             </p>
-            <ul>
+            <ul className="ulIcon">
                 <li>Full Service</li>
                 <li>simple Approach</li>
                 <li>Happy Users</li>
