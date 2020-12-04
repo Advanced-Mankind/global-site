@@ -27,6 +27,15 @@
   letter-spacing: 0;
   line-height: 40px;
 }
+.title32px{
+  color: #222B45;
+  font-family: "Open Sans";
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 40px;
+  text-align: center;
+}
 .footer {
   padding: 0px 15px;
   height: 13vh;
@@ -38,6 +47,7 @@
   letter-spacing: 0;
   line-height: 20px;
   color: #222b45;
+  text-align: center;
 }
 
 .separator {
@@ -71,6 +81,19 @@
   max-width: 100%;
   position: relative;
 }
+
+.curveBackground{
+  background-image: url('../../static/curveBackground.png');
+  background-position: center;
+  background-repeat: no-repeat; 
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 5%;
+}
+
 /* 
 // Extra small devices (portrait phones, less than 576px)
 // No media query since this is the default in Bootstrap

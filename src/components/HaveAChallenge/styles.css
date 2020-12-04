@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+.cardContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10%;
+}
+
+.iconStyle{
+    background-color: #3333FF;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 95px;
+    width: 95px;
+}
+
+.caption{
+    /* color: black; */
+    font-family: "Open Sans";
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: 16px;
+    margin-top: 5%;
+}
+
+.headline{
+    /* color: #FFFFFF; */
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 24px;
+}
+
+.paragraph{
+    /* color: #FFFFFF; */
+    font-family: "Open Sans";
+    font-size: 15px;
+    letter-spacing: 0;
+    line-height: 20px;
+    text-align: center;
+    margin: 0% 9% 0% 9%;
+}

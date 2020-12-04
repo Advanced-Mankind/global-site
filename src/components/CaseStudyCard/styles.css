@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+.caseStudyCardDesktop{
+    background-color:#EDF1F7;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
+.caseStudyCardTablet{
+    background-color:#EDF1F7;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.hoverImg:hover{
+    opacity: 0.35;
+    background-color: black;
+}
+
+.imgDesktop{
+    display: none;
+}
+
+.imgTablet{
+    display: flex;
+}
+
+/* 
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+}
+/* 
+// Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+/* 
+// Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .caseStudyCardTablet{
+        display: none;
+    }
+    .imgTablet{
+        display: none;
+    }
+    .caseStudyCardDesktop{
+        display: flex;
+    }
+    .imgDesktop{
+        display: flex;
+    }
+}
+/* 
+// Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .caseStudyCardTablet{
+        display: none;
+    }
+    .imgTablet{
+        display: none;
+    }
+    .caseStudyCardDesktop{
+        display: flex;
+    }
+    .imgDesktop{
+        display: flex;
+    }
+}
