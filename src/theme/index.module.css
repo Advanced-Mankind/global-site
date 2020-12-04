@@ -19,6 +19,38 @@
   position: relative;
   top: -11vh;
 }
+.img_mobile {
+  max-width: 150%;
+  position: relative;
+  top: -10vh;
+  float: right;
+}
+.curva_mobile {
+  max-width: 100%;
+  top: 95vh;
+  float: inline-end;
+  position: absolute;
+  float: right;
+}
+.buttonTitle{
+  color:#FFFFFF;
+  font-size: 18px;
+  font-family: "Open Sans";
+  font-weight: bold;
+  line-height: 24px;
+
+}
+.buttonError{
+  background-color:#3333FF;
+  border-radius: 34px;
+  padding: 16px 24px 16px 24px;
+  margin-top: 40px;
+  margin-left: 24;
+}
+.content{
+  width: 100%;
+  margin:5% 5%
+}
 .title {
   color: #222b45;
   font-family: "Open Sans";
@@ -26,6 +58,15 @@
   font-weight: bold;
   letter-spacing: 0;
   line-height: 40px;
+}
+.titleError {
+  color: #222b45;
+  font-family: "Open Sans";
+  font-size: 36px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 40px;
+  padding-left: 10;
 }
 .footer {
   padding: 0px 15px;
@@ -61,6 +102,9 @@
   width: 40px;
   height: 40px;
 }
+.logoOops {
+  margin-bottom: -63px;
+}
 
 .background_mobile {
   z-index: -1;
@@ -77,6 +121,7 @@
 
 // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
+  
   .background_mobile {
     display: none;
   }
@@ -89,6 +134,7 @@
 /* 
 // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  
   .footerText {
     text-align: right;
   }
@@ -96,6 +142,7 @@
 /* 
 // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  
   .header{
     margin: 40px;
     margin-bottom: 0px;
@@ -119,6 +166,10 @@
 /* 
 // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+  .content{
+    width: 54%;
+    margin:35% 20%
+  }
   .title {
     font-size: 36px;
   }
