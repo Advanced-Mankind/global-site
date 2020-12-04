@@ -11,7 +11,7 @@ const OneSizeDoesNotFill = ({ firstTitle, secondTitle, firstParagraph, secondPar
                         <img src={require('../../../static/homeHouseMobile.png')} alt="homeMobile" />
                         <h1 className="title">{firstTitle}</h1>
                         <p className="paragraph"> {firstParagraph} </p>
-                        <img src={require('../../../static/reviewGraphMobile.png')} alt="reviewMobile" />
+                        <img src={require('../../../static/reviewGraphMobile.png')} alt="reviewMobile"  style={{paddingTop:'3%'}} />
                         <h1 className="title"> {secondTitle} </h1>
                         <p className="paragraph"> {secondParagraph} </p>
                     </Col>
@@ -30,7 +30,7 @@ const OneSizeDoesNotFill = ({ firstTitle, secondTitle, firstParagraph, secondPar
                     <Col md="6">
                         <img src={require('../../../static/homeHouseTablet.png')} alt="homeMobile" />
                     </Col>
-                    <Col md="4">
+                    <Col md="4" style={{paddingTop:'3%'}}>
                         <img src={require('../../../static/reviewGraphTablet.png')} alt="homeMobile" />
                     </Col>
                     <Col md="8">
@@ -52,7 +52,7 @@ const OneSizeDoesNotFill = ({ firstTitle, secondTitle, firstParagraph, secondPar
                     <Col md="6" lg="6">
                         <img src={require('../../../static/homeHouseDesktop.png')} alt="homeMobile" />
                     </Col>
-                    <Col md="6" lg="6">
+                    <Col md="6" lg="6" style={{paddingTop:'3%'}}>
                         <img src={require('../../../static/reviewGraphDesktop.png')} alt="homeMobile" />
                     </Col>
                     <Col md="6" lg="6">

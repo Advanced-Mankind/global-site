@@ -53,6 +53,15 @@
     letter-spacing: 0;
     line-height: 20px;
 }
+
+.desktopAndTablet{
+    display: none;
+}
+
+.mobile{
+    display: flex;
+}
+
 /* 
 // Extra small devices (portrait phones, less than 576px)
 // No media query since this is the default in Bootstrap
@@ -66,12 +75,30 @@
     .imageContainer{
         display: flex;
     }
+    .desktopAndTablet{
+        display: flex;
+    }
+    .mobile{
+        display: none;
+    }
 }
 /* 
 // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+    .desktopAndTablet{
+        display: flex;
+    }
+    .mobile{
+        display: none;
+    }
 }
 /* 
 // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+    .desktopAndTablet{
+        display: flex;
+    }
+    .mobile{
+        display: none;
+    }
 }

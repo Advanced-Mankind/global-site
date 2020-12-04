@@ -3,6 +3,8 @@
 .backgroundContainer{
     background-color: white;
     height: 100%;
+    padding-top: 3%;
+    padding-bottom: 3%;
 }
 
 .colContainer{
