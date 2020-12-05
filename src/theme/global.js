@@ -1,17 +1,15 @@
 // global.js\
-import {
-  createGlobalStyle
-} from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 
-export const GlobalStyles = createGlobalStyle `
+export const GlobalStyles = createGlobalStyle`
 
   body {
     background: ${({ theme }) => theme.body};
-    color: ${({ theme }) => theme.text};
+    color: ${({ theme }) => theme.text} !important;
     transition: all 0.25s linear;
     padding: 0px;
     padding-bottom:13vh;
     min-height: 83vh;
     font-family: 'Open Sans', sans-serif;
     max-width: 100vw;
-  }`
+  }`;

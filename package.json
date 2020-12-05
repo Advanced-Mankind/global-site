@@ -18,10 +18,11 @@
     "gh-pages": "^2.0.1",
     "lodash": "^4.17.11",
     "normalize.css": "^8.0.1",
-    "react": "^16.13.1",
+    "react": "^16.8.0",
     "react-bootstrap": "^1.4.0",
-    "react-dom": "^16.13.0",
+    "react-dom": "^16.8.0",
     "react-helmet": "^5.2.0",
+    "react-router-dom": "^5.2.0",
     "react-svg": "^11.0.26",
     "styled-components": "^5.1.1"
   },
