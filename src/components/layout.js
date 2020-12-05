@@ -1,6 +1,7 @@
 import React from "react";
 import { ThemeProvider } from "styled-components";
 import { GlobalStyles } from "../theme/global";
+import styles from "../theme/index.module.css";
 import { lightTheme } from "../theme/theme";
 import { useDarkMode } from "../theme/useDarkMode";
 import { AuthContext } from "../utils/AuthProvider";
@@ -17,9 +18,11 @@ export default function Layout({ children }) {
   return (
     <AuthContext>
       <ThemeProvider theme={themeMode}>
-        <GlobalStyles />
-        <Header></Header>
-        {children}
+        <div className={`${styles.body} "container-fluid p-0"`}>
+          <GlobalStyles />
+          <Header></Header>
+          {children}
+        </div>
       </ThemeProvider>
     </AuthContext>
   );

@@ -3,7 +3,6 @@ import "bootstrap/dist/css/bootstrap.css";
 import "normalize.css";
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import { GlobalStyles } from "../theme/global";
 import styles from "../theme/index.module.css";
 import CaseStudyCard from "./CaseStudyCard/CaseStudyCard";
 import GetStarted from "./GetStarted/GetStarted";
@@ -19,9 +18,7 @@ import YourDreamCards from "./YourDreamCard/YourDreamsCard";
 
 export default function Home() {
   return (
-    <div className={`${styles.body} "container-fluid p-0"`}>
-      <GlobalStyles />
-      {/* <Toggle theme={theme} toggleTheme={toggleTheme} /> */}
+    <div>
       <div className="row align-items-center m-0 ">
         <div className="col col-sm-6 p-0">
           <div className={`${styles.leftContent}`}>
