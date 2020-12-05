@@ -5,7 +5,7 @@ export const GlobalStyles = createGlobalStyle`
 
   body {
     background: ${({ theme }) => theme.body};
-    color: ${({ theme }) => theme.text} !important;
+    color: ${({ theme }) => theme.text};
     transition: all 0.25s linear;
     padding: 0px;
     padding-bottom:13vh;

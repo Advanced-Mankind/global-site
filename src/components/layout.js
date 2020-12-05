@@ -1,5 +1,6 @@
 import React from "react";
 import { ThemeProvider } from "styled-components";
+import { GlobalStyles } from "../theme/global";
 import { lightTheme } from "../theme/theme";
 import { useDarkMode } from "../theme/useDarkMode";
 import { AuthContext } from "../utils/AuthProvider";
@@ -16,6 +17,7 @@ export default function Layout({ children }) {
   return (
     <AuthContext>
       <ThemeProvider theme={themeMode}>
+        <GlobalStyles />
         <Header></Header>
         {children}
       </ThemeProvider>
