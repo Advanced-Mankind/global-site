@@ -1,3 +1,4 @@
+// App.js
 import React from "react";
 import { ThemeProvider } from "styled-components";
 import { useDarkMode } from "../theme/useDarkMode";
@@ -6,9 +7,11 @@ import { GlobalStyles } from "../theme/global";
 import Header from "../components/Header";
 import "bootstrap/dist/css/bootstrap.css";
 import "normalize.css";
+import Phone from "../svgs/phone";
+import Email from "../svgs/email";
 import styles from "../theme/index.module.css";
 import Footer from "../components/footer";
-function MessageError() {
+function App() {
   const [theme, componentMounted] = useDarkMode();
 
   //const themeMode = theme === "dark" ? lightTheme : darkTheme;
@@ -27,20 +30,17 @@ function MessageError() {
           <div className="col col-sm-6 p-0">
             <div className={`${styles.leftContent}`}>
               <div className="row">
-                <img
-                  className={styles.logoOops}
-                  src={require("../../static/oops.png")}
-                  alt=""
-                />
-                <div className="col-12">
-                  <h1 className={styles.titleError}>That's no good! </h1>
+                <div className="col-12 mt-3">
+                  <h1 className={styles.title}>That's no good! </h1>
                 </div>
                 <div className="col-10">
-                  <p className={`${styles.subTitle}`}>
+                  <p className={`${styles.subTitle} mb-0`}>
                     We are going to send you back to a safe space where things
                     don't wilt or die.
                   </p>
                 </div>
+              </div>
+              <div className="mt-4 mb-4">
                 <button
                   className={styles.buttonError}
                   onClick={() => {
@@ -50,6 +50,7 @@ function MessageError() {
                   <span className={styles.buttonTitle}>GO BACK HOME </span>
                 </button>
               </div>
+              <div className="row"></div>
             </div>
             <img
               className={styles.background_mobile}
@@ -58,7 +59,7 @@ function MessageError() {
             />
           </div>
 
-          <div className="d-none d-sm-block col-sm-12 p-0 align-self-end">
+          <div className="d-none d-sm-block col-sm-6 p-0 align-self-end">
             <img
               src={require("../../static/messageError.png")}
               className={styles.background_tablet}
@@ -72,4 +73,4 @@ function MessageError() {
   );
 }
 
-export default MessageError;
+export default App;

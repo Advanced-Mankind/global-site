@@ -8,10 +8,10 @@
   z-index: 10;
   padding: 0px 15px;
 }
-.header{
+.header {
   margin: 15px;
 }
-.footer-Text{
+.footer-Text {
   float: right;
 }
 .background_mobile {
@@ -22,7 +22,7 @@
 .img_mobile {
   max-width: 150%;
   position: relative;
-  top: -10vh;
+  top: -5vh;
   float: right;
 }
 .curva_mobile {
@@ -32,24 +32,19 @@
   position: absolute;
   float: right;
 }
-.buttonTitle{
-  color:#FFFFFF;
+.buttonTitle {
+  color: #ffffff;
   font-size: 18px;
   font-family: "Open Sans";
   font-weight: bold;
   line-height: 24px;
-
 }
-.buttonError{
-  background-color:#3333FF;
+.buttonError {
+  background-color: #3333ff;
+  border-color: #3333ff;
   border-radius: 34px;
   padding: 16px 24px 16px 24px;
-  margin-top: 40px;
   margin-left: 24;
-}
-.content{
-  width: 100%;
-  margin:5% 5%
 }
 .title {
   color: #222b45;
@@ -109,6 +104,9 @@
 .background_mobile {
   z-index: -1;
 }
+.img_mobile {
+  z-index: -1;
+}
 
 .background_tablet {
   z-index: 10;
@@ -121,7 +119,6 @@
 
 // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-  
   .background_mobile {
     display: none;
   }
@@ -130,11 +127,13 @@
     position: relative;
     float: right;
   }
+  .img_mobile {
+    display: none;
+  }
 }
 /* 
 // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  
   .footerText {
     text-align: right;
   }
@@ -142,8 +141,7 @@
 /* 
 // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  
-  .header{
+  .header {
     margin: 40px;
     margin-bottom: 0px;
   }
@@ -166,10 +164,6 @@
 /* 
 // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-  .content{
-    width: 54%;
-    margin:35% 20%
-  }
   .title {
     font-size: 36px;
   }
