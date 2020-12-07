@@ -5,6 +5,7 @@ import Layout from "../components/layout";
 import OneSizeDoesNotFill from "../components/OneSizeDoesNotFit/OneSizeDoesNotFill";
 import Process from "../components/Process/Process";
 import styles from "../theme/ourApproach.module.css";
+
 export default function OurApproach() {
   return (
     <Layout>
