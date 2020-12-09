@@ -4,12 +4,11 @@ import HeroSection from "../components/HeroSection/HeroSection";
 import Layout from "../components/layout";
 import OneSizeDoesNotFill from "../components/OneSizeDoesNotFit/OneSizeDoesNotFill";
 import Process from "../components/Process/Process";
-import styles from "../theme/ourApproach.module.css";
-
+import stylesApproach from "../theme/ourApproach.module.css";
 export default function OurApproach() {
   return (
     <Layout>
-      <div className={`${styles.body} "container-fluid p-0"`}>
+      <div className={`${stylesApproach.body} "container-fluid p-0"`}>
         <div style={{ marginTop: "5%" }}>
           <HeroSection />
         </div>
