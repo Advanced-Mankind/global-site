@@ -4,7 +4,8 @@ import { GlobalStyles } from "../theme/global";
 import styles from "../theme/index.module.css";
 import { lightTheme } from "../theme/theme";
 import { useDarkMode } from "../theme/useDarkMode";
-import { AuthContext } from "../utils/Authprovider";
+import { AuthContext } from "./Authprovider";
+
 import Header from "./Header";
 export default function Layout({ children }) {
   const [theme, componentMounted] = useDarkMode();
