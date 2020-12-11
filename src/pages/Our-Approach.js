@@ -14,7 +14,7 @@ export default function OurApproach() {
           <HeroSection />
         </div>
       </div>
-      <div>
+      <div style={{ marginTop: "5%" }}>
         <OneSizeDoesNotFill
           firstTitle={"One Size Does Not Fit All"}
           secondTitle={"It’s Time for Tomorrow’s Technology"}

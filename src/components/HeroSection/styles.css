@@ -1,65 +1,65 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
-.title{
-    color: #222B45;
-    font-family: "Open Sans";
-    font-size: 36px;
-    font-weight: bold;
-    letter-spacing: 0;
-    line-height: 48px;
+.title {
+  color: #222b45;
+  font-family: "Open Sans";
+  font-size: 36px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 48px;
 }
 
-.paragraph{
-    color: #222B45;
-    font-family: "Open Sans";
-    font-size: 15px;
-    letter-spacing: 0;
-    line-height: 20px;
-    text-align: start;
+.paragraph {
+  color: #222b45;
+  font-family: "Open Sans";
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: 20px;
+  text-align: start;
 }
 
-.imageContainer{
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    display: none;
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  display: none;
 }
 
-.cardContainer{
-    box-sizing: border-box;
-    border: 1px solid #FBFBFB;
-    border-radius: 10px;
-    background-color: #FFFFFF;
-    box-shadow: 0 10px 20px 0 rgba(35,35,35,0.08);
-    padding: 10% 8%;
-    height: 85%;
-    display: flex;
-    align-items: flex-start;
+.cardContainer {
+  box-sizing: border-box;
+  border: 1px solid #fbfbfb;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 10px 20px 0 rgba(35, 35, 35, 0.08);
+  padding: 10% 8%;
+  height: 100%;
+  /* display: flex; */
+  align-items: flex-start;
 }
 
-.cardTitle{
-    color: #222B45;
-    font-family: "Open Sans";
-    font-size: 18px;
-    font-weight: bold;
-    letter-spacing: 0;
-    line-height: 24px
+.cardTitle {
+  color: #222b45;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 24px;
 }
 
-.cardParagraph{
-    color: #222B45;
-    font-family: "Open Sans";
-    font-size: 15px;
-    letter-spacing: 0;
-    line-height: 20px;
+.cardParagraph {
+  color: #222b45;
+  font-family: "Open Sans";
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: 20px;
 }
 
-.desktopAndTablet{
-    display: none;
+.desktopAndTablet {
+  display: none;
 }
 
-.mobile{
-    display: flex;
+.mobile {
+  display: flex;
 }
 
 /* 
@@ -72,33 +72,33 @@
 /* 
 // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-    .imageContainer{
-        display: flex;
-    }
-    .desktopAndTablet{
-        display: flex;
-    }
-    .mobile{
-        display: none;
-    }
+  .imageContainer {
+    display: flex;
+  }
+  .desktopAndTablet {
+    display: flex;
+  }
+  .mobile {
+    display: none;
+  }
 }
 /* 
 // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-    .desktopAndTablet{
-        display: flex;
-    }
-    .mobile{
-        display: none;
-    }
+  .desktopAndTablet {
+    display: flex;
+  }
+  .mobile {
+    display: none;
+  }
 }
 /* 
 // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-    .desktopAndTablet{
-        display: flex;
-    }
-    .mobile{
-        display: none;
-    }
+  .desktopAndTablet {
+    display: flex;
+  }
+  .mobile {
+    display: none;
+  }
 }

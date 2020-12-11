@@ -12,4 +12,5 @@ export const GlobalStyles = createGlobalStyle`
     min-height: 83vh;
     font-family: 'Open Sans', sans-serif;
     max-width: 100vw;
+    overflow-x: hidden; 
   }`;

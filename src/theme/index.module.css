@@ -1,23 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
 .body {
-  min-height: 83vh;
+  min-height: 100vh;
   position: relative;
 }
 .leftContent {
   z-index: 10;
   padding: 0px 15px;
 }
-.header{
+.header {
   margin: 15px;
 }
-.footer-Text{
+.footer-Text {
   float: right;
 }
 .background_mobile {
   max-width: 100%;
-  position: relative;
-  top: -11vh;
 }
 .title {
   color: #222b45;
@@ -27,8 +25,8 @@
   letter-spacing: 0;
   line-height: 40px;
 }
-.title32px{
-  color: #222B45;
+.title32px {
+  color: #222b45;
   font-family: "Open Sans";
   font-size: 32px;
   font-weight: bold;
@@ -47,7 +45,7 @@
   letter-spacing: 0;
   line-height: 20px;
   color: #222b45;
-  text-align: center;
+  text-align: left;
 }
 
 .separator {
@@ -72,7 +70,7 @@
   height: 40px;
 }
 
-.title{
+.title {
   font-family: "Open Sans";
   font-size: 36px;
   font-weight: bold;
@@ -80,7 +78,7 @@
   line-height: 48px;
 }
 
-.paragraph{
+.paragraph {
   font-family: "Open Sans";
   font-size: 15px;
   letter-spacing: 0;
@@ -96,16 +94,7 @@
   max-width: 100%;
   position: relative;
 }
-
-.curveBackground{
-  background-image: url('../../static/curveBackground.png');
-  background-position: center;
-  background-repeat: no-repeat; 
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+.curveBackground {
   padding-top: 5%;
 }
 
@@ -127,6 +116,17 @@
 /* 
 // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  .curveBackground {
+    background-image: url("../../static/curveBackground.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 8%;
+  }
   .footerText {
     text-align: right;
   }
@@ -134,7 +134,18 @@
 /* 
 // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  .header{
+  .curveBackground {
+    background-image: url("../../static/curveBackground.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 8%;
+  }
+  .header {
     margin: 40px;
     margin-bottom: 0px;
   }
@@ -157,6 +168,17 @@
 /* 
 // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+  .curveBackground {
+    background-image: url("../../static/curveBackground.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 8%;
+  }
   .title {
     font-size: 36px;
   }
