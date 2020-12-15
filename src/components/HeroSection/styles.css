@@ -37,13 +37,14 @@
   align-items: flex-start;
 }
 
-.cardTitle {
+.cardTitleHero {
   color: #222b45;
   font-family: "Open Sans";
   font-size: 18px;
   font-weight: bold;
   letter-spacing: 0;
   line-height: 24px;
+  text-align: left !important;
 }
 
 .cardParagraph {

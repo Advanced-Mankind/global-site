@@ -5,8 +5,9 @@ import styles from "../theme/index.module.css";
 import { lightTheme } from "../theme/theme";
 import { useDarkMode } from "../theme/useDarkMode";
 import { AuthContext } from "./Authprovider";
-
+import Footer from "./Footer";
 import Header from "./Header";
+
 export default function Layout({ children }) {
   const [theme, componentMounted] = useDarkMode();
 
@@ -23,6 +24,7 @@ export default function Layout({ children }) {
           <GlobalStyles />
           <Header></Header>
           {children}
+          <Footer></Footer>
         </div>
       </ThemeProvider>
     </AuthContext>
