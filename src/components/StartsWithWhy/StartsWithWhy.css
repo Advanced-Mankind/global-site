@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+.StartsWithWhyContainer {
+  background-color: #3333ff;
+  border-radius: 10px;
+  /* display: flex;
+  flex-direction: row; */
+  max-width: 100%;
+  margin: 0;
+}
+
+.ContentRight {
+  display: flex;
+  flex-direction: column;
+}
+
+.Title {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 48px;
+  font-family: "Open Sans";
+}
+
+.Paragraph {
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: 20px;
+}
+
+.Button {
+  border: unset;
+  height: 40px;
+  width: 132px;
+  border-radius: 34px;
+  background-color: #edf1f7;
+  font-size: 14px;
+  color: #222b45;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 16px;
+  text-align: center;
+}
+
+.QuoteCaption {
+  color: white;
+  font-family: "Open Sans";
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: 16px;
+}
+
+.imageMobile {
+  display: flex;
+  width: 100%;
+}
+
+.imageTablet {
+  display: none;
+}
+
+.imageDesktop {
+  display: none;
+}
+
+.divider-line {
+  margin: 26px 15px;
+  box-sizing: border-box;
+  height: 1px;
+  width: 100%;
+  border: 1px dashed #ffffff;
+  opacity: 0.3;
+}
+
+.avatar {
+  padding: 6px;
+  box-sizing: border-box;
+  height: 57px;
+  width: 57px;
+  border: 2px solid #0095ff;
+  border-radius: 100%;
+}
+
+/* 
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+/* 
+// Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .imageTablet {
+    display: flex !important;
+  }
+  .imageMobile {
+    display: none !important;
+  }
+  .imageDesktop {
+    display: none !important;
+  }
+}
+/* 
+// Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .imageMobile {
+    display: none !important;
+  }
+  .imageTablet {
+    display: flex !important;
+  }
+  .imageDesktop {
+    display: none !important;
+  }
+}
+/* 
+// Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .imageMobile {
+    display: none !important;
+  }
+  .imageTablet {
+    display: none !important;
+  }
+  .imageDesktop {
+    display: flex !important;
+  }
+  /* .stylesContentRightDesktop{
+        height: 80%;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        display: none;
+    } */
+}

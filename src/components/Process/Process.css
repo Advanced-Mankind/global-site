@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+.leftContentStep3{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.rightContentStep3{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+.infoContainer{
+    margin-left: 10%;
+    margin-top: 2%;
+}
+
+.imgStyleMobile{
+    display: flex;
+    align-items: center;
+}
+
+.imgStyle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title{
+    color: #222B45;
+    font-family: "Open Sans";
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 0;  
+    line-height: 48px;
+}
+
+.titleTabletMobile{
+    color: #222B45;
+    font-family: "Open Sans";
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 40px;
+}
+
+.subtitleMobile{
+    color: #222B45;
+    font-family: "Open Sans";
+    font-size: 9.41px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 12.55px;
+}
+
+.paragraphMobile{
+    color: #222B45;
+    font-family: "Open Sans";
+    font-size: 7.84px;
+    letter-spacing: 0;
+    line-height: 10.46px;
+}
+
+.subtitle{
+    color: #222B45;
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 24px;
+}
+
+.paragraph{
+    color: #222B45;
+    font-family: "Open Sans";
+    font-size: 15px;
+    letter-spacing: 0;
+    line-height: 20px;
+}
+
+.step1Desktop{
+    display: none;
+}
+.step1Tablet{
+    display: none;
+}
+.step1Mobile{
+    display: flex;
+}
+
+.step2Desktop{
+    display: none;
+}
+.step2Tablet{
+    display: none;
+}
+.step2Mobile{
+    display: flex;
+}
+
+.step3Desktop{
+    display: none;
+}
+.step3Tablet{
+    display: none;
+}
+.step3Mobile{
+    display: flex;
+}
+/* 
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+}
+/* 
+// Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .step1Tablet{
+        display: none;
+    }
+    .step1Mobile{
+        display: none;
+    }
+    .step1Tablet{
+        display: flex;
+    }
+    .step2Desktop{
+        display: none;
+    }
+    .step2Tablet{
+        display: flex;
+    }   
+    .step2Mobile{
+        display: none;
+    }
+    .step3Desktop{
+        display: none;
+    }
+    .step3Tablet{
+        display: flex;
+    }   
+    .step3Mobile{
+        display: none;
+    }
+}
+/* 
+// Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .step1Mobile{
+        display: none;
+    }
+    .step1Tablet{
+        display: none;
+    }
+    .step1Desktop{
+        display: flex;
+    }
+    .step2Desktop{
+        display: flex;
+    }
+    .step2Tablet{
+        display: none;
+    }  
+    .step2Mobile{
+        display: none;
+    }
+    .step3Desktop{
+        display: flex;
+    }
+    .step3Tablet{
+        display: none;
+    }  
+    .step3Mobile{
+        display: none;
+    }
+}
+/* 
+// Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}

@@ -1,0 +1,72 @@
+.ourPerkCardContainer{
+    box-sizing: border-box;
+    padding: 10% 8%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.cardTitle{
+    color: #222B45;
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 24px;
+}
+
+.cardParagraph{
+    color: #222B45;
+    font-family: "Open Sans";
+    font-size: 15px;
+    letter-spacing: 0;
+    line-height: 20px;
+}
+
+.ourPerkQuoteContainer{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 3% 10%;
+    margin-top: 2%;
+}
+
+.quoteTitle{
+    font-family: "Open Sans";
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 40px;
+    text-align: center;
+}
+
+.quoteInfo{
+    font-family: "Open Sans";
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 24px;
+    text-align: center;
+}
+
+.secondTitle{
+    font-family: "Open Sans";
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 32px;
+}
+
+.secondParagraph{
+    font-family: "Open Sans";
+    font-size: 15px;
+    letter-spacing: 0;
+    line-height: 20px;
+    text-align: center;
+    width: 60%;
+}

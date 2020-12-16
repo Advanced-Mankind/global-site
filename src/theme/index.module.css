@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
 .body {
-  min-height: 83vh;
+  min-height: 100vh;
   position: relative;
 }
 .leftContent {
@@ -16,8 +16,6 @@
 }
 .background_mobile {
   max-width: 100%;
-  position: relative;
-  top: -11vh;
 }
 .img_mobile {
   max-width: 150%;
@@ -63,6 +61,15 @@
   line-height: 40px;
   padding-left: 10;
 }
+.title32px {
+  color: #222b45;
+  font-family: "Open Sans";
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 40px;
+  text-align: center;
+}
 .footer {
   padding: 0px 15px;
   height: 13vh;
@@ -74,6 +81,7 @@
   letter-spacing: 0;
   line-height: 20px;
   color: #222b45;
+  text-align: left;
 }
 
 .separator {
@@ -97,8 +105,39 @@
   width: 40px;
   height: 40px;
 }
+
 .logoOops {
   margin-bottom: -63px;
+}
+.footersectiontext {
+  color: #222b45;
+  font-family: "Open Sans";
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 16px;
+}
+.footersectiontextbold {
+  color: #222b45;
+  font-family: "Open Sans";
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+.title {
+  font-family: "Open Sans";
+  font-size: 36px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 48px;
+}
+
+.paragraph {
+  font-family: "Open Sans";
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: 20px;
 }
 
 .background_mobile {
@@ -113,6 +152,10 @@
   max-width: 100%;
   position: relative;
 }
+.curveBackground {
+  padding-top: 5%;
+}
+
 /* 
 // Extra small devices (portrait phones, less than 576px)
 // No media query since this is the default in Bootstrap
@@ -134,6 +177,17 @@
 /* 
 // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  .curveBackground {
+    background-image: url("../../static/curveBackground.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 8%;
+  }
   .footerText {
     text-align: right;
   }
@@ -141,6 +195,19 @@
 /* 
 // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+
+  .curveBackground {
+    background-image: url("../../static/curveBackground.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 8%;
+  }
+
   .header {
     margin: 40px;
     margin-bottom: 0px;
@@ -164,6 +231,17 @@
 /* 
 // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+  .curveBackground {
+    background-image: url("../../static/curveBackground.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 8%;
+  }
   .title {
     font-size: 36px;
   }
