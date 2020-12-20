@@ -1,9 +1,14 @@
 import React from "react";
 import Layout from "../components/layout";
-import CandidateCard from "../components/Positions/candidateCard";
 import styles from "../theme/index.module.css";
-import {Row, Col, Container } from "react-bootstrap";
+import {Container } from "react-bootstrap";
+import ContainerPositions from "../components/Positions/containerPositions"
+
 export default function Positions() {
+const positionsList=["UI/UX Designer","Project Manager", "Copy Writer", "Creative Director", "Bisiness Analytics"]
+const titleItems = positionsList.map((data) => (
+   <p>{data}</p>
+));
   return (
     <Layout>
       <div className="row align-items-center m-0">
@@ -39,27 +44,15 @@ export default function Positions() {
             alt=""
           />
         </div>
-        <Container>
-      <Row>
-        <Col sm="12" md="12" lg="12" className="cardDesktop">
-          <div className="textCard">
-          <CandidateCard/>
-          </div>
-        </Col>
-        <Col sm="12" md="12" lg="12" className="cardTablet">
-          <div className="textCard">
-          <CandidateCard/>
-          </div>
-        </Col>
-        <Col sm="12" md="12" lg="12" className="cardMobile">
-          <div className="textCard">
-            <CandidateCard/>
-          </div>
-        </Col>
-      </Row>
-      
-    </Container>
+      <Container>
+      <ContainerPositions/>
+      <ContainerPositions/>
+      <ContainerPositions/>
+      <ContainerPositions/>
+      <ContainerPositions/>
+      </Container>
       </div>
     </Layout>
   );
 }
+

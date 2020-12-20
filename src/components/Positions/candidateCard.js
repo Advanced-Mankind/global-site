@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import { Collapse, Button, Container, Row,Col } from "react-bootstrap";
+import { Collapse, Button, Container, Row,} from "react-bootstrap";
 import "./styles.css";
+import CandidateList from "../Positions/candidateList"
 
-const CandidateCard = () => {
-  const [open, setOpen] = useState(false);
+const CandidateCard = ({title}) => {
+const [open, setOpen] = useState(false);
   return (
     <Container>
       <Row>
@@ -23,15 +24,18 @@ const CandidateCard = () => {
           )}
         </Button>
         <Collapse in={open}>
-          <Container>
-          <div>About the ideal candidate:</div>
-          
-        
-           <Row>
-           
-             <img src={require("../../../static/cornerRight.svg")} alt="" />
-           <div className="text">Minimum of 4 years of design experience</div></Row>
-           </Container>
+          <Container fluid>
+            <p>About the ideal candidate:</p>
+            <Row>
+             <CandidateList/>
+             <p>
+             If this job opportunity sounds like you, we should chat!
+             </p>
+             <Button style={{ borderRadius: '34px', fontSize: '18px', color:"#3333FF" }}>
+                  Apply
+                </Button>
+            </Row>
+          </Container>
         </Collapse>
       </Row>
     </Container>

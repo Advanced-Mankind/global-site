@@ -24,13 +24,17 @@
     width: 100%;
     margin-top: 5%;
   }
-  .text {
+  .requirementsText {
     fontSize: 15px;
     lineHeight: 20px;
     color: #222B45;
-    width: 100%;
-  },
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+  
+
 @media (min-width: 576px) {
+ 
 }
 /* 
 // Medium devices (tablets, 768px and up) */
