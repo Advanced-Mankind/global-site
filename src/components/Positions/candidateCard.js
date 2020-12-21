@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import { Collapse, Button, Container, Row,} from "react-bootstrap";
+import { Collapse, Button, Container, Row, Col } from "react-bootstrap";
 import "./styles.css";
-import CandidateList from "../Positions/candidateList"
+import CandidateList from "../Positions/candidateList";
 
-const CandidateCard = ({title}) => {
-const [open, setOpen] = useState(false);
+const CandidateCard = ({ title }) => {
+  const [open, setOpen] = useState(false);
   return (
     <Container>
       <Row>
@@ -24,16 +24,49 @@ const [open, setOpen] = useState(false);
           )}
         </Button>
         <Collapse in={open}>
-          <Container fluid>
+          <Container>
             <p>About the ideal candidate:</p>
             <Row>
-             <CandidateList/>
-             <p>
-             If this job opportunity sounds like you, we should chat!
-             </p>
-             <Button style={{ borderRadius: '34px', fontSize: '18px', color:"#3333FF" }}>
+              <CandidateList />
+              <Row className="cardMobile">
+                <p style={{ marginLeft: "15px", marginRight: "15px" }}>
+                  If this job opportunity sounds like you, we should chat!
+                </p>
+                <Button
+                  style={{
+                    borderRadius: "34px",
+                    backgroundColor: "#3333FF",
+                    marginLeft: "15px",
+                    marginBottom: "20px",
+                  }}
+                >
                   Apply
                 </Button>
+              </Row>
+
+              <Col sm="12" md="12" lg="12" className="cardTablet">
+                <p className="col col-sm-10">
+                  If this job opportunity sounds like you, we should chat!
+                </p>
+                <Button
+                  className="col col-sm-2 "
+                  style={{ borderRadius: "34px", backgroundColor: "#3333FF" }}
+                >
+                  Apply
+                </Button>
+              </Col>
+
+              <Col sm="12" md="12" lg="12" className="cardDesktop">
+                <p className="col col-sm-11">
+                  If this job opportunity sounds like you, we should chat!
+                </p>
+                <Button
+                  className="col col-sm-1 "
+                  style={{ borderRadius: "34px", backgroundColor: "#3333FF" }}
+                >
+                  Apply
+                </Button>
+              </Col>
             </Row>
           </Container>
         </Collapse>

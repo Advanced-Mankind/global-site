@@ -27,5 +27,5 @@ function DesignerList(props) {
         {item}
       </li>
     ));
-  return <ul>{uxItems}</ul>;
+  return <ul class="list-unstyled" >{uxItems}</ul>;
 }

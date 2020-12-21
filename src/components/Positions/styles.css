@@ -25,29 +25,36 @@
     margin-top: 5%;
   }
   .requirementsText {
-    fontSize: 15px;
-    lineHeight: 20px;
     color: #222B45;
     max-width: 100%;
-    flex-wrap: wrap;
+    margin-left: auto;
   }
-  
-
+  .cardDesktop{display: none; flex-direction: row;}
+  .cardTablet{display: none; flex-direction: row;}
+  .cardMobile{display: flex; flex-direction: row;}
 @media (min-width: 576px) {
  
 }
 /* 
 // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  .cardDesktop{display: none;}
+  .cardTablet{display: flex;}
+  .cardMobile{display: none;}
     
 }
 /* 
 // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  .cardDesktop{display: flex;}
+    .cardTablet{display: none;}
+    .cardMobile{display: none;}
     
 }
 /* 
 // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-    
+  .cardDesktop{display: flex;}
+  .cardTablet{display: none;}
+  .cardMobile{display: none;}
 }
