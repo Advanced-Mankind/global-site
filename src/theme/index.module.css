@@ -112,28 +112,13 @@
 .curveBackground {
   padding-top: 5%;
 }
-.curveBackgroundBottom{
-  background-image: url("../../static/curveBackground.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  align-items: baseline;
-  justify-content: baseline;
-  height: 30vh;
-  position: absolute;
-  width: 100vw;
-  bottom: -31vh;
-}
-.logoOops {
-  margin-bottom: -73px;
-}
-
 /* 
 // Extra small devices (portrait phones, less than 576px)
 // No media query since this is the default in Bootstrap
 
 // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-  .curveBackgroundBottom{
+  .curveBackgroundBottom {
     bottom: 0vh;
   }
   .background_mobile {
@@ -159,8 +144,7 @@
     flex-direction: column;
     padding-top: 8%;
   }
-  .curveBackgroundBottom{
-    
+  .curveBackgroundBottom {
     bottom: -20vh;
   }
   .footerText {
@@ -215,7 +199,7 @@
     flex-direction: column;
     padding-top: 8%;
   }
-  
+
   .title {
     font-size: 36px;
   }
