@@ -118,6 +118,9 @@
 
 // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
+  .curveBackgroundBottom {
+    bottom: 0vh;
+  }
   .background_mobile {
     display: none;
   }
@@ -140,6 +143,9 @@
     justify-content: center;
     flex-direction: column;
     padding-top: 8%;
+  }
+  .curveBackgroundBottom {
+    bottom: -20vh;
   }
   .footerText {
     text-align: right;
@@ -193,6 +199,7 @@
     flex-direction: column;
     padding-top: 8%;
   }
+
   .title {
     font-size: 36px;
   }
