@@ -1,7 +1,7 @@
 import React from "react";
+import Partners from "../../components/Partners/Partners";
 import CircleImage from "../CircleImage/CircleImage";
 import "./GetStarted.css";
-
 const ContentLeft = () => {
   return (
     <div className="contentLeftContainer">
@@ -31,6 +31,14 @@ const ContentLeft = () => {
         <CircleImage img={require("../../../static/heart.png")} />
         <CircleImage img={require("../../../static/heart.png")} />
       </div>
+      <Partners
+        imgs={[
+          require("../../../static/Hyundai.png"),
+          require("../../../static/Canon.png"),
+          require("../../../static/chedrahui.png"),
+          require("../../../static/coxmedia.png"),
+        ]}
+      />
     </div>
   );
 };

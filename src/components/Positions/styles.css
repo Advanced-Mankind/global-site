@@ -1,7 +1,6 @@
-  @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
-
-.title{
+/* .title{
     color: #222B45;
     font-family: "Open Sans";
     font-size: 22px;
@@ -9,52 +8,76 @@
     letter-spacing: 0;
     line-height: 32px;
     flex: auto;
-}
+} */
 
-.textCard{
-    align-items: center;
-    background-color: #FFFFFF;
-    border-radius: 10px;
-    box-shadow: 0 10px 20px 0 rgba(35,35,35,0.08);
-    padding: 2% 5%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-    margin-top: 5%;
-  }
-  .requirementsText {
-    color: #222B45;
-    max-width: 100%;
-    margin-left: auto;
-  }
-  .cardDesktop{display: none; flex-direction: row;}
-  .cardTablet{display: none; flex-direction: row;}
-  .cardMobile{display: flex; flex-direction: row;}
+.textCard {
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px 0 rgba(35, 35, 35, 0.08);
+  padding: 2% 5%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  margin-top: 5%;
+}
+.requirementsText {
+  color: #222b45;
+  max-width: 100%;
+  margin-left: auto;
+}
+.cardDesktop {
+  display: none;
+  flex-direction: row;
+}
+.cardTablet {
+  display: none;
+  flex-direction: row;
+}
+.cardMobile {
+  display: flex;
+  flex-direction: row;
+}
 @media (min-width: 576px) {
- 
 }
 /* 
 // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  .cardDesktop{display: none;}
-  .cardTablet{display: flex;}
-  .cardMobile{display: none;}
-    
+  .cardDesktop {
+    display: none;
+  }
+  .cardTablet {
+    display: flex;
+  }
+  .cardMobile {
+    display: none;
+  }
 }
 /* 
 // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  .cardDesktop{display: flex;}
-    .cardTablet{display: none;}
-    .cardMobile{display: none;}
-    
+  .cardDesktop {
+    display: flex;
+  }
+  .cardTablet {
+    display: none;
+  }
+  .cardMobile {
+    display: none;
+  }
 }
 /* 
 // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-  .cardDesktop{display: flex;}
-  .cardTablet{display: none;}
-  .cardMobile{display: none;}
+  .cardDesktop {
+    display: flex;
+  }
+  .cardTablet {
+    display: none;
+  }
+  .cardMobile {
+    display: none;
+  }
 }

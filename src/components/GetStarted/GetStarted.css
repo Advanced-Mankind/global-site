@@ -68,11 +68,17 @@
 .formContainer {
   width: 90%;
   height: 90%;
+  padding: 40px;
   box-sizing: border-box;
   border: 1px solid #fbfbfb;
   border-radius: 10px;
   background-color: #ffffff;
   box-shadow: 0 10px 20px 0 rgba(35, 35, 35, 0.08);
+}
+
+.form-control {
+  border-radius: 4px !important;
+  background-color: #f7f9fc !important;
 }
 
 .ulIconGetStarted li:nth-child(1) {

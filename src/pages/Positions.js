@@ -1,14 +1,20 @@
 import React from "react";
+import { Container } from "react-bootstrap";
 import Layout from "../components/layout";
+import ContainerPositions from "../components/Positions/containerPositions";
 import styles from "../theme/index.module.css";
-import {Container } from "react-bootstrap";
-import ContainerPositions from "../components/Positions/containerPositions"
 
 export default function Positions() {
-const positionsList=["UI/UX Designer","Project Manager", "Copy Writer", "Creative Director", "Bisiness Analytics"]
-const titleItems = positionsList.map((data) => (
-   <p>{data}</p>
-));
+  // const positionsList = [
+  //   "UI/UX Designer",
+  //   "Project Manager",
+  //   "Copy Writer",
+  //   "Creative Director",
+  //   "Bisiness Analytics",
+  // ];
+  // const titleItems = positionsList.map((data) => (
+  //    <p>{data}</p>
+  // ));
   return (
     <Layout>
       <div className="row align-items-center m-0">
@@ -44,15 +50,14 @@ const titleItems = positionsList.map((data) => (
             alt=""
           />
         </div>
-      <Container>
-      <ContainerPositions/>
-      <ContainerPositions/>
-      <ContainerPositions/>
-      <ContainerPositions/>
-      <ContainerPositions/>
-      </Container>
+        <Container>
+          <ContainerPositions />
+          <ContainerPositions />
+          <ContainerPositions />
+          <ContainerPositions />
+          <ContainerPositions />
+        </Container>
       </div>
     </Layout>
   );
 }
-
