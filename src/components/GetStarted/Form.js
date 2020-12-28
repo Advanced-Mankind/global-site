@@ -3,18 +3,27 @@ import React from "react";
 import { Col } from "react-bootstrap";
 import Select from "react-select";
 import "../../theme/index.module.css";
+import "./GetStarted.css";
+
 const options = [
-  { value: "chocolate", label: "Chocolate" },
-  { value: "strawberry", label: "Strawberry" },
-  { value: "vanilla", label: "Vanilla" },
+  { value: "México", label: "México" },
+  { value: "USA", label: "USA" },
 ];
 const Form = () => {
   return (
     <div className="formContainer">
       <div>
-        <h1>Make the first move. Don’t be shy.</h1>
+        <h1 className="title-form">Make the first move. Don’t be shy.</h1>
         <Formik
-          initialValues={{ email: "", tel: "" }}
+          initialValues={{
+            email: "",
+            tel: "",
+            company: "",
+            firstName: "",
+            lastName: "",
+            role: "",
+            country: "",
+          }}
           validate={(values) => {
             const errors = {};
             if (!values.email) {
@@ -24,6 +33,23 @@ const Form = () => {
             ) {
               errors.email = "Invalid email address";
             }
+            if (!values.tel) {
+              errors.tel = "Required";
+            }
+            if (!values.company) {
+              errors.company = "Required";
+            }
+            if (!values.firstName) {
+              errors.firstName = "Required";
+            }
+            if (!values.lastName) {
+              errors.lastName = "Required";
+            }
+            if (!values.role) {
+              errors.role = "Required";
+            }
+
+            console.log(errors);
             return errors;
           }}
           onSubmit={(values, { setSubmitting }) => {
@@ -69,6 +95,7 @@ const Form = () => {
                     onBlur={handleBlur}
                     value={values.tel}
                   />
+                  {errors.tel && touched.tel && errors.tel}
                 </Col>
                 <Col xs={6}>
                   <input
@@ -80,64 +107,76 @@ const Form = () => {
                     onBlur={handleBlur}
                     value={values.company}
                   />
+                  {errors.company && touched.company && errors.company}
                 </Col>
               </div>
               <div class="form-row mt-4">
                 <Col xs={12}>
                   <input
                     type="text"
-                    name="First Name"
+                    name="firstName"
                     placeholder="First Name"
                     className="form-control form-control-lg"
                     onChange={handleChange}
                     onBlur={handleBlur}
-                    value={values.FirstName}
+                    value={values.firstName}
                   />
+                  {errors.firstName && touched.firstName && errors.firstName}
                 </Col>
               </div>
               <div class="form-row mt-4">
                 <Col xs={12}>
                   <input
                     type="text"
-                    name="Last Name"
+                    name="lastName"
                     placeholder="Last Name"
                     className="form-control form-control-lg"
                     onChange={handleChange}
                     onBlur={handleBlur}
-                    value={values.LastName}
+                    value={values.lastName}
                   />
+                  {errors.lastName && touched.lastName && errors.lastName}
                 </Col>
               </div>
               <div class="form-row mt-4">
                 <Col xs={6} className="mr-0">
                   <input
                     type="text"
-                    name="Job Role"
-                    placeholder="Job Role"
+                    name="role"
+                    placeholder="Job role"
                     className="form-control form-control-lg"
                     onChange={handleChange}
                     onBlur={handleBlur}
-                    value={values.Role}
+                    value={values.role}
                   />
+                  {errors.role && touched.role && errors.role}
                 </Col>
                 <Col xs={6}>
                   <Select
                     styles={customStyles}
                     placeholder="Country"
                     options={options}
-                    value={values.country}
+                    name="country"
+                    //value={values.country}
+                    onChange={(selectedOption) => {
+                      // This inline function can now completely be reaplce by handleChange("year")
+                      handleChange("country")(selectedOption.value);
+                    }}
                   />
                 </Col>
               </div>
 
-              <div class="custom-control custom-checkbox">
+              <div class="custom-control my-5 custom-checkbox">
                 <input
                   type="checkbox"
                   class="custom-control-input"
                   id="customCheck1"
                   name="customCheck1"
                 />
-                <label class="custom-control-label" for="customCheck1">
+                <label
+                  class="custom-control-label label-checkBox"
+                  for="customCheck1"
+                >
                   Yes. I’d like to receive occasional marketing emails from
                   Advanced Mankind. I have the right to opt out at any time.
                   View privacy policy.

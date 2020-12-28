@@ -20,6 +20,19 @@
   line-height: 48px;
 }
 
+.label-checkBox {
+  color: #222b45;
+  font-family: "Open Sans";
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 16px;
+}
+.custom-control-input:checked ~ .custom-control-label::before {
+  color: #fff;
+  border-color: #06b76a !important;
+  background-color: #06b76a !important;
+}
 .subtitleGetStarted {
   color: #ffffff;
   font-family: "Open Sans";
@@ -56,6 +69,15 @@
   line-height: 16px;
 }
 
+.title-form {
+  color: #222b45;
+  font-family: "Open Sans";
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 32px;
+}
+
 .caption {
   color: #ffffff;
   font-family: "Open Sans";
@@ -67,13 +89,16 @@
 
 .formContainer {
   width: 90%;
-  height: 90%;
+  margin: 5% 0%;
   padding: 40px;
   box-sizing: border-box;
   border: 1px solid #fbfbfb;
   border-radius: 10px;
   background-color: #ffffff;
   box-shadow: 0 10px 20px 0 rgba(35, 35, 35, 0.08);
+}
+.custom-control {
+  z-index: 0 !important;
 }
 
 .form-control {
