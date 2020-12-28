@@ -1,7 +1,7 @@
 import React from "react";
-import styles from "../theme/index.module.css";
 import Layout from "../components/layout";
-import "../components/Error404/styles.css";
+import styles from "../theme/index.module.css";
+// import "../components/Error404/styles.css";
 export default function Error404() {
   return (
     <Layout>

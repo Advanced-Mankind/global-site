@@ -1,5 +1,6 @@
 // App.js
 import "bootstrap/dist/css/bootstrap.css";
+import { Link } from "gatsby";
 import "normalize.css";
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
@@ -152,41 +153,47 @@ export default function Home() {
           <Container>
             <Row className="justify-content-evenly ">
               <Col sm="12" md="6" lg="6" className="mb-3">
-                <CaseStudyCard
-                  text="Chedraui"
-                  imgsDesktop={[
-                    require("../../static/ImageChedrahuiDesktop.png"),
-                  ]}
-                  imgsTablet={[
-                    require("../../static/imageChedrahuiTablet.png"),
-                  ]}
-                />
+                <Link to="/Case-Studies/Chedraui">
+                  <CaseStudyCard
+                    text="Chedraui"
+                    imgsDesktop={[
+                      require("../../static/ImageChedrahuiDesktop.png"),
+                    ]}
+                    imgsTablet={[
+                      require("../../static/imageChedrahuiTablet.png"),
+                    ]}
+                  />
+                </Link>
               </Col>
               <Col sm="12" md="6" lg="6" className="justify-content-center">
                 <Row className="justify-content-center mb-3">
                   <Col sm="12" md="6" lg="12">
-                    <CaseStudyCard
-                      text="Motorola"
-                      imgsDesktop={[require("../../static/motoDesktop.png")]}
-                      imgsTablet={[require("../../static/motoTablet.png")]}
-                    />
+                    <Link to="/Case-Studies/Logicalis/">
+                      <CaseStudyCard
+                        text="Motorola"
+                        imgsDesktop={[require("../../static/motoDesktop.png")]}
+                        imgsTablet={[require("../../static/motoTablet.png")]}
+                      />
+                    </Link>
                   </Col>
                 </Row>
                 <Row className="justify-content-center mb-3">
                   <Col sm="12" md="6" lg="12">
-                    <CaseStudyCard
-                      text="AnyClub"
-                      imgsDesktop={[
-                        require("../../static/phone1.png"),
-                        require("../../static/phone2.png"),
-                        require("../../static/laptopImageDesktop.png"),
-                      ]}
-                      imgsTablet={[
-                        require("../../static/phone1Tablet.png"),
-                        require("../../static/phone2Tablet.png"),
-                        require("../../static/laptopImageTablet.png"),
-                      ]}
-                    />
+                    <Link to="/Case-Studies/AnyClub/">
+                      <CaseStudyCard
+                        text="AnyClub"
+                        imgsDesktop={[
+                          require("../../static/phone1.png"),
+                          require("../../static/phone2.png"),
+                          require("../../static/laptopImageDesktop.png"),
+                        ]}
+                        imgsTablet={[
+                          require("../../static/phone1Tablet.png"),
+                          require("../../static/phone2Tablet.png"),
+                          require("../../static/laptopImageTablet.png"),
+                        ]}
+                      />
+                    </Link>
                   </Col>
                 </Row>
               </Col>

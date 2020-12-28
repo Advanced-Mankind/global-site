@@ -1,12 +1,14 @@
-import React from 'react';
-import './styles.css'
+import React from "react";
+import "./styles.css";
 
-const CircleImage = ({img}) => {
-    return (
-        <div className="iconStyle">
-            <img src={img} alt={img} />
-        </div>
-    )
-}
+const CircleImage = ({ img }) => {
+  return (
+    <img
+      className="avatar mr-3"
+      src={require("../../../static/people.png")}
+      alt="Ilustration"
+    />
+  );
+};
 
-export default CircleImage
+export default CircleImage;
