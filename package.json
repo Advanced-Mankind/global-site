@@ -8,6 +8,7 @@
     "url": "https://github.com/contentful/starter-gatsby-blog/issues"
   },
   "dependencies": {
+    "@immfly/flights-map": "^1.2.7",
     "bootstrap": "^4.5.3",
     "formik": "^2.2.6",
     "gatsby": "^2.28.1",

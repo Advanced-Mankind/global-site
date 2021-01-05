@@ -70,7 +70,7 @@ const Form = () => {
             /* and other goodies */
           }) => (
             <form onSubmit={handleSubmit}>
-              <div class="form-row mt-4">
+              <div className="form-row mt-4">
                 <Col xs={12}>
                   <input
                     type="email"
@@ -84,7 +84,7 @@ const Form = () => {
                   {errors.email && touched.email && errors.email}
                 </Col>
               </div>
-              <div class="form-row mt-4">
+              <div className="form-row mt-4">
                 <Col xs={6}>
                   <input
                     type="tel"
@@ -110,7 +110,7 @@ const Form = () => {
                   {errors.company && touched.company && errors.company}
                 </Col>
               </div>
-              <div class="form-row mt-4">
+              <div className="form-row mt-4">
                 <Col xs={12}>
                   <input
                     type="text"
@@ -124,7 +124,7 @@ const Form = () => {
                   {errors.firstName && touched.firstName && errors.firstName}
                 </Col>
               </div>
-              <div class="form-row mt-4">
+              <div className="form-row mt-4">
                 <Col xs={12}>
                   <input
                     type="text"
@@ -138,7 +138,7 @@ const Form = () => {
                   {errors.lastName && touched.lastName && errors.lastName}
                 </Col>
               </div>
-              <div class="form-row mt-4">
+              <div className="form-row mt-4">
                 <Col xs={6} className="mr-0">
                   <input
                     type="text"
@@ -166,15 +166,15 @@ const Form = () => {
                 </Col>
               </div>
 
-              <div class="custom-control my-5 custom-checkbox">
+              <div className="custom-control my-5 custom-checkbox">
                 <input
                   type="checkbox"
-                  class="custom-control-input"
+                  className="custom-control-input"
                   id="customCheck1"
                   name="customCheck1"
                 />
                 <label
-                  class="custom-control-label label-checkBox"
+                  className="custom-control-label label-checkBox"
                   for="customCheck1"
                 >
                   Yes. I’d like to receive occasional marketing emails from

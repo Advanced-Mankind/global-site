@@ -87,7 +87,7 @@ export default class Footer extends Component {
           </Col>
         </Row>
         <div className="row">
-          <hr class={`${styles.separator} col mx-4`}></hr>
+          <hr className={`${styles.separator} col mx-4`}></hr>
         </div>
         <div className="row">
           <div className="col col-lg-6 ml-auto px-4 footer-Text">

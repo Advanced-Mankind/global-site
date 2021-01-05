@@ -21,11 +21,11 @@ export default CandidateList;
 
 function DesignerList(props) {
   const uxList = props.uxList;
-    const uxItems = uxList.map((item) => (
-      <li>
-        <img src={require("../../../static/cornerRight.svg")} alt="" />
-        {item}
-      </li>
-    ));
-  return <ul class="list-unstyled" >{uxItems}</ul>;
+  const uxItems = uxList.map((item) => (
+    <li>
+      <img src={require("../../../static/cornerRight.svg")} alt="" />
+      {item}
+    </li>
+  ));
+  return <ul className="list-unstyled">{uxItems}</ul>;
 }

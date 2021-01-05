@@ -24,7 +24,7 @@ export default function Home() {
           <div className={`${styles.leftContent}`}>
             <div className={styles.titleContainer}>
               <div className="col-12 mt-3">
-                <div class="row align-items-center">
+                <div className="row align-items-center">
                   <div className="col-9">
                     <h1 className={styles.title}>
                       We deliver tranformative interfaces
