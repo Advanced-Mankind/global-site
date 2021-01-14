@@ -236,3 +236,16 @@ input::placeholder {
   width: 100vw;
   height: 100vh;
 }
+.containerMap .amcharts-bg {
+  color: #000;
+}
+
+.containerMap #map {
+  background-color: #f2f6ff !important;
+}
+.mapabg #map {
+  background-color: #f2f6ff !important;
+}
+flights-map::part(div) {
+  background-color: red !important;
+}

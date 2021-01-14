@@ -12,7 +12,7 @@
 }
 
 .titleGetStarted {
-  color: #ffffff;
+  color: white;
   font-family: "Open Sans";
   font-size: 36px;
   font-weight: bold;
@@ -34,7 +34,7 @@
   background-color: #06b76a !important;
 }
 .subtitleGetStarted {
-  color: #ffffff;
+  color: white;
   font-family: "Open Sans";
   font-size: 15px;
   letter-spacing: 0;
@@ -50,7 +50,7 @@
 }
 
 .headline {
-  color: #ffffff;
+  color: white;
   font-family: "Open Sans";
   font-size: 18px;
   font-weight: bold;
@@ -60,7 +60,7 @@
 }
 
 .quote {
-  color: #ffffff;
+  color: white;
   font-family: "Open Sans";
   font-size: 12px;
   font-style: italic;
@@ -79,7 +79,7 @@
 }
 
 .caption {
-  color: #ffffff;
+  color: white;
   font-family: "Open Sans";
   font-size: 12px;
   font-weight: 300;
@@ -94,7 +94,7 @@
   box-sizing: border-box;
   border: 1px solid #fbfbfb;
   border-radius: 10px;
-  background-color: #ffffff;
+  background-color: white;
   box-shadow: 0 10px 20px 0 rgba(35, 35, 35, 0.08);
 }
 .custom-control {

@@ -1,65 +1,73 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
-
-.title{
-    color: #222B45;
-    font-family: "Open Sans";
-    font-size: 30px;
-    font-weight: bold;
-    letter-spacing: 0;
-    line-height: 48px
+.title {
+  color: #222b45;
+  font-family: "Open Sans";
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 48px;
 }
 
-.cardPageContainer{
-    align-items: center;
-    background-color: #FFFFFF;
-    border-radius: 10px;
-    box-shadow: 0 10px 20px 0 rgba(35,35,35,0.08);
-    padding: 5% 0;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-    margin-top: 2%;
+.cardPageContainer {
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px 0 rgba(35, 35, 35, 0.08);
+  padding: 5% 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  margin-top: 2%;
 }
 
-.cardPageContainer:hover{
-    opacity: 0.35;
-    border-radius: 10px;
-    /* background-color: #000000; */
+.cardPageContainer:hover {
+  opacity: 0.35;
+  border-radius: 10px;
+  /* background-color: #000000; */
 }
 
-.motoDesktop{
-    display: none;
+.motoDesktop {
+  display: none;
 }
-.motoTablet{
-    display: none;
+.motoTablet {
+  display: none;
 }
-.motoMobile{
-    display: flex;
-}
-
-.containerDesktop{
-    display: none;
-}
-.containerMobile{
-    display: flex;
+.motoMobile {
+  display: flex;
 }
 
-.imgDesktop{
-    display: none;
+.containerDesktop {
+  display: none;
+}
+.containerMobile {
+  display: flex;
 }
 
-.imgTabMob{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.imgDesktop {
+  display: none;
 }
 
-.cardDesktop{display: none; flex-direction: column;}
-.cardTablet{display: none; flex-direction: column;}
-.cardMobile{display: flex; flex-direction: column;}
+.imgTabMob {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardDesktop {
+  display: none;
+  flex-direction: column;
+}
+.cardTablet {
+  display: none;
+  flex-direction: column;
+}
+.cardMobile {
+  display: flex;
+  flex-direction: column;
+}
 /* 
 // Extra small devices (portrait phones, less than 576px)
 // No media query since this is the default in Bootstrap
@@ -70,42 +78,102 @@
 /* 
 // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-    .imgDesktop{display: none;}
-    .imgTabMob{display: flex;}
-    .containerDesktop{display: flex;}
-    .containerMobile{display: none;}
-    .motoDesktop{display: none;}
-    .motoTablet{display: flex;}
-    .motoMobile{display: none;}
-    .cardDesktop{display: none;}
-    .cardTablet{display: flex;}
-    .cardMobile{display: none;}
+  .imgDesktop {
+    display: none;
+  }
+  .imgTabMob {
+    display: flex;
+  }
+  .containerDesktop {
+    display: flex;
+  }
+  .containerMobile {
+    display: none;
+  }
+  .motoDesktop {
+    display: none;
+  }
+  .motoTablet {
+    display: flex;
+  }
+  .motoMobile {
+    display: none;
+  }
+  .cardDesktop {
+    display: none;
+  }
+  .cardTablet {
+    display: flex;
+  }
+  .cardMobile {
+    display: none;
+  }
 }
 /* 
 // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-    .imgDesktop{display: flex;}
-    .imgTabMob{display: none;}
-    .containerDesktop{display: flex;} 
-    .containerMobile{display: none;}
-    .motoDesktop{display: flex;}
-    .motoTablet{display: none;}
-    .motoMobile{display: none;}
-    .cardDesktop{display: flex;}
-    .cardTablet{display: none;}
-    .cardMobile{display: none;}
+  .imgDesktop {
+    display: flex;
+  }
+  .imgTabMob {
+    display: none;
+  }
+  .containerDesktop {
+    display: flex;
+  }
+  .containerMobile {
+    display: none;
+  }
+  .motoDesktop {
+    display: flex;
+  }
+  .motoTablet {
+    display: none;
+  }
+  .motoMobile {
+    display: none;
+  }
+  .cardDesktop {
+    display: flex;
+  }
+  .cardTablet {
+    display: none;
+  }
+  .cardMobile {
+    display: none;
+  }
 }
 /* 
 // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-    .imgDesktop{display: flex;}
-    .imgTabMob{display: none;}   
-    .containerDesktop{display: flex;}    
-    .containerMobile{display: none;}
-    .motoDesktop{display: flex;}
-    .motoTablet{display: none;}
-    .motoMobile{display: none;}
-    .cardDesktop{display: flex;}
-    .cardTablet{display: none;}
-    .cardMobile{display: none;}
+  .imgDesktop {
+    display: flex;
+  }
+  .imgTabMob {
+    display: none;
+  }
+  .containerDesktop {
+    display: flex;
+  }
+  .containerMobile {
+    display: none;
+  }
+  .motoDesktop {
+    display: flex;
+  }
+  .motoTablet {
+    display: none;
+  }
+  .motoMobile {
+    display: none;
+  }
+  .cardDesktop {
+    display: flex;
+  }
+  .cardTablet {
+    display: none;
+  }
+  .cardMobile {
+    display: none;
+  }
 }

@@ -16,6 +16,7 @@ const OneSizeDoesNotFill = ({
             <img
               src={require("../../../static/homeHouseMobile.png")}
               alt="homeMobile"
+              className="mx-auto d-flex"
             />
             <h1 className="title">{firstTitle}</h1>
             <p className="paragraph"> {firstParagraph} </p>
@@ -23,6 +24,7 @@ const OneSizeDoesNotFill = ({
               src={require("../../../static/reviewGraphMobile.png")}
               alt="reviewMobile"
               style={{ paddingTop: "3%" }}
+              className="mx-auto d-flex"
             />
             <h1 className="title"> {secondTitle} </h1>
             <p className="paragraph"> {secondParagraph} </p>

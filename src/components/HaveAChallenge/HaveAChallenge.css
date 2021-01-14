@@ -28,7 +28,7 @@
 }
 
 .headlineChallenge {
-  /* color: #FFFFFF; */
+  /* color: white; */
   font-family: "Open Sans";
   font-size: 18px;
   font-weight: bold;
@@ -37,7 +37,7 @@
 }
 
 .paragraphChallenge {
-  /* color: #FFFFFF; */
+  /* color: white; */
   font-family: "Open Sans";
   font-size: 15px;
   letter-spacing: 0;

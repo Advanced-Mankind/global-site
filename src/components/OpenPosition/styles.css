@@ -1,50 +1,50 @@
-.openPositionContainer{
-    border-radius: 10px;
-    background-color: #3333FF;
-    box-shadow: 0 10px 20px 0 rgba(35,35,35,0.08);
-    width: 95%;
-    padding: 2% 0%;
+.openPositionContainer {
+  border-radius: 10px;
+  background-color: #3333ff;
+  box-shadow: 0 10px 20px 0 rgba(35, 35, 35, 0.08);
+  width: 95%;
+  padding: 2% 0%;
 }
 
-.title{
-    color: #FFFFFF;
-    font-family: "Open Sans";
-    font-size: 36px;
-    font-weight: bold;
-    letter-spacing: 0;
-    line-height: 48p
+.title {
+  color: white;
+  font-family: "Open Sans";
+  font-size: 36px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 48p;
 }
 
-.mainParagraph{
-    color: #FFFFFF;
-    font-family: "Open Sans";
-    font-size: 15px;
-    letter-spacing: 0;
-    line-height: 20px;
+.mainParagraph {
+  color: white;
+  font-family: "Open Sans";
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: 20px;
 }
 
-.quote{
-    color: #FFFFFF;
-    font-family: "Open Sans";
-    font-size: 12px;
-    font-style: italic;
-    font-weight: 300;
-    letter-spacing: 0;
-    line-height: 16px;
+.quote {
+  color: white;
+  font-family: "Open Sans";
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: 16px;
 }
 
-.caption{
-    color: #FFFFFF;
-    font-family: "Open Sans";
-    font-size: 12px;
-    font-weight: 300;
-    letter-spacing: 0;
-    line-height: 16px
+.caption {
+  color: white;
+  font-family: "Open Sans";
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: 16px;
 }
 
-.circle{
-    height: 57px;
-    width: 57px;
-    border-radius: 50%;
-    background-color: white;
+.circle {
+  height: 57px;
+  width: 57px;
+  border-radius: 50%;
+  background-color: white;
 }

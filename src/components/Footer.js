@@ -7,9 +7,9 @@ export default class Footer extends Component {
     return (
       <footer className={`${styles.footer} mt-5`}>
         <Row>
-          <Col xs={6}>
+          <Col xs={12} sm={6}>
             <Row>
-              <Col xs={4}>
+              <Col xs={6} sm={4} className="mt-3">
                 <Row>
                   <Col className={`${styles.footersectiontextbold} mb-1`}>
                     Company
@@ -30,7 +30,7 @@ export default class Footer extends Component {
                 </Row>
               </Col>
 
-              <Col xs={4}>
+              <Col xs={6} sm={4} className="mt-3">
                 <Row>
                   <Col className={`${styles.footersectiontextbold} mb-1`}>
                     People
@@ -57,7 +57,7 @@ export default class Footer extends Component {
                 </Row>
               </Col>
 
-              <Col xs={4}>
+              <Col xs={6} sm={4} className="mt-3">
                 <Row>
                   <Col className={`${styles.footersectiontextbold} mb-1`}>
                     Work
