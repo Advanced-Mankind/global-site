@@ -19,15 +19,15 @@ import YourDreamCards from "./YourDreamCard/YourDreamsCard";
 export default function Home() {
   return (
     <div>
-      <div className="row align-items-center m-0 ">
+      <div className="row align-items-center">
         <div className="col col-sm-6 p-0">
           <div className={`${styles.leftContent}`}>
             <div className={styles.titleContainer}>
               <div className="col-12 mt-3">
-                <div class="row align-items-center">
+                <div className={"row align-items-center"}>
                   <div className="col-9">
                     <h1 className={styles.title}>
-                      We deliver tranformative interfaces
+                      We deliver transformative interfaces.
                     </h1>
                   </div>
                   <div className="col-3">
@@ -65,7 +65,7 @@ export default function Home() {
         <div className={styles.curveBackground}>
           <Container>
             <div>
-              <h1 className={styles.title} style={{ textAlign: "center" }}>
+              <h1 className={styles.title32px} style={{ textAlign: "center" }}>
                 Solving Your Digital Needs One Pixel at a Time
               </h1>
               <p

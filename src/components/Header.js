@@ -17,10 +17,18 @@ export default class Header extends Component {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="ml-auto">
-              <Nav.Link href="/Who-We-Are">Who We Are</Nav.Link>
-              <Nav.Link href="/Our-Approach">Our Approach</Nav.Link>
-              <Nav.Link href="/Case-Studies">Our Work</Nav.Link>
-              <Nav.Link href="/Careers">Careers</Nav.Link>
+              <Nav.Link className="mx-4" href="/Who-We-Are">
+                Who We Are
+              </Nav.Link>
+              <Nav.Link className="mx-4" href="/Our-Approach">
+                Our Approach
+              </Nav.Link>
+              <Nav.Link className="mx-4" href="/Case-Studies">
+                Our Work
+              </Nav.Link>
+              <Nav.Link className="mx-4" href="/Careers">
+                Careers
+              </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Navbar>
