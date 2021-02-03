@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
 .wereHiringMobile {
   background-image: url("../../../static/hiringMobile.png");
   background-position: center;
@@ -63,6 +63,29 @@
   font-weight: 300;
   letter-spacing: 0;
   line-height: 16px;
+}
+.HiringCaption {
+  color: #0095FF;
+  font-family: "Open Sans";
+  font-size: 12px;
+  line-height: 16px;
+}
+.dotStyle{
+  background-color: #0095FF;
+  height: 16px;
+  width: 16px;
+  border-radius: 16px;
+  margin-right: 10px;
+  opacity: 50%;
+}
+.littleDot{
+  background-color:#0095FF;
+  height: 6px;
+  width: 6px;
+  border-radius: 6px;
+  position: relative;
+  top: 5px;
+  left: -21px;
 }
 
 .Autor {

@@ -3,7 +3,8 @@
   border-radius: 10px;
   display: flex;
   flex-direction: row;
-  width: 90%;
+  max-width: 99%;
+  margin: 0;
 }
 
 .contentLeftContainer {

@@ -5,10 +5,10 @@ import "./StartsWithWhy.css";
 const ContentRight = () => {
   return (
     <Row>
-      <Col xs={12}>
+      <Col xs={12} md={12} xl={8}>
         <h2 className="Title">We believe. We dream. We build.</h2>
       </Col>
-      <Col xs={12}>
+      <Col xs={12} md={12} xl={8}>
         <p className="Paragraph">
           Why do we approach our work with gut feelings, efficient methods, and
           creative problem solving? We do it because we aim to harness
@@ -25,14 +25,14 @@ const ContentRight = () => {
       </Col>
       <Col xs={12}>
         <Row>
-          <Col xs={3}>
+          <Col xs={2} md={2} xl={1}>
             <img
               className="avatar"
               src={require("../../../static/people.png")}
               alt="Ilustration"
             />
           </Col>
-          <Col xs={9}>
+          <Col xs={9} md={10} xl={9}>
             <Row>
               <Col xs={12}>
                 <p className="QuoteCaption">
@@ -42,7 +42,9 @@ const ContentRight = () => {
                 </p>
               </Col>
               <Col xs={12}>
-                <p className="QuoteCaption">Paul Demark, VP of Company Name</p>
+                <p className="QuoteCaptionBold">
+                  Paul Demark,VP of Company Name
+                </p>
               </Col>
             </Row>
           </Col>

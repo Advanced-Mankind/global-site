@@ -188,14 +188,13 @@ const Form = () => {
                 style={{
                   borderRadius: "34px",
                   backgroundColor: "#3333FF",
-
+                  borderColor: "#3333FF",
                   height: "56px",
                   width: "117px",
                   color: "#FFFFFF",
                   fontFamily: "Open Sans",
                   fontSize: "18px",
                   fontWeight: "bold",
-                  letterSpacing: 0,
                   lineHeight: "24px",
                   textAlign: "center",
                 }}
