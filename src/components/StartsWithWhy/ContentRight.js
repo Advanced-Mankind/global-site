@@ -41,11 +41,10 @@ const ContentRight = () => {
                   upsum dolor un met lorem ipsum dolor un met.”
                 </p>
               </Col>
-              <Col xs={12}>
-                <p className="QuoteCaptionBold">
-                  Paul Demark,VP of Company Name
-                </p>
-              </Col>
+                <div className="w-100 d-flex">
+                  <h4 className="QuoteCaptionBold">Paul Demark</h4>
+                  <h4 className="caption">, VP of Company Name</h4>
+                </div>
             </Row>
           </Col>
         </Row>

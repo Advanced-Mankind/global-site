@@ -1,5 +1,4 @@
 import React from "react";
-import Partners from "../../components/Partners/Partners";
 import CircleImage from "../CircleImage/CircleImage";
 import "./GetStarted.css";
 const ContentLeft = () => {
@@ -14,31 +13,30 @@ const ContentLeft = () => {
       </p>
       <ul className="ulIconGetStarted">
         <li>Full Service</li>
-        <li>simple Approach</li>
+        <li>Simple Approach</li>
         <li>Happy Users</li>
       </ul>
       <hr />
       <h3 className="headline">Delivering valuable experiences is our jam.</h3>
       <p className="quote">
-        “Advanced Mankind built customer service solutions that mimicked
-        human-to-human dialogue so our customers could communicate the way they
-        do with other humans while maintaining the context of the conversation.”
+        “We value our partnership with Advncd Manknd. Their team is always
+        responsive to our needs and provide extraordinary service on every
+        engagement.”
       </p>
-      <h4 className="caption">Charlie Mann, Social VP of Marketing</h4>
-      <div className="iconContainer">
-        <CircleImage img={require("../../../static/heart.png")} />
-        <CircleImage img={require("../../../static/heart.png")} />
-        <CircleImage img={require("../../../static/heart.png")} />
-        <CircleImage img={require("../../../static/heart.png")} />
+      <div className="w-100 d-flex">
+        <h4 className="captionBold">Kelly Rader</h4>
+        <h4 className="caption">, Object Edge</h4>
       </div>
-      <Partners
-        imgs={[
-          require("../../../static/Hyundai.png"),
-          require("../../../static/Canon.png"),
-          require("../../../static/chedrahui.png"),
-          require("../../../static/coxmedia.png"),
-        ]}
-      />
+      <div className="iconContainer">
+        <CircleImage
+          img={[
+            require("../../../static/profile1.png"),
+            require("../../../static/profile2.png"),
+            require("../../../static/profile3.png"),
+            require("../../../static/profile4.png"),
+          ]}
+        />
+      </div>
     </div>
   );
 };

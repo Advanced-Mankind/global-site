@@ -3,11 +3,28 @@ import "./styles.css";
 
 const CircleImage = ({ img }) => {
   return (
-    <img
+    <div>
+      <img
       className="avatar mr-3"
-      src={require("../../../static/people.png")}
+      src={img[0]}
       alt="Ilustration"
     />
+    <img
+      className="avatar mr-3"
+      src={img[1]}
+      alt="Ilustration"
+    />
+    <img
+      className="avatar mr-3"
+      src={img[2]}
+      alt="Ilustration"
+    />
+    <img
+      className="avatar mr-3"
+      src={img[3]}
+      alt="Ilustration"
+    />
+    </div>
   );
 };
 

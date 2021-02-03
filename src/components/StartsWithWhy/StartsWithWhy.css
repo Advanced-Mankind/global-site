@@ -46,7 +46,13 @@
   line-height: 16px;
   text-align: center;
 }
-
+.caption {
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 16px;
+}
 .QuoteCaption {
   color: white;
   font-family: "Open Sans";

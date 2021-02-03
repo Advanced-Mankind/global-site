@@ -6,15 +6,16 @@ const Content = () => {
       <Row className="ml-0">
         <div className="dotStyle"></div>
         <div className="littleDot"></div>
-
         <p className="HiringCaption">We’re Hiring!</p>
       </Row>
-      <h1 className="Title">Work with us!</h1>
-      <ul>
-        <li className="listItem">Work from anywhere</li>
-        <li className="listItem">Unique benefits</li>
-        <li className="listItem">Competetive salary</li>
-        <li className="listItem">$1000 annual tech bonus</li>
+      <p style={{ marginBottom: "28px" }} className="Title">
+        Work with us!
+      </p>
+      <ul className="ulIconWork">
+        <li>Work from anywhere</li>
+        <li>Unique benefits</li>
+        <li>Competetive salary</li>
+        <li>$1000 annual tech bonus</li>
       </ul>
       <Col xs={12}>
         <button className="Button">LEARN MORE</button>
@@ -43,9 +44,10 @@ const Content = () => {
                 </p>
               </Col>
               <Col xs={12}>
-                <p className="QuoteCaptionBold">
-                  Paul Demark, VP of Company Name
-                </p>
+                <div className="w-100 d-flex">
+                  <h4 className="QuoteCaptionBold">Shaun Davis</h4>
+                  <h4 className="caption">, Senior UI Designer</h4>
+                </div>
               </Col>
             </Row>
           </Col>

@@ -48,6 +48,14 @@
   line-height: 20px;
 }
 
+.ulIconWork li {
+  font-family: "Open Sans";
+  font-size: 15px;
+  letter-spacing: 0;
+  margin-bottom: 17.5px;
+  line-height: 20px;
+}
+
 .Button {
   height: 40px;
   width: 132px;
@@ -108,6 +116,23 @@
 
 .imageDesktop {
   display: none;
+}
+
+.ulIconWork li:nth-child(1) {
+  list-style-image: url("../../../static/globe.svg");
+  color: white;
+}
+.ulIconWork li:nth-child(2) {
+  list-style-image: url("../../../static/heart.png");
+  color: white;
+}
+.ulIconWork li:nth-child(3) {
+  list-style-image: url("../../../static/fire.svg");
+  color: white;
+}
+.ulIconWork li:nth-child(4) {
+  list-style-image: url("../../../static/gift.svg");
+  color: white;
 }
 
 /* 
