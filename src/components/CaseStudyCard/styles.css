@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
 
 .CaseStudyCard {
   min-height: 158px;
@@ -33,10 +33,10 @@
   right: 15px;
   color: white;
   font-family: "Open Sans";
-  font-size: 26px;
+  font-size: 18px;
   font-weight: bold;
   letter-spacing: 0;
-  line-height: 32px;
+  line-height: 24px;
   text-align: center;
   left: 15px;
   align-items: center;
@@ -82,14 +82,18 @@
 
 .imgDesktop {
   max-width: -webkit-fill-available;
-
   display: none;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
 }
 
 .imgTablet {
   max-width: -webkit-fill-available;
-
   display: flex;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
 }
 
 /* 
@@ -117,6 +121,9 @@
   }
   .imgDesktop {
     display: flex;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
   }
 }
 /* 
@@ -133,5 +140,8 @@
   }
   .imgDesktop {
     display: flex;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
   }
 }

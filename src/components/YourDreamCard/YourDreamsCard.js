@@ -4,12 +4,7 @@ import './styles.css';
 const YourDreamCards = ({ title, subtitle, imgDesktop, imgTablet, info }) => {
     return (
         <div className="cardBox">
-            <h4 className="cardTitle">
-                {title}
-            </h4>
-            <h4 className="cardSubtitle">
-                {subtitle}
-            </h4>
+           
             <img
                 src={imgDesktop}
                 className="cardImgDesktop"
@@ -20,6 +15,12 @@ const YourDreamCards = ({ title, subtitle, imgDesktop, imgTablet, info }) => {
                 className="cardImgTablet"
                 alt=""
             />
+             <h4 className="cardTitle">
+                {title}
+            </h4>
+            <h4 className="cardSubtitle">
+                {subtitle}
+            </h4>
             <p className="cardInfo">
                 {info}
             </p>

@@ -173,14 +173,6 @@ const Form = () => {
                   id="customCheck1"
                   name="customCheck1"
                 />
-                <label
-                  className="custom-control-label label-checkBox"
-                  for="customCheck1"
-                >
-                  Yes. I’d like to receive occasional marketing emails from
-                  Advanced Mankind. I have the right to opt out at any time.
-                  View privacy policy.
-                </label>
               </div>
 
               <button

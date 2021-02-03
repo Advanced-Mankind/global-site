@@ -30,9 +30,9 @@ export default function Home() {
                       We deliver transformative interfaces.
                     </h1>
                   </div>
-                  <div className="col-3">
+                  <div style={{ marginLeft: "5px"}} className="col-2">
                     <img
-                      src={require("../../static/computer.png")}
+                      src={require("../../static/computerHome.svg")}
                       alt="backgroundImage"
                     />
                   </div>
@@ -47,11 +47,13 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <img
-            className={styles.background_mobile}
-            src={require("../../static/background_mobile.png")}
-            alt="backgroundImage"
-          />
+          <div className="col-12">
+            <img
+              className={styles.background_mobile}
+              src={require("../../static/background_mobile.png")}
+              alt="backgroundImage"
+            />
+          </div>
         </div>
         <div className="d-none d-sm-block col-sm-6 p-0 align-self-end">
           <img
@@ -64,7 +66,7 @@ export default function Home() {
       <div>
         <div className={styles.curveBackground}>
           <Container>
-            <div>
+            <div className="col-12">
               <h1 className={styles.title32px} style={{ textAlign: "center" }}>
                 Solving Your Digital Needs One Pixel at a Time
               </h1>
@@ -149,49 +151,46 @@ export default function Home() {
             </Row>
           </Container>
         </div>
-        <div style={{ marginTop: "60px" }}>
+        <div style={{ marginTop: "30px" }}>
+          <Container className="col-12">
+            <h1 className={styles.title32px} style={{ textAlign: "center" }}>
+              Case Studies
+            </h1>
+          </Container>
           <Container>
             <Row className="justify-content-evenly ">
               <Col sm="12" md="6" lg="6" className="mb-3">
-                <Link to="/Case-Studies/Chedraui">
+              <Link to="/Case-Studies/AnyClub/">
                   <CaseStudyCard
-                    text="Chedraui"
-                    imgsDesktop={[
-                      require("../../static/ImageChedrahuiDesktop.png"),
-                    ]}
-                    imgsTablet={[
-                      require("../../static/imageChedrahuiTablet.png"),
-                    ]}
+                    text="Anyclub App"
+                    imgsDesktop={[require("../../static/phone1.png")]}
+                    imgsTablet={[require("../../static/phone1Tablet.png")]}
                   />
                 </Link>
               </Col>
               <Col sm="12" md="6" lg="6" className="justify-content-center">
                 <Row className="justify-content-center mb-3">
-                  <Col sm="12" md="6" lg="12">
-                    <Link to="/Case-Studies/Logicalis/">
-                      <CaseStudyCard
-                        text="Motorola"
-                        imgsDesktop={[require("../../static/motoDesktop.png")]}
-                        imgsTablet={[require("../../static/motoTablet.png")]}
-                      />
-                    </Link>
+                  <Col sm="12" md="12" lg="12" className="mb-3">
+                  <Link to="/Case-Studies/Chedraui">
+                  <CaseStudyCard
+                    text="Chedraui E-commerce App"
+                    imgsDesktop={[
+                      require("../../static/ImageChedrauiDesktop.png"),
+                    ]}
+                    imgsTablet={[
+                      require("../../static/imageChedrauiTablet.png"),
+                    ]}
+                  />
+                </Link>
                   </Col>
                 </Row>
                 <Row className="justify-content-center mb-3">
-                  <Col sm="12" md="6" lg="12">
-                    <Link to="/Case-Studies/AnyClub/">
+                  <Col sm="12" md="12" lg="12">
+                  <Link to="/Case-Studies/Logicalis/">
                       <CaseStudyCard
-                        text="AnyClub"
-                        imgsDesktop={[
-                          require("../../static/phone1.png"),
-                          require("../../static/phone2.png"),
-                          require("../../static/laptopImageDesktop.png"),
-                        ]}
-                        imgsTablet={[
-                          require("../../static/phone1Tablet.png"),
-                          require("../../static/phone2Tablet.png"),
-                          require("../../static/laptopImageTablet.png"),
-                        ]}
+                        text="Logicalis Dashboard"
+                        imgsDesktop={[require("../../static/motoDesktop.png")]}
+                        imgsTablet={[require("../../static/motoTablet.png")]}
                       />
                     </Link>
                   </Col>
@@ -203,14 +202,13 @@ export default function Home() {
         <div style={{ marginTop: "5%" }}>
           <StartsWithWhy />
         </div>
-
         <div style={{ marginTop: "5%" }}>
           <div>
             <h1 className={styles.title} style={{ textAlign: "center" }}>
               Partner up.
             </h1>
             <p
-              className={(styles.subTitle, "px-5")}
+              className={(styles.subTitle, "px-2")}
               style={{ textAlign: "center" }}
             >
               We want to work with brands as cool and smart as we are, any size
@@ -241,7 +239,7 @@ export default function Home() {
                 Simple, smart, stellar work.
               </h1>
               <p
-                className={(styles.subTitle, "px-5")}
+                className={(styles.subTitle, "px-3")}
                 style={{ textAlign: "center" }}
               >
                 Our formula isn’t complicated. Design Sprints + Lean Startup
