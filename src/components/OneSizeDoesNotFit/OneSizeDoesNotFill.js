@@ -18,7 +18,7 @@ const OneSizeDoesNotFill = ({
               alt="homeMobile"
               className="mx-auto d-flex"
             />
-            <h1 className="title">{firstTitle}</h1>
+            <h1 className="titleMobile">{firstTitle}</h1>
             <p className="paragraph"> {firstParagraph} </p>
             <img
               src={require("../../../static/reviewGraphMobile.png")}
@@ -26,7 +26,7 @@ const OneSizeDoesNotFill = ({
               style={{ paddingTop: "3%" }}
               className="mx-auto d-flex"
             />
-            <h1 className="title"> {secondTitle} </h1>
+            <h1 className="titleMobile"> {secondTitle} </h1>
             <p className="paragraph"> {secondParagraph} </p>
           </Col>
         </Row>

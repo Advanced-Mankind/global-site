@@ -14,7 +14,7 @@ const SecondSection = () => {
         <Carousel.Item className="mb-5">
           <Col sm="12">
             <Card
-              icon={require("../../../static/compassDesktop.png")}
+              icon={require("../../../static/compass.svg")}
               headline={"Innovation"}
               paragraph={
                 "Always be one step ahead. We imagine like crazy, promote freedom of expression, and inspire each other."
@@ -25,7 +25,7 @@ const SecondSection = () => {
         <Carousel.Item className="mb-5">
           <Col sm="12">
             <Card
-              icon={require("../../../static/compassDesktop.png")}
+              icon={require("../../../static/compass.svg")}
               headline={"Innovation"}
               paragraph={
                 "Always be one step ahead. We imagine like crazy, promote freedom of expression, and inspire each other."
@@ -36,7 +36,7 @@ const SecondSection = () => {
         <Carousel.Item className="mb-5">
           <Col sm="12">
             <Card
-              icon={require("../../../static/compassDesktop.png")}
+              icon={require("../../../static/compass.svg")}
               headline={"Innovation"}
               paragraph={
                 "Always be one step ahead. We imagine like crazy, promote freedom of expression, and inspire each other."
@@ -64,7 +64,7 @@ const SecondSection = () => {
         <Row className="justify-content-between">
           <Col md="3" lg="3">
             <Card
-              icon={require("../../../static/compassDesktop.png")}
+              icon={require("../../../static/compass.svg")}
               headline={"Innovation"}
               paragraph={
                 "Always be one step ahead. We imagine like crazy, promote freedom of expression, and inspire each other."
@@ -73,7 +73,7 @@ const SecondSection = () => {
           </Col>
           <Col md="3" lg="3">
             <Card
-              icon={require("../../../static/flashDesktop.png")}
+              icon={require("../../../static/flash.svg")}
               headline={"Power"}
               paragraph={
                 "Be confident and have what you want. Our goal is to develop a vision, live by it, and transform reality."

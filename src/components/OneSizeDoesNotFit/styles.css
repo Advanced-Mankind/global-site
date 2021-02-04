@@ -24,6 +24,15 @@
   line-height: 48px;
 }
 
+.titleMobile {
+  color: #222b45;
+  font-family: "Open Sans";
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 40px;
+}
+
 .paragraph {
   color: #222b45;
   font-family: "Open Sans";

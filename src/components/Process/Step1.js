@@ -55,7 +55,7 @@ const Step1 = ({ title, p1, subtitle, p2 }) => {
               alt="imgMobile"
             />
           </Col>
-          <Col sm="12" style={{ marginTop: "-74px" }}>
+          <Col sm="12" style={{ marginTop: "10px" }}>
             <h1 className="titleTabletMobile"> {title} </h1>
             <p className="paragraph"> {p1} </p>
             <div className="infoContainer">
