@@ -172,7 +172,7 @@ const Form = () => {
                   name="customCheck1"
                 />
               </div>
-              <Col sm="12" md="3" lg="3">
+              <Col sm="12" md="3" lg="4">
                 <Button 
                   style={{
                     borderRadius: "34px",
