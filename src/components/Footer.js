@@ -92,7 +92,7 @@ export default class Footer extends Component {
         <div className="row">
           <div className="col col-lg-6 ml-auto px-4 footer-Text">
             <p className={styles.footerText}>
-              2020 © Advanced Mankind North America, Inc. All rights reserved.
+              2021 © Advanced Mankind North America, Inc. All rights reserved.
             </p>
           </div>
         </div>
