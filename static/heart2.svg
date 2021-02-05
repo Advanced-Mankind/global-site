@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="17px" viewBox="0 0 20 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>C3ED6D2D-5E33-4B42-8345-6189EBD7B951</title>
+    <defs>
+        <path d="M5.2197,2 C4.3557,2 3.5457,2.334 2.9397,2.941 C1.6817,4.201 1.6817,6.252 2.9407,7.514 L9.9997,14.585 L17.0597,7.514 C18.3187,6.252 18.3187,4.201 17.0597,2.941 C15.8477,1.726 13.7117,1.728 12.4997,2.941 L10.7077,4.736 C10.3317,5.113 9.6677,5.113 9.2917,4.736 L7.4997,2.94 C6.8937,2.334 6.0847,2 5.2197,2 M9.9997,17 L9.9997,17 C9.7347,17 9.4797,16.895 9.2927,16.706 L1.5247,8.926 C-0.5113,6.886 -0.5113,3.567 1.5247,1.527 C2.5087,0.543 3.8207,0 5.2197,0 C6.6187,0 7.9317,0.543 8.9147,1.527 L9.9997,2.614 L11.0847,1.528 C12.0687,0.543 13.3807,0 14.7807,0 C16.1787,0 17.4917,0.543 18.4747,1.527 C20.5117,3.567 20.5117,6.886 18.4757,8.926 L10.7077,16.707 C10.5197,16.895 10.2657,17 9.9997,17" id="path-1"></path>
+    </defs>
+    <g id="Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="M---Positions" transform="translate(-17.000000, -367.000000)">
+            <g id="Hero-Copy" transform="translate(15.000000, 76.000000)">
+                <g id="Bullet-Points" transform="translate(0.000000, 249.000000)">
+                    <g id="Icon/heart" transform="translate(2.000000, 42.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="🎨-Icon-Сolor" fill="#3333FF" xlink:href="#path-1"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

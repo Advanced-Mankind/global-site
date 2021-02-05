@@ -25,46 +25,79 @@ const CandidateCard = ({ title }) => {
         </Button>
         <Collapse in={open}>
           <Container>
-            <p>About the ideal candidate:</p>
+            <p
+              style={{
+                fontFamily: "Open Sans",
+                fontSize: "15px",
+                fontWeight: "bold",
+                lineHeight: "20px",
+              }}
+            >
+              About the ideal candidate:
+            </p>
             <Row>
               <CandidateList />
-              <Row className="cardMobile">
-                <p style={{ marginLeft: "15px", marginRight: "15px" }}>
-                  If this job opportunity sounds like you, we should chat!
-                </p>
+              <Col className="cardMobile" sm="12">
                 <Button
                   style={{
                     borderRadius: "34px",
                     backgroundColor: "#3333FF",
-                    marginLeft: "15px",
-                    marginBottom: "20px",
+                    color: "#FFFFFF",
+                    marginTop: "28px",
+                    marginBottom: "30px",
+                    width: "100%",
+                    padding: "13px",
+                    alignItems: "center",
+                    fontFamily: "Open Sans",
+                    fontSize: "14px",
+                    fontWeight: "bold",
+                    lineHeight: "16px",
                   }}
                 >
-                  Apply
+                  APPLY
                 </Button>
-              </Row>
-
-              <Col sm="12" md="12" lg="12" className="cardTablet">
-                <p className="col col-sm-10">
-                  If this job opportunity sounds like you, we should chat!
-                </p>
+              </Col>
+              <Col md="12" className="cardTablet">
                 <Button
                   className="col col-sm-2 "
-                  style={{ borderRadius: "34px", backgroundColor: "#3333FF" }}
+                  style={{
+                    borderRadius: "34px",
+                    backgroundColor: "#3333FF",
+                    color: "#FFFFFF",
+                    marginTop: "28px",
+                    marginBottom: "30px",
+                    width: "100%",
+                    padding: "13px",
+                    alignItems: "center",
+                    fontFamily: "Open Sans",
+                    fontSize: "14px",
+                    fontWeight: "bold",
+                    lineHeight: "16px",
+                  }}
                 >
-                  Apply
+                  APPLY
                 </Button>
               </Col>
 
-              <Col sm="12" md="12" lg="12" className="cardDesktop">
-                <p className="col col-sm-11">
-                  If this job opportunity sounds like you, we should chat!
-                </p>
+              <Col lg="8" className="cardDesktop">
                 <Button
-                  className="col col-sm-1 "
-                  style={{ borderRadius: "34px", backgroundColor: "#3333FF" }}
+                  className="col col-sm-2 "
+                  style={{
+                    borderRadius: "34px",
+                    backgroundColor: "#3333FF",
+                    color: "#FFFFFF",
+                    marginTop: "28px",
+                    marginBottom: "30px",
+                    width: "100%",
+                    padding: "13px",
+                    alignItems: "center",
+                    fontFamily: "Open Sans",
+                    fontSize: "14px",
+                    fontWeight: "bold",
+                    lineHeight: "16px",
+                  }}
                 >
-                  Apply
+                  APPLY
                 </Button>
               </Col>
             </Row>
