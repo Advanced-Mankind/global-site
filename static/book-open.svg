@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="46px" height="41px" viewBox="0 0 46 41" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>83F2DA48-7FB9-4110-919B-BCFB8E8A1F53</title>
+    <defs>
+        <path d="M40.5,31.00575 L25.5,34.37575 L25.5,8.99325 L40.5,5.62575 L40.5,31.00575 Z M5.5,5.62575 L20.5,8.99325 L20.5,34.37575 L5.5,31.00575 L5.5,5.62575 Z M44.5625,0.54575 C43.9675,0.07325 43.1925,-0.10675 42.45,0.06075 L23,4.43075 L3.55,0.06075 C2.805,-0.10925 2.0325,0.07325 1.4375,0.54575 C0.845,1.02325 0.5,1.74075 0.5,2.50075 L0.5,33.00575 C0.5,34.17575 1.31,35.18825 2.45,35.44325 L22.45,39.93825 C22.635,39.98075 22.8175,40.00075 23,40.00075 C23.1825,40.00075 23.365,39.98075 23.55,39.93825 L43.55,35.44325 C44.69,35.18825 45.5,34.17575 45.5,33.00575 L45.5,2.50075 C45.5,1.74075 45.155,1.02325 44.5625,0.54575 L44.5625,0.54575 Z" id="path-1"></path>
+    </defs>
+    <g id="Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="M---Careers" transform="translate(-22.000000, -1389.000000)">
+            <g id="Section-2:-Our-Perks" transform="translate(15.000000, 883.000000)">
+                <g id="Column-3" transform="translate(0.000000, 496.000000)">
+                    <g id="27)-Icon/book-open" transform="translate(7.000000, 10.750725)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="🎨-Icon-Сolor" fill="#3333FF" xlink:href="#path-1"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

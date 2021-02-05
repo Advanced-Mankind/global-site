@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="46px" viewBox="0 0 50 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>87A9116E-9AF9-4657-B2AC-A63EF37FD0FE</title>
+    <defs>
+        <path d="M45,28 C45,29.3775 43.88,30.5 42.5,30.5 L25.2175,30.5 L24.7825,30.5 L7.5,30.5 C6.12,30.5 5,29.3775 5,28 L5,8 C5,6.6225 6.12,5.5 7.5,5.5 L42.5,5.5 C43.88,5.5 45,6.6225 45,8 L45,28 Z M42.5,0.5 L7.5,0.5 C3.365,0.5 0,3.865 0,8 L0,28 C0,32.135 3.365,35.5 7.5,35.5 L22.5,35.5 L22.5,40.5 L12.5,40.5 C11.125,40.5 10,41.625 10,43 C10,44.375 11.125,45.5 12.5,45.5 L37.5,45.5 C38.875,45.5 40,44.375 40,43 C40,41.625 38.875,40.5 37.5,40.5 L27.5,40.5 L27.5,35.5 L42.5,35.5 C46.635,35.5 50,32.135 50,28 L50,8 C50,3.865 46.635,0.5 42.5,0.5 L42.5,0.5 Z" id="path-1"></path>
+    </defs>
+    <g id="Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="M---Careers" transform="translate(-20.000000, -2479.000000)">
+            <g id="Section-2:-Our-Perks" transform="translate(15.000000, 883.000000)">
+                <g id="Column-6" transform="translate(0.000000, 1589.000000)">
+                    <g id="27)-Icon/browser" transform="translate(5.000000, 7.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="🎨-Icon-Сolor" fill="#3333FF" xlink:href="#path-1"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
