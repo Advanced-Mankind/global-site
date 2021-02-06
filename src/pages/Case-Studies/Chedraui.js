@@ -1,7 +1,9 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import Layout from "../../components/layout";
+import GetStarted from "../../components/GetStarted/GetStarted";
 import styles from "../../theme/index.module.css";
+
 export default function Chedraui() {
   return (
     <Layout>
@@ -46,6 +48,7 @@ export default function Chedraui() {
               aliquet. Nam at elit elit. Fusce sollicitudin sollicitudin felis,
               semper tincidunt massa vehicula ut. Pellentesque habitant morbi
               tristique senectus et netus et malesuada fames ac turpis egestas.
+              <br></br>
               <br></br>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
               ante ante, blandit ut euismod sagittis, facilisis ac ante.
@@ -121,6 +124,9 @@ export default function Chedraui() {
             />
           </Col>
         </Row>
+      </Container>
+      <Container style={{ marginTop: "5%"}}>
+        <GetStarted />
       </Container>
     </Layout>
   );
