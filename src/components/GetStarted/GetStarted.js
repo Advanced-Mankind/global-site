@@ -11,6 +11,7 @@ const GetStarted = () => {
       className="GetStarterContainer"
       style={{ marginLeft: "10px" }}
     >
+      <Container>
       <Row>
         <Col sm="12" md="12" lg="6">
           <ContentLeft />
@@ -28,6 +29,7 @@ const GetStarted = () => {
           <Form />
         </Col>
       </Row>
+      </Container>
     </Container>
   );
 };
