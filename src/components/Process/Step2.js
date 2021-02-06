@@ -52,7 +52,7 @@ const Step2 = ({ title, paragraph }) => {
           <Col
             sm="12"
             style={{
-              marginTop: "-74px",
+              marginTop: "10px",
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
