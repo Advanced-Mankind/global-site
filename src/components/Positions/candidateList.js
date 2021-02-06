@@ -1,7 +1,7 @@
 import React from "react";
 const CandidateList = () => {
   const uxList = [
-    " Minimum of 4 years of designexperience",
+    "Minimum of 4 years of designexperience",
     "Experienced with Sketch, Invision, Adobe Photoshop, ext…",
     "Strong conceptual thinker who possesses a wide range of design capabilities, including: web, responsive, blog, UI and brand development",
     "Demonstrates strong organizational skills in order to effectively handle multiple projects at a time",
@@ -22,10 +22,9 @@ export default CandidateList;
 function DesignerList(props) {
   const uxList = props.uxList;
   const uxItems = uxList.map((item) => (
-    <li>
-      <img src={require("../../../static/cornerRight.svg")} alt="" />
-      {item}
-    </li>
+    <ul>
+      <li>{item}</li>
+    </ul>
   ));
-  return <ul className="list-unstyled">{uxItems}</ul>;
+  return <li className="list-unstyled">{uxItems}</li>;
 }
