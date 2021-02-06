@@ -1,6 +1,6 @@
 import { Formik } from "formik";
 import React from "react";
-import { Col } from "react-bootstrap";
+import { Col, Button,Row } from "react-bootstrap";
 import Select from "react-select";
 import "../../theme/index.module.css";
 import "./GetStarted.css";
@@ -13,7 +13,7 @@ const Form = () => {
   return (
     <div className="formContainer">
       <div>
-        <h1 className="title-form">Make the first move. Don’t be shy.</h1>
+        <p className="title-form">Make the first move. Don’t be shy.</p>
         <Formik
           initialValues={{
             email: "",
@@ -85,7 +85,7 @@ const Form = () => {
                 </Col>
               </div>
               <div className="form-row mt-4">
-                <Col xs={6}>
+                <Col xs={12} sm={6} className="mt-2 mb-2">
                   <input
                     type="tel"
                     name="tel"
@@ -97,11 +97,11 @@ const Form = () => {
                   />
                   {errors.tel && touched.tel && errors.tel}
                 </Col>
-                <Col xs={6}>
+                <Col xs={12} sm={6} className="mt-2">
                   <input
                     type="text"
                     name="company"
-                    placeholder="Compnay Name"
+                    placeholder="Company Name"
                     className="form-control form-control-lg"
                     onChange={handleChange}
                     onBlur={handleBlur}
@@ -111,8 +111,8 @@ const Form = () => {
                 </Col>
               </div>
               <div className="form-row mt-4">
-                <Col xs={12}>
-                  <input
+                <Col xs={12} sm={6} className="mt-2 mb-2">
+                <input
                     type="text"
                     name="firstName"
                     placeholder="First Name"
@@ -123,10 +123,8 @@ const Form = () => {
                   />
                   {errors.firstName && touched.firstName && errors.firstName}
                 </Col>
-              </div>
-              <div className="form-row mt-4">
-                <Col xs={12}>
-                  <input
+                <Col xs={12} sm={6} className="mt-2">
+                <input
                     type="text"
                     name="lastName"
                     placeholder="Last Name"
@@ -139,7 +137,7 @@ const Form = () => {
                 </Col>
               </div>
               <div className="form-row mt-4">
-                <Col xs={6} className="mr-0">
+                <Col xs={12} sm={8} className="mb-4">
                   <input
                     type="text"
                     name="role"
@@ -151,7 +149,7 @@ const Form = () => {
                   />
                   {errors.role && touched.role && errors.role}
                 </Col>
-                <Col xs={6}>
+                <Col xs={12} sm={4} className="mb-4">
                   <Select
                     styles={customStyles}
                     placeholder="Country"
@@ -166,7 +164,7 @@ const Form = () => {
                 </Col>
               </div>
 
-              <div className="custom-control my-5 custom-checkbox">
+              <div className="custom-control custom-checkbox">
                 <input
                   type="checkbox"
                   className="custom-control-input"
@@ -174,26 +172,26 @@ const Form = () => {
                   name="customCheck1"
                 />
               </div>
-
-              <button
-                type="submit"
-                style={{
-                  borderRadius: "34px",
-                  backgroundColor: "#3333FF",
-                  borderColor: "#3333FF",
-                  height: "56px",
-                  width: "117px",
-                  color: "#FFFFFF",
-                  fontFamily: "Open Sans",
-                  fontSize: "18px",
-                  fontWeight: "bold",
-                  lineHeight: "24px",
-                  textAlign: "center",
-                }}
-                disabled={isSubmitting}
-              >
-                Submit
-              </button>
+              <Col sm="12" md="3" lg="4">
+                <Button 
+                  style={{
+                    borderRadius: "34px",
+                    backgroundColor: "#3333FF",
+                    borderColor: "#3333FF",
+                    width: "100%",
+                    color: "#FFFFFF",
+                    fontFamily: "Open Sans",
+                    fontSize: "18px",
+                    fontWeight: "bold",
+                    lineHeight: "24px",
+                    textAlign: "center",
+                    padding:"15px"
+                  }}
+                  disabled={isSubmitting}
+                >
+                  SUBMIT
+                </Button>
+              </Col>
             </form>
           )}
         </Formik>

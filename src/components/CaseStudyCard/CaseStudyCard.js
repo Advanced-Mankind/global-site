@@ -8,7 +8,6 @@ const CaseStudyCard = ({ imgsDesktop, imgsTablet, text }) => {
         <div className="text-card">
           {text} <div className="text-card-background"></div>
         </div>
-
         {imgsDesktop.map((img, index) => (
           <img src={img} alt={index} key={index} className="imgDesktop" />
         ))}
