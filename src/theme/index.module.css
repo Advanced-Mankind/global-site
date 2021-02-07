@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
 .body {
   min-height: 100vh;
   position: relative;
@@ -15,7 +15,11 @@ input::placeholder {
   position: relative;
 }
 .header {
-  margin: 15px;
+  padding: 24px 24px 24px 40px;
+  min-height: 90px;
+  border: 1px solid #fbfbfb;
+  background-color: #ffffff;
+  box-shadow: 0 10px 20px 0 rgba(35, 35, 35, 0.08);
 }
 .footer-Text {
   float: right;
@@ -76,7 +80,7 @@ input::placeholder {
   line-height: 16px;
   align-items: center !important;
 }
-.logo{
+.logo {
   max-width: 100%;
 }
 .logoHeader {
@@ -130,28 +134,28 @@ input::placeholder {
 .curveBackground {
   padding-top: 5%;
 }
-#positionsUl  li {
+#positionsUl li {
   font-family: "Open Sans";
   font-size: 15px;
   letter-spacing: 0;
   margin-bottom: 17.5px;
   line-height: 20px;
 }
-#positionsUl  li:nth-child(1) {
+#positionsUl li:nth-child(1) {
   list-style-image: url("../../static/globe2.svg");
-  color: #222B45;
+  color: #222b45;
 }
-#positionsUl  li:nth-child(2) {
+#positionsUl li:nth-child(2) {
   list-style-image: url("../../static/heart2.svg");
-  color: #222B45;
+  color: #222b45;
 }
-#positionsUl  li:nth-child(3) {
+#positionsUl li:nth-child(3) {
   list-style-image: url("../../static/fire2.svg");
-  color: #222B45;
+  color: #222b45;
 }
-#positionsUl  li:nth-child(4) {
+#positionsUl li:nth-child(4) {
   list-style-image: url("../../static/gift2.svg");
-  color: #222B45;
+  color: #222b45;
 }
 
 /* 
@@ -187,7 +191,7 @@ input::placeholder {
     flex-direction: column;
     padding-top: 8%;
     position: relative;
-    top:-30px
+    top: -30px;
   }
   .curveBackgroundBottom {
     bottom: -20vh;
@@ -210,10 +214,7 @@ input::placeholder {
     flex-direction: column;
     padding-top: 8%;
   }
-  .header {
-    margin: 40px;
-    margin-bottom: 0px;
-  }
+
   .logoHeader {
     width: 200px;
     height: 42px;
@@ -243,7 +244,7 @@ input::placeholder {
     justify-content: center;
     flex-direction: column;
     padding-top: 10%;
-    top:-120px
+    top: -120px;
   }
 
   .title {

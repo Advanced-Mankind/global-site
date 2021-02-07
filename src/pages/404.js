@@ -1,7 +1,7 @@
 import React from "react";
+import { Button, Col } from "react-bootstrap";
 import Layout from "../components/layout";
 import styles from "../theme/index.module.css";
-import { Col, Button,Row } from "react-bootstrap";
 // import "../components/Error404/styles.css";
 export default function Error404() {
   return (
@@ -25,7 +25,7 @@ export default function Error404() {
                 </p>
               </div>
               <Col>
-                <Button 
+                <Button
                   style={{
                     borderRadius: "34px",
                     backgroundColor: "#3333FF",
@@ -36,10 +36,9 @@ export default function Error404() {
                     fontWeight: "bold",
                     lineHeight: "24px",
                     textAlign: "center",
-                    padding:"15px 20px",
-                    marginTop:"40px"
+                    padding: "15px 20px",
+                    marginTop: "40px",
                   }}
-                 
                 >
                   GO BACK HOME
                 </Button>

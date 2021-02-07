@@ -1,6 +1,6 @@
 import { Formik } from "formik";
 import React from "react";
-import { Col, Button,Row } from "react-bootstrap";
+import { Button, Col } from "react-bootstrap";
 import Select from "react-select";
 import "../../theme/index.module.css";
 import "./GetStarted.css";
@@ -112,7 +112,7 @@ const Form = () => {
               </div>
               <div className="form-row mt-4">
                 <Col xs={12} sm={6} className="mt-2 mb-2">
-                <input
+                  <input
                     type="text"
                     name="firstName"
                     placeholder="First Name"
@@ -124,7 +124,7 @@ const Form = () => {
                   {errors.firstName && touched.firstName && errors.firstName}
                 </Col>
                 <Col xs={12} sm={6} className="mt-2">
-                <input
+                  <input
                     type="text"
                     name="lastName"
                     placeholder="Last Name"
@@ -173,7 +173,7 @@ const Form = () => {
                 />
               </div>
               <Col sm="12" md="3" lg="4">
-                <Button 
+                <Button
                   style={{
                     borderRadius: "34px",
                     backgroundColor: "#3333FF",
@@ -185,7 +185,7 @@ const Form = () => {
                     fontWeight: "bold",
                     lineHeight: "24px",
                     textAlign: "center",
-                    padding:"15px"
+                    padding: "15px",
                   }}
                   disabled={isSubmitting}
                 >
