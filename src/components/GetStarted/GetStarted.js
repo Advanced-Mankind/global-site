@@ -9,7 +9,6 @@ const GetStarted = () => {
     <Container
       fluid
       className="GetStarterContainer"
-      style={{ marginLeft: "10px" }}
     >
       <Container>
       <Row>

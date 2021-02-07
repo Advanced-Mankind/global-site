@@ -2,6 +2,7 @@ import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import Layout from "../../components/layout";
 import styles from "../../theme/index.module.css";
+import GetStarted from "../../components/GetStarted/GetStarted";
 export default function Logicalis() {
   return (
     <Layout>
@@ -112,6 +113,9 @@ export default function Logicalis() {
             />
           </Col>
         </Row>
+      </Container>
+      <Container style={{ marginTop: "5%"}}>
+        <GetStarted />
       </Container>
     </Layout>
   );
