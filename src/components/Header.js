@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { useMediaQuery } from "react-responsive";
@@ -10,7 +10,11 @@ import "./layout.css";
 const Header = (props) => {
   const { open, setOpen } = props;
   const isTabletOrMobile = useMediaQuery({ maxWidth: 1224 });
-
+  useEffect(() => {
+    if (!isTabletOrMobile) {
+      setOpen(false);
+    }
+  }, [isTabletOrMobile]);
   return (
     <>
       {isTabletOrMobile ? (
