@@ -35,13 +35,13 @@ input::placeholder {
   padding: 2% 0%;
 }
 
-.getTitle{
-    color: white;
-    font-family: "Open Sans";
-    font-size: 36px;
-    font-weight: bold;
-    letter-spacing: 0;
-    line-height: 48px;
+.getTitle {
+  color: white;
+  font-family: "Open Sans";
+  font-size: 36px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 48px;
 }
 .getParagraph {
   color: white;
@@ -167,22 +167,22 @@ input::placeholder {
   margin-bottom: 17.5px;
   line-height: 20px;
 }
-#positionsUl  li:nth-child(1) {
+#positionsUl li:nth-child(1) {
   list-style-image: url("../../static/globe2.svg");
-  color: #222B45;
+  color: #222b45;
 }
-#positionsUl  li:nth-child(2) {
+#positionsUl li:nth-child(2) {
   list-style-image: url("../../static/heart2.svg");
-  color: #222B45;
+  color: #222b45;
 }
-#positionsUl  li:nth-child(3) {
+#positionsUl li:nth-child(3) {
   list-style-image: url("../../static/fire2.svg");
-  color: #222B45;
+  color: #222b45;
 }
-#positionsUl  li:nth-child(4) {
+#positionsUl li:nth-child(4) {
   list-style-image: url("../../static/gift2.svg");
-  color: #222B45;
-=======
+  color: #222b45;
+}
 #positionsUl li:nth-child(1) {
   list-style-image: url("../../static/globe2.svg");
   color: #222b45;
