@@ -134,6 +134,7 @@ input::placeholder {
 .curveBackground {
   padding-top: 5%;
 }
+
 #positionsUl li {
   font-family: "Open Sans";
   font-size: 15px;
@@ -141,6 +142,22 @@ input::placeholder {
   margin-bottom: 17.5px;
   line-height: 20px;
 }
+#positionsUl  li:nth-child(1) {
+  list-style-image: url("../../static/globe2.svg");
+  color: #222B45;
+}
+#positionsUl  li:nth-child(2) {
+  list-style-image: url("../../static/heart2.svg");
+  color: #222B45;
+}
+#positionsUl  li:nth-child(3) {
+  list-style-image: url("../../static/fire2.svg");
+  color: #222B45;
+}
+#positionsUl  li:nth-child(4) {
+  list-style-image: url("../../static/gift2.svg");
+  color: #222B45;
+=======
 #positionsUl li:nth-child(1) {
   list-style-image: url("../../static/globe2.svg");
   color: #222b45;
