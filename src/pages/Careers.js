@@ -62,20 +62,10 @@ export default function Careers() {
               <Col className={""} sm="8" md="6" lg="2">
                 <Row className="img-Container .d-sm-none .d-md-block mx-auto">
                   <img
-                    className="img-1"
-                    src={require("../../static/Image right.png")}
+                    src={require("../../static/Group.png")}
                     alt="Ilustrations1"
                   />
-                  <img
-                    className="img-2"
-                    src={require("../../static/Image right-1.png")}
-                    alt="Ilustrations2"
-                  />
-                  <img
-                    className="img-3"
-                    src={require("../../static/Image right-2.png")}
-                    alt="Ilustrations3"
-                  />
+                 
                 </Row>
               </Col>
             </Row>
@@ -89,7 +79,7 @@ export default function Careers() {
         <div>
           <OurPerks />
         </div>
-        <div style={{ marginTop: "5%", marginLeft: "5%", marginRight: "5%" }}>
+        <div style={{ marginTop: "5%", marginLeft: "5%" }}>
           <div className={styles.getContainer}>
             <Container>
               <Row
@@ -113,7 +103,6 @@ export default function Careers() {
                       color: "#222B45",
                       marginTop: "28px",
                       marginBottom: "30px",
-                      width: "100%",
                       padding: "16px",
                       alignItems: "center",
                       fontFamily: "Open Sans",
