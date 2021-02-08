@@ -13,6 +13,7 @@ import HaveAChallenge from "./HaveAChallenge/HaveAChallenge";
 import StartsWithWhy from "./StartsWithWhy/StartsWithWhy";
 import WereHirin from "./WereHiring/WereHiring";
 import YourDreamCards from "./YourDreamCard/YourDreamsCard";
+import Cookies from "./Cookies/Cookies"
 
 // Esta es la linea que hay que copiar en la parte de los partners linea 134
 
@@ -321,6 +322,7 @@ export default function Home() {
         <div style={{ marginTop: "5%" }}>
           <GetStarted />
         </div>
+        <Cookies/>
       </div>
     </div>
   );
