@@ -1,38 +1,23 @@
-/* #map {
-  width: 100vw;
-  height: 80vh;
-} */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
 .bg-blue {
   border-radius: 10px;
   background-color: #3333ff;
   box-shadow: 0 10px 20px 0 rgba(35, 35, 35, 0.08);
 }
-.slack-title {
-  color: white;
+.WhoTitle {
   font-family: "Open Sans";
   font-size: 36px;
   font-weight: bold;
   letter-spacing: 0;
   line-height: 48px;
+  text-align: center;
 }
-.slack-p {
-  color: white;
+.who-p {
   font-family: "Open Sans";
   font-size: 15px;
   letter-spacing: 0;
   line-height: 20px;
-}
-.btn-slack {
-  border-radius: 34px;
-  background-color: #edf1f7;
-  color: #222b45;
-  font-family: "Open Sans";
-  font-size: 14px;
-  font-weight: bold;
-  letter-spacing: 0;
-  line-height: 16px;
   text-align: center;
-  padding: 12px 20px;
 }
 .border-dashed {
   height: 2px;
@@ -104,42 +89,76 @@
   line-height: 24px;
   text-align: center;
 }
-.slider-icon {
-  height: 189px;
-  width: 160px;
+.img-Team {
+  height: 360px;
+  width: 327px;
   border: 1px solid #fbfbfb;
   border-radius: 8px;
   background-color: white;
   box-shadow: 0 10px 20px 0 rgba(35, 35, 35, 0.08);
 }
-.img-1 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-.img-2 {
-  position: absolute;
-  top: 75px;
-  right: -10%;
-}
-.img-3 {
-  position: absolute;
-  top: 0;
-  left: 10%;
-}
 .img-Container {
   position: relative;
   height: 300px;
   max-width: 327px;
+  border-radius: 8px;
+  margin-left: 15px;
+}
+.title-Position{
+  color:#3333FF;
+  font-family: "Open Sans";
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 16px;
+}
+.name{
+  color:#222B45;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 24px;
+}
+.containerName{
+  width: 200px;
+}
+
+.cardMobile {
+  display: flex;
+}
+
+.cardTablet {
+  display: none;
+}
+
+.cardDesktop {
+  display: none;
 }
 @media (min-width: 768px) {
-  .slider-icon {
-    height: 325px;
-    width: 264px;
+  .img-Team {
+    height: 428px;
+    width: 346px;
     border: 1px solid #fbfbfb;
     border-radius: 8px;
     background-color: white;
     box-shadow: 0 10px 20px 0 rgba(35, 35, 35, 0.08);
+  }
+  .cardMobile {
+    display: none;
+  }
+  .cardTablet {
+    display: flex;
+  }
+}
+
+@media (min-width: 992px) {
+  .cardMobile {
+    display: none;
+  }
+  .cardTablet {
+    display: none;
+  }
+  .cardDesktop {
+    display: flex;
   }
 }
 @media (min-width: 1200px) {
@@ -149,9 +168,12 @@
     height: 563px;
     max-width: 100%;
   }
-  .img-2 {
-    position: absolute;
-    top: 141px;
-    right: -10%;
+  .img-Team {
+    height: 445px;
+    width: 360px;
+    border: 1px solid #fbfbfb;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 10px 20px 0 rgba(35, 35, 35, 0.08);
   }
 }

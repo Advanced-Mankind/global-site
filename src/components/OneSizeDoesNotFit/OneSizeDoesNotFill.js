@@ -12,11 +12,11 @@ const OneSizeDoesNotFill = ({
     <Container fluid className="backgroundContainer">
       <Container className="stylesMobile">
         <Row>
-          <Col>
+          <Col className="my-4">
             <img
               src={require("../../../static/homeHouseMobile.png")}
               alt="homeMobile"
-              className="mx-auto d-flex"
+              className="m-0 d-flex"
             />
             <h1 className="titleMobile">{firstTitle}</h1>
             <p className="paragraph"> {firstParagraph} </p>
@@ -24,7 +24,7 @@ const OneSizeDoesNotFill = ({
               src={require("../../../static/reviewGraphMobile.png")}
               alt="reviewMobile"
               style={{ paddingTop: "3%" }}
-              className="mx-auto d-flex"
+              className="m-0 d-flex"
             />
             <h1 className="titleMobile"> {secondTitle} </h1>
             <p className="paragraph"> {secondParagraph} </p>
@@ -35,25 +35,21 @@ const OneSizeDoesNotFill = ({
       <Container className="stylesTablet">
         <Row>
           <Col md="6">
+            <img
+              src={require("../../../static/homeHouseTablet.png")}
+              alt="homeMobile"
+            />
             <div>
-              <h1 className="title"> {firstTitle} </h1>
+              <h1 className="titleContainer"> {firstTitle} </h1>
               <p className="paragraph"> {firstParagraph} </p>
             </div>
           </Col>
           <Col md="6">
             <img
-              src={require("../../../static/homeHouseTablet.png")}
-              alt="homeMobile"
-            />
-          </Col>
-          <Col md="4" style={{ paddingTop: "3%" }}>
-            <img
               src={require("../../../static/reviewGraphTablet.png")}
               alt="homeMobile"
             />
-          </Col>
-          <Col md="8">
-            <h1 className="title"> {secondTitle} </h1>
+            <h1 className="titleContainer"> {secondTitle} </h1>
             <p className="paragraph"> {secondParagraph} </p>
           </Col>
         </Row>
@@ -63,7 +59,7 @@ const OneSizeDoesNotFill = ({
         <Row className="col Container">
           <Col md="6" lg="6">
             <div>
-              <h1 className="title"> {firstTitle} </h1>
+              <h1 className="titleContainer"> {firstTitle} </h1>
               <p className="paragraph"> {firstParagraph} </p>
             </div>
           </Col>
@@ -81,7 +77,7 @@ const OneSizeDoesNotFill = ({
           </Col>
           <Col md="6" lg="6">
             <div>
-              <h1 className="title"> {secondTitle} </h1>
+              <h1 className="titleContainer"> {secondTitle} </h1>
               <p className="paragraph"> {secondParagraph} </p>
             </div>
           </Col>
