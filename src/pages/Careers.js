@@ -14,7 +14,7 @@ export default function Careers() {
         <div style={{ marginTop: "5%" }}>
           <Container style={{ marginBottom: "2%" }}>
             <Row
-              className="justify-content-between"
+              className="align-items-start"
               style={{ display: "flex", alignItems: "center" }}
             >
               <Col sm="8" md="5">
