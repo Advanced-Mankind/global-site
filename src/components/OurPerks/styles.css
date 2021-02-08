@@ -1,7 +1,7 @@
 .ourPerkCardContainer {
   box-sizing: border-box;
-  padding: 5% 8%;
-  height: 85%;
+  /* padding: 5% 8%;
+  height: 85%; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;

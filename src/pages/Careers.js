@@ -17,7 +17,7 @@ export default function Careers() {
               className="justify-content-between"
               style={{ display: "flex", alignItems: "center" }}
             >
-              <Col sm="8" md="6" lg="6">
+              <Col sm="8" md="5">
                 <h1 className={styles.title}>Raw Talent, Apply Within.</h1>
                 <p className={styles.paragraph}>
                   We trust our team. We value commitment, family, and a working
@@ -38,14 +38,15 @@ export default function Careers() {
                   possibilities, set benchmarks, and transmit optimism while
                   working hard for our partners.
                 </p>
-                <Col sm="8" md="8" lg="5">
+                <Col sm="12" md="8" lg="5" className="px-0">
                   <Link to="/Positions">
                     <Button
+                      className="w-100"
                       style={{
                         borderRadius: "34px",
                         backgroundColor: "#3333FF",
                         marginTop: "20px",
-                        width: "100%",
+
                         padding: "16px",
                         alignItems: "center",
                         fontFamily: "Open Sans",
@@ -59,13 +60,13 @@ export default function Careers() {
                   </Link>
                 </Col>
               </Col>
-              <Col className={""} sm="8" md="6" lg="2">
+              <Col className="d-none d-md-block" sm="6" md="7">
                 <Row className="img-Container .d-sm-none .d-md-block mx-auto">
                   <img
+                    className="img-fluid"
                     src={require("../../static/Group.png")}
                     alt="Ilustrations1"
                   />
-                 
                 </Row>
               </Col>
             </Row>
@@ -96,23 +97,25 @@ export default function Careers() {
                   </p>
                 </Col>
                 <Col sm="12" md="4" lg="3">
-                  <Button
-                    style={{
-                      borderRadius: "34px",
-                      backgroundColor: "#DEE2E8",
-                      color: "#222B45",
-                      marginTop: "28px",
-                      marginBottom: "30px",
-                      padding: "16px",
-                      alignItems: "center",
-                      fontFamily: "Open Sans",
-                      fontSize: "18px",
-                      fontWeight: "bold",
-                      lineHeight: "24px",
-                    }}
-                  >
-                    SEE POSITIONS
-                  </Button>
+                  <Link to="/Positions">
+                    <Button
+                      style={{
+                        borderRadius: "34px",
+                        backgroundColor: "#DEE2E8",
+                        color: "#222B45",
+                        marginTop: "28px",
+                        marginBottom: "30px",
+                        padding: "16px",
+                        alignItems: "center",
+                        fontFamily: "Open Sans",
+                        fontSize: "18px",
+                        fontWeight: "bold",
+                        lineHeight: "24px",
+                      }}
+                    >
+                      SEE POSITIONS
+                    </Button>
+                  </Link>
                 </Col>
               </Row>
             </Container>
