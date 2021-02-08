@@ -205,13 +205,11 @@ const customStyles = {
     // none of react-select's styles are passed to <Control />
     height: 48,
     backgroundColor: "#f7f9fc",
-
     paddingLeft: 15,
   }),
   control: () => ({
     backgroundColor: "#f7f9fc",
     alignItems: "center",
-
     borderColor: "hsl(0,0%,80%)",
     borderRadius: 4,
     borderStyle: "solid",
