@@ -1,91 +1,133 @@
-.ourPerkCardContainer{
-    box-sizing: border-box;
-    padding: 10% 8%;
-    height: 85%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
+.ourPerkCardContainer {
+  box-sizing: border-box;
+  padding: 5% 8%;
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
-.perkCardTitle{
-    color: #222B45;
-    font-family: "Open Sans";
-    font-size: 22px;
-    font-weight: bold;
-    letter-spacing: 0;
-    line-height: 24px;
+.perkCardTitle {
+  color: #222b45;
+  font-family: "Open Sans";
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 24px;
 }
 
-.cardParagraph{
-    color: #222B45;
-    font-family: "Open Sans";
-    font-size: 15px;
-    letter-spacing: 0;
-    line-height: 20px;
+.cardParagraph {
+  color: #222b45;
+  font-family: "Open Sans";
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: 20px;
 }
 
-.ourPerkQuoteContainer{
-    background-color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    border-radius: 10px;
-    padding: 3% 10%;
-    margin-top: 2%;
-    margin-left: 5%;
-    margin-right: 5%;
+.ourPerkQuoteContainer {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 3% 10%;
+  margin-top: 2%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
-.quoteTitle{
+.quoteTitle {
+  font-family: "Open Sans";
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 32px;
+  text-align: center;
+}
+.quoteInfo {
+  font-family: "Open Sans";
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 16px;
+  text-align: center;
+  margin-bottom: 2%;
+  margin-top: 6%;
+}
+.quoteFoot {
+  font-family: "Open Sans";
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 16px;
+  text-align: center;
+}
+
+.secondTitle {
+  font-family: "Open Sans";
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 32px;
+}
+
+.secondParagraph {
+  font-family: "Open Sans";
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: 20px;
+  text-align: center;
+  width: 60%;
+}
+
+/* 
+// Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .quoteTitle {
     font-family: "Open Sans";
     font-size: 32px;
     font-weight: bold;
     letter-spacing: 0;
-    line-height: 32px;
+    line-height: 40px;
     text-align: center;
+  }
 }
-.quoteTitleMobile{
-    font-family: "Open Sans";
-    font-size: 22px;
-    font-weight: bold;
-    letter-spacing: 0;
-    line-height: 32px;
-    text-align: center;
-}
-
-.quoteInfo{
+/* 
+// Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .quoteInfo {
     font-family: "Open Sans";
     font-size: 12px;
     font-weight: bold;
     letter-spacing: 0;
     line-height: 16px;
     text-align: center;
-    margin-bottom: 2%;
-    margin-top: 6%;
+    margin-bottom: 1%;
+    margin-top: 15px;
+  }
 }
-.quoteFoot{
+/* 
+// Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .quoteTitle {
     font-family: "Open Sans";
-    font-size: 12px;
-    letter-spacing: 0;
-    line-height: 16px;
-    text-align: center;
-}
-
-.secondTitle{
-    font-family: "Open Sans";
-    font-size: 22px;
+    font-size: 32px;
     font-weight: bold;
     letter-spacing: 0;
-    line-height: 32px;
-}
-
-.secondParagraph{
-    font-family: "Open Sans";
-    font-size: 15px;
-    letter-spacing: 0;
-    line-height: 20px;
+    line-height: 40px;
     text-align: center;
-    width: 60%;
+  }
+}
+/* 
+// Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .quoteTitle {
+    font-family: "Open Sans";
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 40px;
+    text-align: center;
+  }
 }
