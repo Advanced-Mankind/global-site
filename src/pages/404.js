@@ -1,4 +1,5 @@
 import React from "react";
+import { Button, Col } from "react-bootstrap";
 import Layout from "../components/layout";
 import styles from "../theme/index.module.css";
 // import "../components/Error404/styles.css";
@@ -15,14 +16,33 @@ export default function Error404() {
                   src={require("../../static/oops.png")}
                   alt=""
                 />
-                <h1 className={styles.title}>That's no good! </h1>
+                <p className={styles.title}>That's no good! </p>
               </div>
-              <div className="col-12">
+              <div className="col-11 col-lg-10">
                 <p className={`${styles.subTitle} mb-0`}>
                   We are going to send you back to a safe space where things
                   don't wilt or die.
                 </p>
               </div>
+              <Col>
+                <Button
+                  style={{
+                    borderRadius: "34px",
+                    backgroundColor: "#3333FF",
+                    borderColor: "#3333FF",
+                    color: "#FFFFFF",
+                    fontFamily: "Open Sans",
+                    fontSize: "18px",
+                    fontWeight: "bold",
+                    lineHeight: "24px",
+                    textAlign: "center",
+                    padding: "15px 20px",
+                    marginTop: "40px",
+                  }}
+                >
+                  GO BACK HOME
+                </Button>
+              </Col>
             </div>
           </div>
           <img

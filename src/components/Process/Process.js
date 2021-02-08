@@ -5,7 +5,7 @@ import Step3 from './Step3'
 
 const Process = () => {
     return (
-        <div  style={{marginTop: '5%', marginBottom:'5%'}}>
+        <div style={{marginTop: '5%', marginBottom:'5%'}}>
             <Step1 
             title={'Start From the Inside Out'}
             p1={'When others start with “what they do” we begin with “why we do what we do” and drive the value of the brand in every way the products interact with the users.'}
@@ -21,10 +21,10 @@ const Process = () => {
                 paragraph={'Design is about solving business problems with people-centered design.'}
                 sub1={'Research'}
                 p1={'Know the Customer'}
-                sub2={'Measure'}
-                p2={'Test the Solution'}
-                sub3={'Identify Gaps'}
-                p3={'Understand Business & Frame the Problems'}
+                sub2={'Identify Gaps'}
+                p2={'Understand Business & Frame the Problems'}
+                sub3={'Measure'}
+                p3={'Test the Solution'}
                 sub4={'Design'}
                 p4={'Design a Solution for the Customer'}
             />
