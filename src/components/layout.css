@@ -9,7 +9,7 @@
 
   overflow: hidden;
   transition: 0.5s;
-  z-index: 5000;
+  z-index: 999;
 }
 .nav-link-am {
   color: #222b45 !important;
@@ -55,11 +55,11 @@
 }
 #menuButton,
 .navbar-brand {
-  z-index: 5001;
+  z-index: 998;
   cursor: pointer;
 }
 .zindex {
-  z-index: 5002;
+  z-index: 1000;
   position: relative;
 }
 .hide-overflow {

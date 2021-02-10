@@ -9,7 +9,12 @@ import stylesApproach from "../theme/ourApproach.module.css";
 export default function OurApproach() {
   return (
     <Layout>
-      <div className={`${stylesApproach.body} "container-fluid p-0"`}>
+      <div
+        className={`${stylesApproach.body} "container-fluid p-0"`}
+        style={{
+          paddingTop: "90px",
+        }}
+      >
         <div style={{ marginTop: "5%" }}>
           <HeroSection />
         </div>

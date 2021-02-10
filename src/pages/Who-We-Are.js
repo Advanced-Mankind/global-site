@@ -31,7 +31,13 @@ const team = [
 export default function WhoWeAre() {
   return (
     <Layout>
-      <Container fluid className="bg-white px-0">
+      <Container
+        fluid
+        className="bg-white px-0"
+        style={{
+          paddingTop: "130px",
+        }}
+      >
         <Container>
           <Row className="align-items-center text-center">
             <Col xs="12" sm="12">

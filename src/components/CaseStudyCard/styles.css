@@ -40,7 +40,7 @@
   text-align: center;
   left: 15px;
   align-items: flex-end;
-  z-index: 1000;
+  z-index: 999;
   padding: 24px;
   vertical-align: middle;
   display: flex;

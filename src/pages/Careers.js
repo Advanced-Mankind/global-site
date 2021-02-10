@@ -10,7 +10,12 @@ export default function Careers() {
   // <Link to="/Careers/">Careers</Link>
   return (
     <Layout>
-      <div className={`${styles.body} "container-fluid p-0"`}>
+      <div
+        className={`${styles.body} "container-fluid p-0"`}
+        style={{
+          paddingTop: "90px",
+        }}
+      >
         <div style={{ marginTop: "5%" }}>
           <Container style={{ marginBottom: "2%" }}>
             <Row

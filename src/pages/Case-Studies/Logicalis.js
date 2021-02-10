@@ -6,7 +6,11 @@ import GetStarted from "../../components/GetStarted/GetStarted";
 export default function Logicalis() {
   return (
     <Layout>
-      <Container>
+      <Container
+        style={{
+          paddingTop: "90px",
+        }}
+      >
         <h1 className="title">Logicalis</h1>
         <Row className="mt-5">
           <Col xs={12} md={4}>
@@ -114,7 +118,7 @@ export default function Logicalis() {
           </Col>
         </Row>
       </Container>
-      <Container style={{ marginTop: "5%"}}>
+      <Container style={{ marginTop: "5%" }}>
         <GetStarted />
       </Container>
     </Layout>

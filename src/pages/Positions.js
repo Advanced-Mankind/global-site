@@ -9,7 +9,12 @@ export default function Positions() {
 
   return (
     <Layout>
-      <div className="row align-items-center m-0">
+      <div
+        className="row align-items-center m-0"
+        style={{
+          paddingTop: "90px",
+        }}
+      >
         <div className="col col-sm-6 p-0">
           <div className={`${styles.leftContent}`}>
             <div className="row">

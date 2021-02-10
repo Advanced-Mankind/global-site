@@ -7,7 +7,11 @@ import styles from "../../theme/index.module.css";
 export default function Chedraui() {
   return (
     <Layout>
-      <Container>
+      <Container
+        style={{
+          paddingTop: "90px",
+        }}
+      >
         <h1 className="title">Chedraui</h1>
         <Row className="mt-5">
           <Col xs={12} md={4}>
@@ -125,7 +129,7 @@ export default function Chedraui() {
           </Col>
         </Row>
       </Container>
-      <Container style={{ marginTop: "5%"}}>
+      <Container style={{ marginTop: "5%" }}>
         <GetStarted />
       </Container>
     </Layout>

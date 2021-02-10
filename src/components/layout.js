@@ -13,7 +13,7 @@ const Layout = ({ children }) => {
   const [theme] = useDarkMode();
   const [open, setOpen] = useState(false);
   const themeMode = theme === "dark" ? lightTheme : lightTheme;
-
+  React.useEffect(() => window.scrollTo(0, 0), []);
   // useEffect(() => {
   //   if (isDesktopOrLaptop) setOpen(false);
   // }, [isDesktopOrLaptop]);

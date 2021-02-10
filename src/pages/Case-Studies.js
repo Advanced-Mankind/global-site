@@ -9,15 +9,17 @@ export default function CaseStudies() {
   return (
     <Layout>
       <CaseStudyPageFirstSection
-        imgs={[require('../../static/caseStudiesPageIllustrationDesktop.png'), require('../../static/caseStudiesPageIllustrationMT.png')]}
+        imgs={[
+          require("../../static/caseStudiesPageIllustrationDesktop.png"),
+          require("../../static/caseStudiesPageIllustrationMT.png"),
+        ]}
       />
-      <div style={{ marginTop: '5%' }} >
-        <CaseStudyPageImagesSection
-        />
+      <div style={{ marginTop: "5%" }}>
+        <CaseStudyPageImagesSection />
       </div>
       <div style={{ marginTop: "5%" }}>
         <GetStarted />
       </div>
     </Layout>
   );
-} 
+}

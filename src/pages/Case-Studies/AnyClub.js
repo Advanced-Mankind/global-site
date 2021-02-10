@@ -7,7 +7,11 @@ import styles from "../../theme/index.module.css";
 export default function AnyClub() {
   return (
     <Layout>
-      <Container>
+      <Container
+        style={{
+          paddingTop: "90px",
+        }}
+      >
         <h1 className="title">AnyClub</h1>
         <Row className="mt-5">
           <Col xs={12} md={4}>

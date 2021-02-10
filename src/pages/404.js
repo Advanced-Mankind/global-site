@@ -6,7 +6,12 @@ import styles from "../theme/index.module.css";
 export default function Error404() {
   return (
     <Layout>
-      <div className={`row align-items-center m-0`}>
+      <div
+        className={`row align-items-center m-0`}
+        style={{
+          paddingTop: "90px",
+        }}
+      >
         <div className="col-sm-5 p-0">
           <div className={`${styles.leftContent}`}>
             <div className="row">

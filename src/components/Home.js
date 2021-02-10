@@ -18,7 +18,11 @@ import YourDreamCards from "./YourDreamCard/YourDreamsCard";
 
 export default function Home() {
   return (
-    <div>
+    <div
+      style={{
+        paddingTop: "90px",
+      }}
+    >
       <div className="row align-items-center">
         <div className="col col-sm-6 p-0">
           <div className={`${styles.leftContent}`}>
@@ -30,7 +34,7 @@ export default function Home() {
                       We deliver transformative interfaces.
                     </h1>
                   </div>
-                  <div style={{ marginLeft: "5px"}} className="col-2">
+                  <div style={{ marginLeft: "5px" }} className="col-2">
                     <img
                       src={require("../../static/computerHome.svg")}
                       alt="backgroundImage"
@@ -160,7 +164,7 @@ export default function Home() {
           <Container>
             <Row className="justify-content-evenly ">
               <Col sm="12" md="6" lg="6" className="mb-3">
-              <Link to="/Case-Studies/AnyClub/">
+                <Link to="/Case-Studies/AnyClub/">
                   <CaseStudyCard
                     text="Anyclub App"
                     imgsDesktop={[require("../../static/phone1.png")]}
@@ -171,22 +175,22 @@ export default function Home() {
               <Col sm="12" md="6" lg="6" className="justify-content-center">
                 <Row className="justify-content-center mb-3">
                   <Col sm="12" md="12" lg="12" className="mb-3">
-                  <Link to="/Case-Studies/Chedraui">
-                  <CaseStudyCard
-                    text="Chedraui E-commerce App"
-                    imgsDesktop={[
-                      require("../../static/ImageChedrauiDesktop.png"),
-                    ]}
-                    imgsTablet={[
-                      require("../../static/imageChedrauiTablet.png"),
-                    ]}
-                  />
-                </Link>
+                    <Link to="/Case-Studies/Chedraui">
+                      <CaseStudyCard
+                        text="Chedraui E-commerce App"
+                        imgsDesktop={[
+                          require("../../static/ImageChedrauiDesktop.png"),
+                        ]}
+                        imgsTablet={[
+                          require("../../static/imageChedrauiTablet.png"),
+                        ]}
+                      />
+                    </Link>
                   </Col>
                 </Row>
                 <Row className="justify-content-center mb-3">
                   <Col sm="12" md="12" lg="12">
-                  <Link to="/Case-Studies/Logicalis/">
+                    <Link to="/Case-Studies/Logicalis/">
                       <CaseStudyCard
                         text="Logicalis Dashboard"
                         imgsDesktop={[require("../../static/motoDesktop.png")]}
