@@ -13,10 +13,22 @@ import HaveAChallenge from "./HaveAChallenge/HaveAChallenge";
 import StartsWithWhy from "./StartsWithWhy/StartsWithWhy";
 import WereHirin from "./WereHiring/WereHiring";
 import YourDreamCards from "./YourDreamCard/YourDreamsCard";
-
+import { useMediaQuery } from "react-responsive";
 // Esta es la linea que hay que copiar en la parte de los partners linea 134
 
 export default function Home() {
+  const DesktopImg = ({ children }) => {
+    const isDesktop = useMediaQuery({ minWidth: 992 });
+    return isDesktop ? children : null;
+  };
+  const TabletImg = ({ children }) => {
+    const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 991 });
+    return isTablet ? children : null;
+  };
+  const MobileImg = ({ children }) => {
+    const isMobile = useMediaQuery({ maxWidth: 767 });
+    return isMobile ? children : null;
+  };
   return (
     <div
       style={{
@@ -35,10 +47,18 @@ export default function Home() {
                     </h1>
                   </div>
                   <div style={{ marginLeft: "5px" }} className="col-2">
-                    <img
-                      src={require("../../static/computerHome.svg")}
-                      alt="backgroundImage"
-                    />
+                    <DesktopImg>
+                      <img
+                        src={require("../../static/computerHome.svg")}
+                        alt=""
+                      />
+                    </DesktopImg>
+                    <MobileImg>
+                      <img src={require("../../static/iphone.svg")} alt="" />
+                    </MobileImg>
+                    <TabletImg>
+                      <img src={require("../../static/ipad.svg")} alt="" />
+                    </TabletImg>
                   </div>
                 </div>
               </div>
@@ -69,7 +89,13 @@ export default function Home() {
       </div>
       <div>
         <div className={styles.curveBackground}>
-          <Container>
+         <div  className="d-none d-sm-block text-center ">
+            <a href="#scroll">
+              <p className={styles.scroll}>SCROLL</p>
+              <img src={require("../../static/arrowDown.png")} alt=""></img>
+            </a>
+         </div>
+          <Container id="scroll">
             <div className="col-12">
               <h1 className={styles.title32px} style={{ textAlign: "center" }}>
                 Solving Your Digital Needs One Pixel at a Time

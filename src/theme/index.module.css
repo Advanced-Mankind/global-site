@@ -124,6 +124,15 @@ input::placeholder {
 .separator {
   border-top: 1px solid #e4e9f2;
 }
+.scroll{
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 16px;
+  color: #222B45;
+  text-align: center;
+  margin:auto;
+  transition: transform 0.5s;
+}
 
 .footerText {
   color: #8f9bb3;
