@@ -1,12 +1,12 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
+import "./styles.css";
 const Content = () => {
   return (
     <div style={{ height: "100%", paddingTop: "64px", paddingBottom: "64px" }}>
       <Row className="ml-0">
-        <div className="dotStyle"></div>
-        <div className="littleDot"></div>
-        <p className="HiringCaption">We’re Hiring!</p>
+        <div className="pulsatingDot mr-3" />
+        <p className="HiringCaption mb-0">We’re Hiring!</p>
       </Row>
       <p style={{ marginBottom: "28px" }} className="Title">
         Work with us!
