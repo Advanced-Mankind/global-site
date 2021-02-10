@@ -7,7 +7,7 @@ const TeamCard = ({ title, name, imgDesktop, imgTablet, imgMobile }) => {
       <div className="cardMobile mt-4">
         <div>
           <div className="img-Team">
-            <img src={imgDesktop} className="img-fluid" />
+            <img src={imgDesktop} className="img-fluid" alt={imgDesktop} />
           </div>
           <div className=" mx-0 mt-3  containerName">
             <p className="title-Position mb-0">{title}</p>
@@ -19,7 +19,7 @@ const TeamCard = ({ title, name, imgDesktop, imgTablet, imgMobile }) => {
       <div className="cardTablet">
         <div>
           <div className="img-Team">
-            <img src={imgDesktop} className="img-fluid" />
+            <img src={imgDesktop} className="img-fluid" alt={imgDesktop} />
           </div>
           <div className=" mx-0 mt-3  containerName">
             <p className="title-Position mb-0">{title}</p>
@@ -31,7 +31,7 @@ const TeamCard = ({ title, name, imgDesktop, imgTablet, imgMobile }) => {
       <div className="cardDesktop ">
         <div>
           <div className="img-Team">
-            <img src={imgDesktop} className="img-fluid" />
+            <img src={imgDesktop} className="img-fluid" alt={imgDesktop} />
           </div>
           <div className=" mx-0 mt-3  containerName">
             <p className="title-Position mb-0">{title}</p>
