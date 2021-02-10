@@ -52,7 +52,7 @@ const Header = (props) => {
       ) : (
         <div className={` ${styles.header}`}>
           <Navbar className={`p-0 `}>
-            <Navbar.Brand>
+            <Navbar.Brand href="/">
               {" "}
               <div className="col-4 col-lg-8">
                 <img src={logo} alt="Logo" />

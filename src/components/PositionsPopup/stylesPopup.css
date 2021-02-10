@@ -7,13 +7,18 @@
   border-style: solid;
 }
 .popContainer {
-  background-color: #595aff;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: row;
-  max-width: 100%;
+  background-color: rgba(51, 51, 255, 0.8);
+  opacity: 1 !important;
 }
-
+.formContainerModal {
+  margin: 5% 0%;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 1px solid #fbfbfb;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 10px 20px 0 rgb(35 35 35 / 8%);
+}
 /* 
 // Extra small devices (portrait phones, less than 576px)
 // No media query since this is the default in Bootstrap
@@ -28,13 +33,6 @@
 /* 
 // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  .popContainer {
-    background-color: #595aff;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: row;
-    max-width: 70%;
-  }
 }
 /* 
 // Extra large devices (large desktops, 1200px and up) */

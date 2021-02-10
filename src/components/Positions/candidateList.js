@@ -21,8 +21,8 @@ export default CandidateList;
 
 function DesignerList(props) {
   const uxList = props.uxList;
-  const uxItems = uxList.map((item) => (
-    <ul>
+  const uxItems = uxList.map((item, i) => (
+    <ul key={i}>
       <li>{item}</li>
     </ul>
   ));

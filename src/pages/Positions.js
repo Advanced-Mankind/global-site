@@ -3,18 +3,10 @@ import { Container, Col, Button } from "react-bootstrap";
 import Layout from "../components/layout";
 import ContainerPositions from "../components/Positions/containerPositions";
 import styles from "../theme/index.module.css";
-
+import ContainerPopup from "../components/PositionsPopup/containerPopup";
 export default function Positions() {
-  // const positionsList = [
-  //   "UI/UX Designer",
-  //   "Project Manager",
-  //   "Copy Writer",
-  //   "Creative Director",
-  //   "Bisiness Analytics",
-  // ];
-  // const titleItems = positionsList.map((data) => (
-  //    <p>{data}</p>
-  // ));
+  const [modalShow, setModalShow] = React.useState(false);
+
   return (
     <Layout>
       <div className="row align-items-center m-0">
@@ -34,7 +26,10 @@ export default function Positions() {
                   only apply in your serious about the position.
                 </p>
               </div>
-              <div className="col-12" style={{ marginTop: "26px", marginLeft:"-12px" }}>
+              <div
+                className="col-12"
+                style={{ marginTop: "26px", marginLeft: "-12px" }}
+              >
                 <ul id={styles.positionsUl} className="ulPositions">
                   <li>Work from anywhere</li>
                   <li>Unique benefits</li>
@@ -42,8 +37,9 @@ export default function Positions() {
                   <li>$1000 annual tech bonus</li>
                 </ul>
               </div>
-              <Col xs="12" sm="6" lg="4">
+              <Col xs="12" sm="6">
                 <Button
+                  onClick={() => setModalShow(true)}
                   style={{
                     borderRadius: "34px",
                     backgroundColor: "#3333FF",
@@ -82,6 +78,7 @@ export default function Positions() {
           <ContainerPositions />
           <ContainerPositions />
         </Container>
+        <ContainerPopup show={modalShow} onHide={() => setModalShow(false)} />
       </div>
     </Layout>
   );

@@ -14,6 +14,32 @@ input::placeholder {
   padding: 0px 15px;
   position: relative;
 }
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 4px;
+  background-color: white;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(216, 216, 216, 1);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.cursorPointer:hover {
+  color: #0056b3;
+  text-decoration: underline;
+  cursor: pointer;
+}
 .header {
   padding: 24px 24px 24px 40px;
   min-height: 90px;
