@@ -89,10 +89,10 @@ export default function Home() {
       </div>
       <div>
         <div className={styles.curveBackground}>
-         <div  className="d-none d-sm-block text-center ">
+         <div  className="d-none d-sm-block text-center">
             <a href="#scroll">
               <p className={styles.scroll}>SCROLL</p>
-              <img src={require("../../static/arrowDown.png")} alt=""></img>
+              <img src={require("../../static/arrowScroll.svg")} alt=""></img>
             </a>
          </div>
           <Container id="scroll">

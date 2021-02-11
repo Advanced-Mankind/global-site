@@ -270,7 +270,6 @@ input::placeholder {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding-top: 8%;
     position: relative;
     top: -30px;
   }
@@ -293,7 +292,6 @@ input::placeholder {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding-top: 8%;
   }
 
   .logoHeader {
@@ -321,8 +319,19 @@ input::placeholder {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding-top: 10%;
+    padding-top: 15%;
     top: -120px;
+  }
+  .scroll{
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: 16px;
+    color: #222B45;
+    text-align: center;
+    margin: auto;
+    margin-top: -250px;
+    transition-delay: 0.5s;
+    transition: transform .2s ease-in-out, opacity .2s ease-in-out;
   }
 
   .title {
