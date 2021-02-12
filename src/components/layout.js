@@ -9,6 +9,8 @@ import Footer from "./Footer";
 import Header from "./Header";
 import CookieConsent from "react-cookie-consent";
 import "./layout.css";
+import ReactNotification from "react-notifications-component";
+import "react-notifications-component/dist/theme.css";
 const Layout = ({ children }) => {
   const [theme] = useDarkMode();
   const [open, setOpen] = useState(false);
@@ -21,6 +23,7 @@ const Layout = ({ children }) => {
     <AuthContext>
       <ThemeProvider theme={themeMode}>
         <div className={`${styles.body} container-fluid p-0`}>
+          <ReactNotification />
           <CookieConsent
             location="bottom"
             buttonText="ACCEPT COOKIES"

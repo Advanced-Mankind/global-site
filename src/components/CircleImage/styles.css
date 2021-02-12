@@ -1,12 +1,16 @@
-.iconStyle{
-    background-color: #507EFF;
-    box-sizing: border-box;
-    height: 57px;
-    width: 57px;
-    border: 2px solid #0095FF;
+.iconStyle {
+  background-color: #507eff;
+  box-sizing: border-box;
+  height: 57px;
+  width: 57px;
+  border: 2px solid #0095ff;
 }
 
-.iconContainer{
-    display: flex;
-    flex-direction: row;
+.iconContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.avatar-focused {
+  filter: grayscale(100%);
 }

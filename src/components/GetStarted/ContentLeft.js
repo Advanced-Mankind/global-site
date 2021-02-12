@@ -1,6 +1,32 @@
 import React from "react";
 import CircleImage from "../CircleImage/CircleImage";
 import "./GetStarted.css";
+const data = [
+  {
+    name: "Test Name 0",
+    text: `"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book"`,
+    company: "Object Edge",
+    img: require("../../../static/profile1.png"),
+  },
+  {
+    name: "Test Name 1",
+    text: `"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"`,
+    company: "Object Edge",
+    img: require("../../../static/profile1.png"),
+  },
+  {
+    name: "Test Name 2",
+    text: `"Lorem Ipsum is simply dummy text of the printing and typesetting industry"`,
+    company: "Object Edge",
+    img: require("../../../static/profile1.png"),
+  },
+  {
+    name: "Test Name 3",
+    text: `"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"`,
+    company: "Object Edge",
+    img: require("../../../static/profile1.png"),
+  },
+];
 const ContentLeft = () => {
   return (
     <div className="contentLeftContainer">
@@ -18,24 +44,9 @@ const ContentLeft = () => {
       </ul>
       <hr />
       <h3 className="headline">Delivering valuable experiences is our jam.</h3>
-      <p className="quote">
-        “We value our partnership with Advncd Manknd. Their team is always
-        responsive to our needs and provide extraordinary service on every
-        engagement.”
-      </p>
-      <div className="w-100 d-flex">
-        <h4 className="captionBold">Kelly Rader</h4>
-        <h4 className="caption">, Object Edge</h4>
-      </div>
+
       <div className="iconContainer">
-        <CircleImage
-          img={[
-            require("../../../static/profile1.png"),
-            require("../../../static/profile2.png"),
-            require("../../../static/profile3.png"),
-            require("../../../static/profile4.png"),
-          ]}
-        />
+        <CircleImage data={data} />
       </div>
     </div>
   );

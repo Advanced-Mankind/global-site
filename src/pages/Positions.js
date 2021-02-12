@@ -4,6 +4,7 @@ import Layout from "../components/layout";
 import ContainerPositions from "../components/Positions/containerPositions";
 import styles from "../theme/index.module.css";
 import ContainerPopup from "../components/PositionsPopup/containerPopup";
+import CandidateCard from "../components/Positions/candidateCard";
 export default function Positions() {
   const [modalShow, setModalShow] = React.useState(false);
 
@@ -79,11 +80,57 @@ export default function Positions() {
           </p>
         </Col>
         <Container>
-          <ContainerPositions />
-          <ContainerPositions />
-          <ContainerPositions />
+          <Col sm="12" md="12" lg="12" className="cardDesktop">
+            <div className="textCard">
+              <CandidateCard setShow={setModalShow} />
+            </div>
+          </Col>
+          <Col sm="12" md="12" lg="12" className="cardTablet">
+            <div className="textCard">
+              <CandidateCard setShow={setModalShow} />
+            </div>
+          </Col>
+          <Col sm="12" md="12" lg="12" className="cardMobile">
+            <div className="textCard">
+              <CandidateCard setShow={setModalShow} />
+            </div>
+          </Col>
+          <Col sm="12" md="12" lg="12" className="cardDesktop">
+            <div className="textCard">
+              <CandidateCard setShow={setModalShow} />
+            </div>
+          </Col>
+          <Col sm="12" md="12" lg="12" className="cardTablet">
+            <div className="textCard">
+              <CandidateCard setShow={setModalShow} />
+            </div>
+          </Col>
+          <Col sm="12" md="12" lg="12" className="cardMobile">
+            <div className="textCard">
+              <CandidateCard setShow={setModalShow} />
+            </div>
+          </Col>
+          <Col sm="12" md="12" lg="12" className="cardDesktop">
+            <div className="textCard">
+              <CandidateCard setShow={setModalShow} />
+            </div>
+          </Col>
+          <Col sm="12" md="12" lg="12" className="cardTablet">
+            <div className="textCard">
+              <CandidateCard setShow={setModalShow} />
+            </div>
+          </Col>
+          <Col sm="12" md="12" lg="12" className="cardMobile">
+            <div className="textCard">
+              <CandidateCard />
+            </div>
+          </Col>
         </Container>
-        <ContainerPopup show={modalShow} onHide={() => setModalShow(false)} />
+        <ContainerPopup
+          show={modalShow}
+          setShow={setModalShow}
+          onHide={() => setModalShow(false)}
+        />
       </div>
     </Layout>
   );

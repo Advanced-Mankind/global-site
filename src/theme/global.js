@@ -2,7 +2,9 @@
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
-
+  html {
+  scroll-behavior: smooth;
+}
   body {
     background: ${({ theme }) => theme.body};
     color: ${({ theme }) => theme.text} ;
@@ -13,6 +15,7 @@ export const GlobalStyles = createGlobalStyle`
     font-family: 'Open Sans', sans-serif;
     max-width: 100vw;
     overflow-x: hidden; 
+    
   }
   .title {
     color: ${({ theme }) => theme.title} ;
@@ -20,7 +23,9 @@ export const GlobalStyles = createGlobalStyle`
   `;
 
 export const GlobalStylesOverFlow = createGlobalStyle`
-
+  html {
+  scroll-behavior: smooth;
+}
   body {
     background: ${({ theme }) => theme.body};
     color: ${({ theme }) => theme.text} ;

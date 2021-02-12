@@ -3,8 +3,9 @@ import { Collapse, Button, Container, Row, Col } from "react-bootstrap";
 import "./styles.css";
 import CandidateList from "../Positions/candidateList";
 
-const CandidateCard = ({ title }) => {
+const CandidateCard = (props) => {
   const [open, setOpen] = useState(false);
+
   return (
     <Container>
       <Row>
@@ -39,6 +40,7 @@ const CandidateCard = ({ title }) => {
               <CandidateList />
               <Col className="cardMobile" sm="12">
                 <Button
+                  onClick={() => props.setShow(true)}
                   style={{
                     borderRadius: "34px",
                     backgroundColor: "#3333FF",
@@ -59,6 +61,7 @@ const CandidateCard = ({ title }) => {
               </Col>
               <Col md="12" className="cardTablet">
                 <Button
+                  onClick={() => props.setShow(true)}
                   className="col col-sm-2 "
                   style={{
                     borderRadius: "34px",
@@ -81,6 +84,7 @@ const CandidateCard = ({ title }) => {
 
               <Col lg="8" className="cardDesktop">
                 <Button
+                  onClick={() => props.setShow(true)}
                   className="col col-sm-2 "
                   style={{
                     borderRadius: "34px",

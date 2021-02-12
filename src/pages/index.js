@@ -4,6 +4,7 @@ import "normalize.css";
 import React from "react";
 import Home from "../components/Home";
 import Layout from "../components/layout";
+
 const App = () => {
   return (
     <Layout>

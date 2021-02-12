@@ -29,6 +29,14 @@ export default function Home() {
     const isMobile = useMediaQuery({ maxWidth: 767 });
     return isMobile ? children : null;
   };
+  const messagesEndRef = React.useRef();
+  const scrollToBottom = () => {
+    console.log(messagesEndRef);
+    messagesEndRef &&
+      messagesEndRef.current &&
+      messagesEndRef.current.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <div
       style={{
@@ -89,12 +97,12 @@ export default function Home() {
       </div>
       <div>
         <div className={styles.curveBackground}>
-         <div  className="d-none d-sm-block text-center">
-            <a href="#scroll">
+          <div className="d-none d-sm-block text-center">
+            <div className={styles.scrollIcon} onClick={() => scrollToBottom()}>
               <p className={styles.scroll}>SCROLL</p>
               <img src={require("../../static/arrowScroll.svg")} alt=""></img>
-            </a>
-         </div>
+            </div>
+          </div>
           <Container id="scroll">
             <div className="col-12">
               <h1 className={styles.title32px} style={{ textAlign: "center" }}>
@@ -348,7 +356,7 @@ export default function Home() {
             </Row>
           </Container>
         </div>
-        <div style={{ marginTop: "5%" }}>
+        <div ref={messagesEndRef} style={{ marginTop: "5%" }}>
           <GetStarted />
         </div>
       </div>

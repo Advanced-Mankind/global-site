@@ -4,7 +4,9 @@ import { Button, Col } from "react-bootstrap";
 import Select from "react-select";
 import "../../theme/index.module.css";
 import "./GetStarted.css";
-
+import axios from "axios";
+import Spinner from "react-bootstrap/Spinner";
+import { store } from "react-notifications-component";
 const options = [
   { value: "México", label: "México" },
   { value: "USA", label: "USA" },
@@ -53,10 +55,36 @@ const Form = () => {
             return errors;
           }}
           onSubmit={(values, { setSubmitting }) => {
-            setTimeout(() => {
-              alert(JSON.stringify(values, null, 2));
-              setSubmitting(false);
-            }, 400);
+            axios
+              .post(
+                "https://us-central1-advanced-global-site.cloudfunctions.net/app/sendForm",
+                values
+              )
+              .then(function (response) {
+                if (response.status === 201) {
+                  store.addNotification({
+                    title: "Success",
+                    message: "information sent correctly",
+                    type: "success",
+                    insert: "top",
+                    container: "top-right",
+                    animationIn: ["animate__animated", "animate__fadeIn"],
+                    animationOut: ["animate__animated", "animate__fadeOut"],
+                    dismiss: {
+                      duration: 5000,
+                      onScreen: true,
+                    },
+                  });
+                } else {
+                }
+
+                setSubmitting(false);
+              })
+              .catch(function (error) {
+                console.log(error);
+
+                setSubmitting(false);
+              });
           }}
         >
           {({
@@ -187,9 +215,14 @@ const Form = () => {
                     textAlign: "center",
                     padding: "15px",
                   }}
+                  type="submit"
                   disabled={isSubmitting}
                 >
-                  SUBMIT
+                  {isSubmitting ? (
+                    <Spinner animation="border" variant="primary" />
+                  ) : (
+                    "SUBMIT"
+                  )}
                 </Button>
               </Col>
             </form>

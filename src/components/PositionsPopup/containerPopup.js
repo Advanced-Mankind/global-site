@@ -40,7 +40,7 @@ const ContainerPopup = (props) => {
                 justifyContent: "center",
               }}
             >
-              <PositionsPopup />
+              <PositionsPopup setShow={props.setShow} />
             </Col>
           </Row>
         </Container>

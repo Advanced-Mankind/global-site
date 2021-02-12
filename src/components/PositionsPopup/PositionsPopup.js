@@ -4,7 +4,7 @@ import React from "react";
 import { Col, Button } from "react-bootstrap";
 import Select from "react-select";
 import "./stylesPopup.css";
-
+import { store } from "react-notifications-component";
 const positionsOptions = [
   { value: "UI/UX", label: "UI/UX Designer" },
   { value: "Project Manager", label: "Project Manager" },
@@ -18,7 +18,7 @@ const salaryOptions = [
   { value: "30", label: "$30,000" },
   { value: "40", label: "$40,000" },
 ];
-const PositionsPopup = () => {
+const PositionsPopup = (props) => {
   return (
     <div className="w-100">
       <Formik
@@ -72,10 +72,21 @@ const PositionsPopup = () => {
           return errors;
         }}
         onSubmit={(values, { setSubmitting }) => {
-          setTimeout(() => {
-            alert(JSON.stringify(values, null, 2));
-            setSubmitting(false);
-          }, 400);
+          props.setShow(false);
+          store.addNotification({
+            title: "Success",
+            message: "information sent correctly",
+            type: "success",
+            insert: "top",
+            container: "top-right",
+            animationIn: ["animate__animated", "animate__fadeIn"],
+            animationOut: ["animate__animated", "animate__fadeOut"],
+            dismiss: {
+              duration: 5000,
+              onScreen: true,
+            },
+          });
+          setSubmitting(false);
         }}
       >
         {({
@@ -236,6 +247,7 @@ const PositionsPopup = () => {
                   padding: "15px",
                 }}
                 disabled={isSubmitting}
+                type="submit"
               >
                 SUBMIT
               </Button>
