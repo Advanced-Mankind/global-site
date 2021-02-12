@@ -28,7 +28,7 @@ const ContentRight = () => {
           <Col xs={2} md={2} xl={1}>
             <img
               className="avatar"
-              src={require("../../../static/people.png")}
+              src={require("../../../static/profile3.png")}
               alt="Ilustration"
             />
           </Col>
@@ -36,14 +36,12 @@ const ContentRight = () => {
             <Row>
               <Col xs={12}>
                 <p className="QuoteCaption">
-                  “Would love to have a quote here from a client for happy
-                  customer talking about how great it was to work with us. Lorem
-                  upsum dolor un met lorem ipsum dolor un met.”
+                “We value our partnership with Advncd Manknd. Their team is always responsive to our needs and provide extraordinary service on every engagement.”
                 </p>
               </Col>
                 <div className="w-100 d-flex">
-                  <h4 className="QuoteCaptionBold">Paul Demark</h4>
-                  <h4 className="caption">, VP of Company Name</h4>
+                  <h4 className="QuoteCaptionBold">Kelly Rader</h4>
+                  <h4 className="caption">, Object Edge</h4>
                 </div>
             </Row>
           </Col>
