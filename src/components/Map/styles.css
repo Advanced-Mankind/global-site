@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+
 .bg-blue {
   border-radius: 10px;
   background-color: #3333ff;
@@ -12,12 +13,14 @@
   line-height: 20px;
   text-align: center;
 }
+
 .border-dashed {
   height: 2px;
   width: 100%;
   border: 1px dashed #000000;
   opacity: 0.3;
 }
+
 .know-us-title {
   color: #222b45;
   font-family: "Open Sans";
@@ -26,6 +29,7 @@
   letter-spacing: 0;
   line-height: 48px;
 }
+
 .know-us-p {
   color: #222b45;
   font-family: "Open Sans";
@@ -33,6 +37,7 @@
   letter-spacing: 0;
   line-height: 20px;
 }
+
 .know-us-small {
   color: #1f1f1f;
   font-family: "Open Sans";
@@ -42,6 +47,7 @@
   letter-spacing: 0;
   line-height: 16px;
 }
+
 .know-us-subTitle {
   color: #1f1f1f;
   font-family: "Open Sans";
@@ -49,6 +55,7 @@
   letter-spacing: 0;
   line-height: 24px;
 }
+
 .chose-small {
   color: #1f1f1f;
   font-family: "Open Sans";
@@ -57,6 +64,7 @@
   letter-spacing: 0;
   line-height: 16px;
 }
+
 .chose-p {
   color: #1f1f1f;
   font-family: "Open Sans";
@@ -65,6 +73,7 @@
   letter-spacing: 0;
   line-height: 16px;
 }
+
 .slider-ppl {
   color: #3333ff;
   font-family: "Open Sans";
@@ -73,6 +82,7 @@
   line-height: 16px;
   text-align: center;
 }
+
 .slider-ppls {
   color: #222b45;
   font-family: "Open Sans";
@@ -82,13 +92,16 @@
   line-height: 24px;
   text-align: center;
 }
+
 .img-Team {
   min-height: 357px;
+  min-width: 100%;
   border: 1px solid #fbfbfb;
   border-radius: 8px;
   background-color: #ffffff;
   box-shadow: 0 10px 20px 0 rgba(35, 35, 35, 0.08);
 }
+
 .img-Team img {
   border-radius: 8px;
 }
@@ -100,6 +113,7 @@
   font-weight: bold;
   line-height: 16px;
 }
+
 .name {
   color: #222b45;
   font-family: "Open Sans";
@@ -124,9 +138,11 @@
   .img-Team {
     height: 428px;
   }
+
   .cardMobile {
     display: none;
   }
+
   .cardTablet {
     display: flex;
   }
@@ -136,13 +152,16 @@
   .cardMobile {
     display: none;
   }
+
   .cardTablet {
     display: none;
   }
+
   .cardDesktop {
     display: flex;
   }
 }
+
 @media (min-width: 1200px) {
   .img-Container {
     position: relative;

@@ -1,10 +1,12 @@
 import { Formik } from "formik";
-
 import React from "react";
-import { Col, Button } from "react-bootstrap";
-import Select from "react-select";
-import "./stylesPopup.css";
+import { Button, Col } from "react-bootstrap";
+import Form from "react-bootstrap/Form";
+import { useDropzone } from "react-dropzone";
 import { store } from "react-notifications-component";
+import Select from "react-select";
+import * as Yup from "yup";
+import "./stylesPopup.css";
 const positionsOptions = [
   { value: "UI/UX", label: "UI/UX Designer" },
   { value: "Project Manager", label: "Project Manager" },
@@ -18,7 +20,44 @@ const salaryOptions = [
   { value: "30", label: "$30,000" },
   { value: "40", label: "$40,000" },
 ];
+
+const SignupSchema = Yup.object().shape({
+  firstName: Yup.string().required("Required"),
+  lastName: Yup.string().required("Required"),
+  email: Yup.string().email("Invalid email").required("Required"),
+  website: Yup.string().required("Required"),
+  linkedIn: Yup.string().required("Required"),
+  applying: Yup.string().required("Required"),
+  salary: Yup.string().required("Required"),
+
+  message: Yup.string().required("Required"),
+});
+
 const PositionsPopup = (props) => {
+  const {
+    acceptedFiles,
+    getRootProps,
+    getInputProps,
+    isDragActive,
+    isDragAccept,
+    isDragReject,
+  } = useDropzone({
+    accept: "image/*,.pdf",
+  });
+  const files = acceptedFiles.map((file) => (
+    <li key={file.path}>
+      {file.path} - {file.size} bytes
+    </li>
+  ));
+  const style = React.useMemo(
+    () => ({
+      ...baseStyle,
+      ...(isDragActive ? activeStyle : {}),
+      ...(isDragAccept ? acceptStyle : {}),
+      ...(isDragReject ? rejectStyle : {}),
+    }),
+    [isDragActive, isDragReject, isDragAccept]
+  );
   return (
     <div className="w-100">
       <Formik
@@ -33,48 +72,13 @@ const PositionsPopup = (props) => {
           resume: "",
           message: "",
         }}
-        validate={(values) => {
-          const errors = {};
-          if (!values.firstName) {
-            errors.firstName = "Required";
-          }
-          if (!values.lastName) {
-            errors.lastName = "Required";
-          }
-
-          if (!values.email) {
-            errors.email = "Required";
-          } else if (
-            !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
-          ) {
-            errors.email = "Invalid email address";
-          }
-          if (!values.website) {
-            errors.website = "Required";
-          }
-          if (!values.linkedIn) {
-            errors.linkedIn = "Required";
-          }
-
-          if (!values.applying) {
-            errors.applying = "Required";
-          }
-          if (!values.salary) {
-            errors.salary = "Required";
-          }
-          if (!values.resume) {
-            errors.resume = "Required";
-          }
-          if (!values.message) {
-            errors.message = "Required";
-          }
-          console.log(errors);
-          return errors;
-        }}
+        validationSchema={SignupSchema}
         onSubmit={(values, { setSubmitting }) => {
+          values.resume = acceptedFiles[0];
+          console.dir(values);
           props.setShow(false);
           store.addNotification({
-            title: "Success",
+            title: "Success!",
             message: "information sent correctly",
             type: "success",
             insert: "top",
@@ -99,80 +103,94 @@ const PositionsPopup = (props) => {
           isSubmitting,
           /* and other goodies */
         }) => (
-          <form onSubmit={handleSubmit}>
-            <div className="form-row mt-4">
-              <Col xs={12} sm={6} className="mt-2 mb-2">
-                <input
+          <Form noValidate onSubmit={handleSubmit}>
+            <Form.Row>
+              <Form.Group as={Col} xs="12" sm="6">
+                <Form.Control
                   type="text"
+                  size="lg"
                   name="firstName"
                   placeholder="First Name"
-                  className="form-control form-control-lg"
+                  value={values.firstName}
                   onChange={handleChange}
                   onBlur={handleBlur}
-                  value={values.firstName}
+                  isValid={touched.firstName && !errors.firstName}
+                  isInvalid={!!errors.firstName}
                 />
-                {errors.firstName && touched.firstName && errors.firstName}
-              </Col>
-              <Col xs={12} sm={6} className="mt-2">
-                <input
+                <Form.Control.Feedback type="invalid">
+                  {errors.firstName}
+                </Form.Control.Feedback>
+              </Form.Group>
+              <Form.Group as={Col} xs="12" sm="6">
+                <Form.Control
                   type="text"
+                  size="lg"
                   name="lastName"
                   placeholder="Last Name"
-                  className="form-control form-control-lg"
-                  onChange={handleChange}
-                  onBlur={handleBlur}
                   value={values.lastName}
+                  onBlur={handleBlur}
+                  onChange={handleChange}
+                  isValid={touched.lastName && !errors.lastName}
+                  isInvalid={!!errors.lastName}
                 />
-                {errors.lastName && touched.lastName && errors.lastName}
-              </Col>
-            </div>
-            <div className="form-row mt-4">
-              <Col xs={12}>
-                <input
+                <Form.Control.Feedback type="invalid">
+                  {errors.lastName}
+                </Form.Control.Feedback>
+              </Form.Group>
+              <Form.Group as={Col} xs="12" className="mt-3">
+                <Form.Control
                   type="email"
+                  size="lg"
                   name="email"
                   placeholder="Email"
-                  className="form-control form-control-lg"
-                  onChange={handleChange}
-                  onBlur={handleBlur}
                   value={values.email}
+                  onBlur={handleBlur}
+                  onChange={handleChange}
+                  isValid={touched.email && !errors.email}
+                  isInvalid={!!errors.email}
                 />
-                {errors.email && touched.email && errors.email}
-              </Col>
-            </div>
-            <div className="form-row mt-4">
-              <Col>
-                <input
+
+                <Form.Control.Feedback type="invalid">
+                  {errors.email}
+                </Form.Control.Feedback>
+              </Form.Group>
+              <Form.Group as={Col} xs="12" className="mt-3">
+                <Form.Control
                   type="text"
+                  size="lg"
                   name="website"
                   placeholder="Website"
-                  className="form-control form-control-lg"
-                  onChange={handleChange}
-                  onBlur={handleBlur}
                   value={values.website}
+                  onBlur={handleBlur}
+                  onChange={handleChange}
+                  isValid={touched.website && !errors.website}
+                  isInvalid={!!errors.website}
                 />
-                {errors.website && touched.website && errors.website}
-              </Col>
-            </div>
-            <div className="form-row mt-4">
-              <Col>
-                <input
+
+                <Form.Control.Feedback type="invalid">
+                  {errors.website}
+                </Form.Control.Feedback>
+              </Form.Group>
+              <Form.Group as={Col} xs="12" className="mt-3">
+                <Form.Control
+                  size="lg"
                   type="text"
                   name="linkedIn"
                   placeholder="LinkedIn URL"
-                  className="form-control form-control-lg"
-                  onChange={handleChange}
                   onBlur={handleBlur}
                   value={values.linkedIn}
+                  onChange={handleChange}
+                  isValid={touched.linkedIn && !errors.linkedIn}
+                  isInvalid={!!errors.linkedIn}
                 />
-                {errors.linkedIn && touched.linkedIn && errors.linkedIn}
-              </Col>
-            </div>
-            <div className="form-row mt-4">
-              <Col xs={12} sm={6} className="mb-4">
+
+                <Form.Control.Feedback type="invalid">
+                  {errors.linkedIn}
+                </Form.Control.Feedback>
+              </Form.Group>
+              <Form.Group as={Col} xs="12" sm="6" className="mt-3">
                 <Select
                   styles={customStyles}
-                  //className="formMessage"
                   placeholder="Applying For..."
                   options={positionsOptions}
                   name="applying"
@@ -180,79 +198,101 @@ const PositionsPopup = (props) => {
                     handleChange("applying")(selectedOption.value);
                   }}
                 />
-              </Col>
-              <Col xs={12} sm={6}>
-                <Select
-                  styles={customStyles}
-                  placeholder="Salary Needs"
-                  options={salaryOptions}
+                <Form.Control.Feedback type="invalid">
+                  {errors.applying}
+                </Form.Control.Feedback>
+              </Form.Group>
+              <Form.Group as={Col} xs="12" sm="6" className="mt-3">
+                <Form.Control
+                  size="lg"
+                  type="number"
                   name="salary"
-                  onChange={(selectedOption) => {
-                    handleChange("salary")(selectedOption.value);
-                  }}
-                />
-              </Col>
-            </div>
-            <div className="form-row">
-              <Col>
-                <input
-                  type="text"
-                  name="resume"
-                  placeholder="Resume"
-                  className="form-control form-control-lg"
-                  onChange={handleChange}
+                  min="1"
                   onBlur={handleBlur}
-                  value={values.resume}
-                />
-                {errors.resume && touched.resume && errors.resume}
-              </Col>
-            </div>
-            <div className="form-row mt-4">
-              <Col>
-                <input
-                  style={{ height: "104px" }}
-                  type="text"
-                  name="message"
-                  placeholder="Message"
-                  className="form-control form-control-lg"
+                  step="any"
+                  placeholder="Salary Need"
+                  value={values.salary}
                   onChange={handleChange}
-                  onBlur={handleBlur}
-                  value={values.message}
+                  isValid={touched.salary && !errors.salary}
+                  isInvalid={!!errors.salary}
                 />
-                {errors.message && touched.message && errors.message}
-              </Col>
-            </div>
+                <Form.Control.Feedback type="invalid">
+                  {errors.salary}
+                </Form.Control.Feedback>
+              </Form.Group>
+              <Form.Group as={Col} xs="12" className="mt-3">
+                <div {...getRootProps({ style })}>
+                  <input {...getInputProps()} />
 
-            <div className="custom-control custom-checkbox">
-              <input
-                type="checkbox"
-                className="custom-control-input"
-                id="customCheck1"
-                name="customCheck1"
-              />
-            </div>
-            <Col sm="12" md="12" lg="12">
-              <Button
-                style={{
-                  borderRadius: "34px",
-                  backgroundColor: "#3333FF",
-                  borderColor: "#3333FF",
-                  width: "100%",
-                  color: "#FFFFFF",
-                  fontFamily: "Open Sans",
-                  fontSize: "18px",
-                  fontWeight: "bold",
-                  lineHeight: "24px",
-                  textAlign: "center",
-                  padding: "15px",
-                }}
-                disabled={isSubmitting}
-                type="submit"
-              >
-                SUBMIT
-              </Button>
-            </Col>
-          </form>
+                  <p className="mb-0">Resume</p>
+                  <p
+                    style={{
+                      color: "black",
+                      fontFamily: "Open Sans",
+                      fontSize: "12px",
+                      letterSpacing: "0",
+                      lineHeight: "16px",
+                    }}
+                  >
+                    Dop File here or{" "}
+                    <span
+                      style={{
+                        color: "#3366FF",
+                        fontFamily: "Open Sans",
+                        fontSize: "12px",
+                        letterSpacing: "0",
+                        lineHeight: "16px",
+                      }}
+                    >
+                      Select Files
+                    </span>
+                  </p>
+                  <aside>
+                    <ul>{files}</ul>
+                  </aside>
+                </div>
+                <Form.Control.Feedback type="invalid">
+                  {errors.salary}
+                </Form.Control.Feedback>
+              </Form.Group>
+              <Form.Group as={Col} xs="12" className="mt-3">
+                <Form.Control
+                  as="textarea"
+                  style={{ height: "104px" }}
+                  name="message"
+                  onBlur={handleBlur}
+                  placeholder="Message"
+                  value={values.message}
+                  onChange={handleChange}
+                  isValid={touched.message && !errors.message}
+                  isInvalid={!!errors.message}
+                />
+                <Form.Control.Feedback type="invalid">
+                  {errors.message}
+                </Form.Control.Feedback>
+              </Form.Group>
+            </Form.Row>
+            <Button
+              className="mt-4"
+              style={{
+                borderRadius: "34px",
+                backgroundColor: "#3333FF",
+                borderColor: "#3333FF",
+                width: "100%",
+                color: "#FFFFFF",
+                fontFamily: "Open Sans",
+                fontSize: "18px",
+                fontWeight: "bold",
+                lineHeight: "24px",
+                textAlign: "center",
+                padding: "15px",
+              }}
+              disabled={isSubmitting}
+              type="submit"
+            >
+              SUBMIT
+            </Button>
+          </Form>
         )}
       </Formik>
     </div>
@@ -286,6 +326,31 @@ const customStyles = {
   // placeholder:()=>({
   //   color:"red !important",
   // })
+};
+const baseStyle = {
+  flex: 1,
+  display: "flex",
+  flexDirection: "column",
+
+  padding: "11px 16px",
+  border: "1px solid #ced4da",
+  borderRadius: 4,
+  backgroundColor: "#F7F9FC",
+  color: "#bdbdbd",
+  outline: "none",
+  transition: "border .24s ease-in-out",
+};
+
+const activeStyle = {
+  borderColor: "#2196f3",
+};
+
+const acceptStyle = {
+  borderColor: "#00e676",
+};
+
+const rejectStyle = {
+  borderColor: "#ff1744",
 };
 
 export default PositionsPopup;

@@ -1,19 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+
 .body {
   min-height: 100vh;
   position: relative;
 }
+
 input::placeholder {
   color: #8f9bb3 !important;
   font-family: "Open Sans";
   font-size: 15px;
   letter-spacing: 0;
 }
+
 .leftContent {
   z-index: 10;
   padding: 0px 15px;
   position: relative;
 }
+
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
@@ -35,11 +39,13 @@ input::placeholder {
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+
 .cursorPointer:hover {
   color: #0056b3;
   text-decoration: underline;
   cursor: pointer;
 }
+
 .header {
   position: fixed;
   width: 100%;
@@ -51,12 +57,15 @@ input::placeholder {
   background-color: #ffffff;
   box-shadow: 0 10px 20px 0 rgba(35, 35, 35, 0.08);
 }
+
 .footer-Text {
   float: right;
 }
+
 .background_mobile {
   max-width: 100%;
 }
+
 .getContainer {
   border-radius: 10px;
   background-color: #3333ff;
@@ -73,6 +82,7 @@ input::placeholder {
   letter-spacing: 0;
   line-height: 48px;
 }
+
 .getParagraph {
   color: white;
   font-family: "Open Sans";
@@ -82,6 +92,11 @@ input::placeholder {
   font-weight: lighter;
 }
 
+.was-validated .form-control:valid,
+.form-control.is-valid {
+  background-image: unset !important;
+}
+
 .title {
   color: #222b45;
   font-family: "Open Sans";
@@ -89,6 +104,7 @@ input::placeholder {
   font-weight: bold;
   letter-spacing: 0;
   line-height: 48px;
+  word-break: break-word;
 }
 
 .title32px {
@@ -100,6 +116,7 @@ input::placeholder {
   line-height: 40px;
   text-align: center;
 }
+
 .subtitle22px {
   color: #222b45;
   font-family: "Open Sans";
@@ -108,11 +125,13 @@ input::placeholder {
   letter-spacing: 0;
   line-height: 32px;
 }
+
 .footer {
   height: 13vh;
   position: absolute;
   width: 100%;
 }
+
 .subTitle {
   font-size: 15px;
   letter-spacing: 0;
@@ -124,6 +143,7 @@ input::placeholder {
 .separator {
   border-top: 1px solid #e4e9f2;
 }
+
 .scroll {
   font-size: 12px;
   letter-spacing: 0;
@@ -133,6 +153,7 @@ input::placeholder {
   margin: auto;
   transition: transform 0.5s;
 }
+
 .scrollIcon {
   cursor: pointer;
   position: relative;
@@ -144,9 +165,11 @@ input::placeholder {
   0% {
     transform: translate(0);
   }
+
   20% {
     transform: translateY(15px);
   }
+
   40% {
     transform: translate(0);
   }
@@ -156,9 +179,11 @@ input::placeholder {
   0% {
     transform: translate(0);
   }
+
   20% {
     transform: translateY(15px);
   }
+
   40% {
     transform: translate(0);
   }
@@ -168,9 +193,11 @@ input::placeholder {
   0% {
     height: 40px;
   }
+
   30% {
     height: 70px;
   }
+
   60% {
     height: 40px;
   }
@@ -180,13 +207,16 @@ input::placeholder {
   0% {
     height: 40px;
   }
+
   30% {
     height: 70px;
   }
+
   60% {
     height: 40px;
   }
 }
+
 .footerText {
   color: #8f9bb3;
   font-family: "Open Sans";
@@ -197,17 +227,21 @@ input::placeholder {
 
   align-items: center !important;
 }
+
 .logo {
   max-width: 100%;
 }
+
 .logoHeader {
   width: 135px;
   height: 42px;
 }
+
 .logoFooter {
   width: 40px;
   height: 40px;
 }
+
 .footersectiontext {
   color: #222b45;
   font-family: "Open Sans";
@@ -216,6 +250,7 @@ input::placeholder {
   letter-spacing: 0;
   line-height: 16px;
 }
+
 .footersectiontextbold {
   color: #222b45;
   font-family: "Open Sans";
@@ -224,6 +259,7 @@ input::placeholder {
   letter-spacing: 0;
   line-height: 24px;
 }
+
 .title {
   font-family: "Open Sans";
   font-size: 36px;
@@ -248,6 +284,7 @@ input::placeholder {
   max-width: 100%;
   position: relative;
 }
+
 .curveBackground {
   padding-top: 5%;
 }
@@ -259,34 +296,48 @@ input::placeholder {
   margin-bottom: 17.5px;
   line-height: 20px;
 }
+
 #positionsUl li:nth-child(1) {
   list-style-image: url("../../static/globe2.svg");
   color: #222b45;
 }
+
 #positionsUl li:nth-child(2) {
   list-style-image: url("../../static/heart2.svg");
   color: #222b45;
 }
+
 #positionsUl li:nth-child(3) {
   list-style-image: url("../../static/fire2.svg");
   color: #222b45;
+  position: relative;
+  left: -3px;
+  padding-left: 3px;
 }
+
 #positionsUl li:nth-child(4) {
   list-style-image: url("../../static/gift2.svg");
   color: #222b45;
+  position: relative;
+  left: -3px;
+  padding-left: 3px;
 }
+
 #positionsUl li:nth-child(1) {
   list-style-image: url("../../static/globe2.svg");
   color: #222b45;
 }
+
 #positionsUl li:nth-child(2) {
   list-style-image: url("../../static/heart2.svg");
   color: #222b45;
 }
+
 #positionsUl li:nth-child(3) {
   list-style-image: url("../../static/fire2.svg");
   color: #222b45;
 }
+
 #positionsUl li:nth-child(4) {
   list-style-image: url("../../static/gift2.svg");
   color: #222b45;
@@ -301,9 +352,11 @@ input::placeholder {
   .curveBackgroundBottom {
     bottom: 0vh;
   }
+
   .background_mobile {
     display: none;
   }
+
   .background_tablet {
     max-width: 100%;
     position: relative;
@@ -311,6 +364,7 @@ input::placeholder {
     bottom: 0;
   }
 }
+
 /* 
 // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
@@ -326,13 +380,16 @@ input::placeholder {
     position: relative;
     top: -30px;
   }
+
   .curveBackgroundBottom {
     bottom: -20vh;
   }
+
   .footerText {
     text-align: right;
   }
 }
+
 /* 
 // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
@@ -355,11 +412,13 @@ input::placeholder {
   .footerText {
     text-align: right;
   }
+
   .logoFooter {
     width: 60px;
     height: 60px;
   }
 }
+
 /* 
 // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
@@ -375,6 +434,7 @@ input::placeholder {
     padding-top: 15%;
     top: -120px;
   }
+
   .scroll {
     font-size: 12px;
     letter-spacing: 0;
@@ -390,15 +450,18 @@ input::placeholder {
   .title {
     font-size: 36px;
   }
+
   .leftContent {
     width: 54%;
     margin: auto;
   }
+
   .background_tablet {
     max-width: 70%;
     position: relative;
     float: right;
   }
+
   .footerText {
     text-align: right;
   }
@@ -408,6 +471,7 @@ input::placeholder {
   width: 100vw;
   height: 100vh;
 }
+
 .containerMap .amcharts-bg {
   color: #000;
 }
@@ -415,9 +479,11 @@ input::placeholder {
 .containerMap #map {
   background-color: #f2f6ff !important;
 }
+
 .mapabg #map {
   background-color: #f2f6ff !important;
 }
+
 flights-map::part(div) {
   background-color: red !important;
 }

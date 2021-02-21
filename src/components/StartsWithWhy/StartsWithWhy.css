@@ -46,6 +46,7 @@
   line-height: 16px;
   text-align: center;
 }
+
 .caption {
   color: #ffffff;
   font-family: "Open Sans";
@@ -53,6 +54,7 @@
   letter-spacing: 0;
   line-height: 16px;
 }
+
 .QuoteCaption {
   color: white;
   font-family: "Open Sans";
@@ -63,6 +65,7 @@
   margin-left: 20px;
   font-style: italic;
 }
+
 .QuoteCaptionBold {
   color: white;
   font-family: "Open Sans";
@@ -72,6 +75,7 @@
   line-height: 16px;
   margin-left: 37px;
 }
+
 .imageMobile {
   display: flex;
   width: 100%;
@@ -108,46 +112,55 @@
 // No media query since this is the default in Bootstrap
 
 // Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
-}
+@media (min-width: 576px) {}
+
 /* 
 // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .imageTablet {
     display: flex !important;
   }
+
   .imageMobile {
     display: none !important;
   }
+
   .imageDesktop {
     display: none !important;
   }
 }
+
 /* 
 // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   .imageMobile {
     display: none !important;
   }
+
   .imageTablet {
     display: flex !important;
   }
+
   .imageDesktop {
     display: none !important;
   }
 }
+
 /* 
 // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   .imageMobile {
     display: none !important;
   }
+
   .imageTablet {
     display: none !important;
   }
+
   .imageDesktop {
     display: flex !important;
   }
+
   /* .stylesContentRightDesktop{
         height: 80%;
         width: 80%;

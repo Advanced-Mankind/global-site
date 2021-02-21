@@ -55,7 +55,7 @@ const Header = (props) => {
             <Navbar.Brand href="/">
               {" "}
               <div className="col-4 col-lg-8">
-                <img src={logo} alt="Logo" />
+                <img style={{ width: "200%" }} src={logo} alt="Logo" />
               </div>
             </Navbar.Brand>
             <Navbar.Collapse>

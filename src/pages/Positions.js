@@ -1,10 +1,10 @@
+import { Link } from "gatsby";
 import React from "react";
-import { Container, Col, Button } from "react-bootstrap";
+import { Button, Col, Container } from "react-bootstrap";
 import Layout from "../components/layout";
-import ContainerPositions from "../components/Positions/containerPositions";
-import styles from "../theme/index.module.css";
-import ContainerPopup from "../components/PositionsPopup/containerPopup";
 import CandidateCard from "../components/Positions/candidateCard";
+import ContainerPopup from "../components/PositionsPopup/containerPopup";
+import styles from "../theme/index.module.css";
 export default function Positions() {
   const [modalShow, setModalShow] = React.useState(false);
 
@@ -18,6 +18,19 @@ export default function Positions() {
       >
         <div className="col col-sm-6 p-0">
           <div className={`${styles.leftContent}`}>
+            <Link
+              to="/Careers/"
+              style={{
+                color: "#222b45",
+                fontFamily: "Open Sans",
+                fontSize: "12px",
+                fontWeight: "600",
+                letterSpacing: "0",
+                lineHeight: "16px",
+              }}
+            >
+              Back to Careers
+            </Link>
             <div className="row">
               <div className="col-12 mt-3">
                 <h1 className={styles.title}>

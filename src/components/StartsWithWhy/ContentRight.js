@@ -1,3 +1,4 @@
+import { Link } from "gatsby";
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 import "./StartsWithWhy.css";
@@ -16,7 +17,9 @@ const ContentRight = () => {
         </p>
       </Col>
       <Col xs={12}>
-        <button className="Button">LEARN MORE</button>
+        <Link to="/Our-Approach/">
+          <button className="Button">LEARN MORE</button>
+        </Link>
       </Col>
       <Col xs={12}>
         <Row>
@@ -36,13 +39,15 @@ const ContentRight = () => {
             <Row>
               <Col xs={12}>
                 <p className="QuoteCaption">
-                “We value our partnership with Advncd Manknd. Their team is always responsive to our needs and provide extraordinary service on every engagement.”
+                  “We value our partnership with Advncd Manknd. Their team is
+                  always responsive to our needs and provide extraordinary
+                  service on every engagement.”
                 </p>
               </Col>
-                <div className="w-100 d-flex">
-                  <h4 className="QuoteCaptionBold">Kelly Rader</h4>
-                  <h4 className="caption">, Object Edge</h4>
-                </div>
+              <div className="w-100 d-flex">
+                <h4 className="QuoteCaptionBold">Kelly Rader</h4>
+                <h4 className="caption">, Object Edge</h4>
+              </div>
             </Row>
           </Col>
         </Row>

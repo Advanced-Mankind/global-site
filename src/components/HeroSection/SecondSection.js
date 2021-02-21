@@ -9,7 +9,7 @@ const SecondSection = () => {
     <>
       <Carousel
         className="mobile"
-        style={{ marginTop: "2%", marginBottom: "4%" }}
+        style={{ marginTop: "5%", marginBottom: "4%" }}
       >
         <Carousel.Item className="mb-5">
           <Col sm="12">
@@ -58,7 +58,7 @@ const SecondSection = () => {
       </Carousel>
 
       <Container
-        style={{ marginTop: "2%", marginBottom: "2%" }}
+        style={{ marginTop: "5%", marginBottom: "2%" }}
         className="desktopAndTablet"
       >
         <Row className="justify-content-between">

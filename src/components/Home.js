@@ -5,6 +5,7 @@ import "normalize.css";
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import Carousel from "react-bootstrap/Carousel";
+import { useMediaQuery } from "react-responsive";
 import Partners from "../components/Partners/Partners";
 import styles from "../theme/index.module.css";
 import CaseStudyCard from "./CaseStudyCard/CaseStudyCard";
@@ -13,7 +14,6 @@ import HaveAChallenge from "./HaveAChallenge/HaveAChallenge";
 import StartsWithWhy from "./StartsWithWhy/StartsWithWhy";
 import WereHirin from "./WereHiring/WereHiring";
 import YourDreamCards from "./YourDreamCard/YourDreamsCard";
-import { useMediaQuery } from "react-responsive";
 // Esta es la linea que hay que copiar en la parte de los partners linea 134
 
 export default function Home() {
@@ -54,18 +54,27 @@ export default function Home() {
                       We deliver transformative interfaces.
                     </h1>
                   </div>
-                  <div style={{ marginLeft: "5px" }} className="col-2">
+                  <div className="col-2">
                     <DesktopImg>
                       <img
+                        style={{ marginLeft: "5px" }}
                         src={require("../../static/computerHome.svg")}
                         alt=""
                       />
                     </DesktopImg>
                     <MobileImg>
-                      <img src={require("../../static/iphone.svg")} alt="" />
+                      <img
+                        style={{ marginLeft: "5px" }}
+                        src={require("../../static/iphone.svg")}
+                        alt=""
+                      />
                     </MobileImg>
                     <TabletImg>
-                      <img src={require("../../static/ipad.svg")} alt="" />
+                      <img
+                        style={{ marginLeft: "5px" }}
+                        src={require("../../static/ipad.svg")}
+                        alt=""
+                      />
                     </TabletImg>
                   </div>
                 </div>
@@ -97,7 +106,10 @@ export default function Home() {
       </div>
       <div>
         <div className={styles.curveBackground}>
-          <div className="d-none d-sm-block text-center">
+          <div
+            className="d-none d-sm-block text-center"
+            style={{ position: "relative", top: "75px" }}
+          >
             <div className={styles.scrollIcon} onClick={() => scrollToBottom()}>
               <p className={styles.scroll}>SCROLL</p>
               <img src={require("../../static/arrowScroll.svg")} alt=""></img>

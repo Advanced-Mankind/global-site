@@ -75,7 +75,7 @@ const OneSizeDoesNotFill = ({
               alt="homeMobile"
             />
           </Col>
-          <Col md="6" lg="6">
+          <Col md="6" lg="6" style={{ paddingTop: "3%" }}>
             <div>
               <h1 className="titleContainer"> {secondTitle} </h1>
               <p className="paragraph"> {secondParagraph} </p>

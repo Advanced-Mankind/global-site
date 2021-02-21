@@ -60,7 +60,7 @@ export default function Careers() {
                         lineHeight: "24px",
                       }}
                     >
-                      SEE POSITION
+                      See Positions
                     </Button>
                   </Link>
                 </Col>
@@ -93,8 +93,8 @@ export default function Careers() {
                 style={{ display: "flex", alignItems: "center" }}
               >
                 <Col sm="8" md="8" lg="8">
-                  <h1 className={styles.getTitle}>Get to Work</h1>
-                  <p className={styles.getParagraph}>
+                  <h1 className={`${styles.getTitle} my-4`}>Get to Work</h1>
+                  <p className={`${styles.getParagraph} mb-4`}>
                     Our culture is relentlessly positive, with autonomy. It’s
                     uncomplicated, with passion for building the future of
                     digital products. Get started with the application process

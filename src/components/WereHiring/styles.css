@@ -72,12 +72,14 @@
   letter-spacing: 0;
   line-height: 16px;
 }
+
 .HiringCaption {
   color: #0095ff;
   font-family: "Open Sans";
   font-size: 12px;
   line-height: 16px;
 }
+
 .pulsatingDot {
   margin: auto;
   margin-left: unset;
@@ -106,6 +108,7 @@
   0% {
     transform: scale(0.5);
   }
+
   80%,
   100% {
     opacity: 0;
@@ -113,10 +116,12 @@
 }
 
 @keyframes pulseDot {
+
   0%,
   100% {
     transform: scale(1);
   }
+
   50% {
     transform: scale(1.1);
   }
@@ -148,17 +153,26 @@
   list-style-image: url("../../../static/globe.svg");
   color: white;
 }
+
 .ulIconWork li:nth-child(2) {
   list-style-image: url("../../../static/heart.png");
   color: white;
 }
+
 .ulIconWork li:nth-child(3) {
   list-style-image: url("../../../static/fire.svg");
   color: white;
+  position: relative;
+  left: -3px;
+  padding-left: 3px;
 }
+
 .ulIconWork li:nth-child(4) {
   list-style-image: url("../../../static/gift.svg");
   color: white;
+  position: relative;
+  left: -1px;
+  padding-left: 1px;
 }
 
 /* 
@@ -166,29 +180,32 @@
 // No media query since this is the default in Bootstrap
 
 // Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
-}
+@media (min-width: 576px) {}
+
 /* 
 // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .wereHiringMobile {
     display: none;
   }
+
   .wereHiringTablet {
     display: flex;
   }
 }
+
 /* 
 // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   .wereHiringDesktop {
     display: flex;
   }
+
   .wereHiringTablet {
     display: none;
   }
 }
+
 /* 
 // Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-}
+@media (min-width: 1200px) {}

@@ -8,7 +8,7 @@ const HaveAChallenge = ({ icon, caption, headline, paragraph }) => {
         <img src={icon} alt={icon} />
       </div>
       <h3 className="captionChallenge">{caption}</h3>
-      <h1 className="headlineChallenge">{headline}</h1>
+      <h1 className="headlineChallenge mt-0">{headline}</h1>
       <p className="paragraphChallenge">{paragraph}</p>
     </div>
   );

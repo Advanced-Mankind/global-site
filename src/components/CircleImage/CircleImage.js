@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./styles.css";
 
 const CircleImage = (props) => {
@@ -6,19 +6,23 @@ const CircleImage = (props) => {
   const [current, setCurrent] = useState(0);
 
   useInterval(() => {
-    if (current < 3) {
+    if (current < props.data.length - 1) {
       setCurrent(current + 1);
     } else {
       setCurrent(0);
     }
-  }, 5000);
+  }, 7000);
 
   return (
-    <div>
+    <div style={{ minHeight: "165px" }}>
       {props.data.map((item, index) => {
         return (
           <>
-            <div className={`${index === current ? "d-block" : "d-none"}`}>
+            <div
+              className={`${
+                index === current ? "d-block" : "d-none"
+              } itemImage`}
+            >
               <p className="quote">{item.text}</p>
               <div className="w-100 d-flex">
                 <h4 className="captionBold">{item.name}</h4>
@@ -33,7 +37,7 @@ const CircleImage = (props) => {
           <>
             <img
               key={index}
-              className={`avatar mr-3 ${
+              className={`avatarAlt mr-3 ${
                 index === current ? "avatar-focused" : ""
               }`}
               src={item.img}

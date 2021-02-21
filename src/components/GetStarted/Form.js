@@ -1,17 +1,29 @@
+import axios from "axios";
 import { Formik } from "formik";
 import React from "react";
 import { Button, Col } from "react-bootstrap";
-import Select from "react-select";
-import "../../theme/index.module.css";
-import "./GetStarted.css";
-import axios from "axios";
+import Form from "react-bootstrap/Form";
 import Spinner from "react-bootstrap/Spinner";
 import { store } from "react-notifications-component";
+import Select from "react-select";
+import * as Yup from "yup";
+import "../../theme/index.module.css";
+import "./GetStarted.css";
 const options = [
   { value: "México", label: "México" },
   { value: "USA", label: "USA" },
 ];
-const Form = () => {
+
+const SignupSchema = Yup.object().shape({
+  email: Yup.string().email("Invalid email").required("Required"),
+  tel: Yup.string().required("Required"),
+  company: Yup.string().required("Required"),
+  firstName: Yup.string().required("Required"),
+
+  lastName: Yup.string().required("Required"),
+  role: Yup.string().required("Required"),
+});
+const FormGetStarted = () => {
   return (
     <div className="formContainer">
       <div>
@@ -26,34 +38,7 @@ const Form = () => {
             role: "",
             country: "",
           }}
-          validate={(values) => {
-            const errors = {};
-            if (!values.email) {
-              errors.email = "Required";
-            } else if (
-              !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
-            ) {
-              errors.email = "Invalid email address";
-            }
-            if (!values.tel) {
-              errors.tel = "Required";
-            }
-            if (!values.company) {
-              errors.company = "Required";
-            }
-            if (!values.firstName) {
-              errors.firstName = "Required";
-            }
-            if (!values.lastName) {
-              errors.lastName = "Required";
-            }
-            if (!values.role) {
-              errors.role = "Required";
-            }
-
-            console.log(errors);
-            return errors;
-          }}
+          validationSchema={SignupSchema}
           onSubmit={(values, { setSubmitting }) => {
             axios
               .post(
@@ -63,7 +48,7 @@ const Form = () => {
               .then(function (response) {
                 if (response.status === 201) {
                   store.addNotification({
-                    title: "Success",
+                    title: "Success!",
                     message: "information sent correctly",
                     type: "success",
                     insert: "top",
@@ -97,87 +82,109 @@ const Form = () => {
             isSubmitting,
             /* and other goodies */
           }) => (
-            <form onSubmit={handleSubmit}>
-              <div className="form-row mt-4">
-                <Col xs={12}>
-                  <input
+            <Form noValidate onSubmit={handleSubmit}>
+              <Form.Row>
+                <Form.Group as={Col} xs="12" sm="6">
+                  <Form.Control
+                    size="lg"
                     type="email"
                     name="email"
                     placeholder="Email"
-                    className="form-control form-control-lg"
+                    value={values.email}
                     onChange={handleChange}
                     onBlur={handleBlur}
-                    value={values.email}
+                    isValid={touched.email && !errors.email}
+                    isInvalid={!!errors.email}
                   />
-                  {errors.email && touched.email && errors.email}
-                </Col>
-              </div>
-              <div className="form-row mt-4">
-                <Col xs={12} sm={6} className="mt-2 mb-2">
-                  <input
+                  <Form.Control.Feedback type="invalid">
+                    {errors.email}
+                  </Form.Control.Feedback>
+                </Form.Group>
+                <Form.Group as={Col} xs="12" sm="6">
+                  <Form.Control
+                    size="lg"
                     type="tel"
                     name="tel"
                     placeholder="Phone Number"
-                    className="form-control form-control-lg"
-                    onChange={handleChange}
-                    onBlur={handleBlur}
                     value={values.tel}
+                    onBlur={handleBlur}
+                    onChange={handleChange}
+                    isValid={touched.tel && !errors.tel}
+                    isInvalid={!!errors.tel}
                   />
-                  {errors.tel && touched.tel && errors.tel}
-                </Col>
-                <Col xs={12} sm={6} className="mt-2">
-                  <input
+                  <Form.Control.Feedback type="invalid">
+                    {errors.tel}
+                  </Form.Control.Feedback>
+                </Form.Group>
+                <Form.Group as={Col} xs="12" className="mt-3">
+                  <Form.Control
                     type="text"
+                    size="lg"
                     name="company"
                     placeholder="Company Name"
-                    className="form-control form-control-lg"
-                    onChange={handleChange}
-                    onBlur={handleBlur}
                     value={values.company}
+                    onBlur={handleBlur}
+                    onChange={handleChange}
+                    isValid={touched.company && !errors.company}
+                    isInvalid={!!errors.company}
                   />
-                  {errors.company && touched.company && errors.company}
-                </Col>
-              </div>
-              <div className="form-row mt-4">
-                <Col xs={12} sm={6} className="mt-2 mb-2">
-                  <input
+
+                  <Form.Control.Feedback type="invalid">
+                    {errors.company}
+                  </Form.Control.Feedback>
+                </Form.Group>
+                <Form.Group as={Col} xs="12" sm="6" className="mt-3">
+                  <Form.Control
                     type="text"
+                    size="lg"
                     name="firstName"
                     placeholder="First Name"
-                    className="form-control form-control-lg"
-                    onChange={handleChange}
-                    onBlur={handleBlur}
                     value={values.firstName}
+                    onBlur={handleBlur}
+                    onChange={handleChange}
+                    isValid={touched.firstName && !errors.firstName}
+                    isInvalid={!!errors.firstName}
                   />
-                  {errors.firstName && touched.firstName && errors.firstName}
-                </Col>
-                <Col xs={12} sm={6} className="mt-2">
-                  <input
+
+                  <Form.Control.Feedback type="invalid">
+                    {errors.firstName}
+                  </Form.Control.Feedback>
+                </Form.Group>
+                <Form.Group as={Col} xs="12" sm="6" className="mt-3">
+                  <Form.Control
+                    size="lg"
                     type="text"
                     name="lastName"
                     placeholder="Last Name"
-                    className="form-control form-control-lg"
-                    onChange={handleChange}
                     onBlur={handleBlur}
                     value={values.lastName}
+                    onChange={handleChange}
+                    isValid={touched.lastName && !errors.lastName}
+                    isInvalid={!!errors.lastName}
                   />
-                  {errors.lastName && touched.lastName && errors.lastName}
-                </Col>
-              </div>
-              <div className="form-row mt-4">
-                <Col xs={12} sm={8} className="mb-4">
-                  <input
+
+                  <Form.Control.Feedback type="invalid">
+                    {errors.lastName}
+                  </Form.Control.Feedback>
+                </Form.Group>
+
+                <Form.Group as={Col} xs="12" sm="8" className="mt-3">
+                  <Form.Control
+                    size="lg"
                     type="text"
                     name="role"
                     placeholder="Job role"
-                    className="form-control form-control-lg"
-                    onChange={handleChange}
                     onBlur={handleBlur}
                     value={values.role}
+                    onChange={handleChange}
+                    isValid={touched.role && !errors.role}
+                    isInvalid={!!errors.role}
                   />
-                  {errors.role && touched.role && errors.role}
-                </Col>
-                <Col xs={12} sm={4} className="mb-4">
+                  <Form.Control.Feedback type="invalid">
+                    {errors.role}
+                  </Form.Control.Feedback>
+                </Form.Group>
+                <Form.Group as={Col} xs="12" sm="4" className="mt-3">
                   <Select
                     styles={customStyles}
                     placeholder="Country"
@@ -189,17 +196,11 @@ const Form = () => {
                       handleChange("country")(selectedOption.value);
                     }}
                   />
-                </Col>
-              </div>
-
-              <div className="custom-control custom-checkbox">
-                <input
-                  type="checkbox"
-                  className="custom-control-input"
-                  id="customCheck1"
-                  name="customCheck1"
-                />
-              </div>
+                  <Form.Control.Feedback type="invalid">
+                    {errors.country}
+                  </Form.Control.Feedback>
+                </Form.Group>
+              </Form.Row>
               <Col sm="12" md="3" lg="4">
                 <Button
                   style={{
@@ -225,7 +226,7 @@ const Form = () => {
                   )}
                 </Button>
               </Col>
-            </form>
+            </Form>
           )}
         </Formik>
       </div>
@@ -259,4 +260,4 @@ const customStyles = {
   }),
 };
 
-export default Form;
+export default FormGetStarted;

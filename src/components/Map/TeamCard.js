@@ -29,7 +29,7 @@ const TeamCard = ({ title, name, imgDesktop, imgTablet, imgMobile }) => {
       </div>
 
       <div className="cardDesktop ">
-        <div>
+        <div className="w-100 ">
           <div className="img-Team">
             <img src={imgDesktop} className="img-fluid" alt={imgDesktop} />
           </div>

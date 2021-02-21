@@ -27,6 +27,27 @@ const team = [
     imgTablet: "",
     imgMobile: "",
   },
+  {
+    name: "Name",
+    title: "Title",
+    imgDesktop: "",
+    imgTablet: "",
+    imgMobile: "",
+  },
+  {
+    name: "Name",
+    title: "Title",
+    imgDesktop: "",
+    imgTablet: "",
+    imgMobile: "",
+  },
+  {
+    name: "Name",
+    title: "Title",
+    imgDesktop: "",
+    imgTablet: "",
+    imgMobile: "",
+  },
 ];
 export default function WhoWeAre() {
   return (

@@ -3,8 +3,8 @@
   border-radius: 10px;
   display: flex;
   flex-direction: row;
-  max-width: 99%;
-  margin: 0;
+  max-width: 100%;
+  margin: 0px 20px;
 }
 
 .contentLeftContainer {
@@ -29,11 +29,13 @@
   letter-spacing: 0;
   line-height: 16px;
 }
-.custom-control-input:checked ~ .custom-control-label::before {
+
+.custom-control-input:checked~.custom-control-label::before {
   color: #fff;
   border-color: #06b76a !important;
   background-color: #06b76a !important;
 }
+
 .subtitleGetStarted {
   color: white;
   font-family: "Open Sans";
@@ -87,6 +89,7 @@
   letter-spacing: 0;
   line-height: 16px;
 }
+
 .caption {
   color: white;
   font-family: "Open Sans";
@@ -105,6 +108,7 @@
   background-color: white;
   box-shadow: 0 10px 20px 0 rgba(35, 35, 35, 0.08);
 }
+
 .custom-control {
   z-index: 0 !important;
 }
@@ -118,10 +122,12 @@
   list-style-image: url("../../../static/layers.png");
   color: white;
 }
+
 .ulIconGetStarted li:nth-child(2) {
   list-style-image: url("../../../static/list.png");
   color: white;
 }
+
 .ulIconGetStarted li:nth-child(3) {
   list-style-image: url("../../../static/heart.png");
   color: white;

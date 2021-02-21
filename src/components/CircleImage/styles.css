@@ -3,7 +3,7 @@
   box-sizing: border-box;
   height: 57px;
   width: 57px;
-  border: 2px solid #0095ff;
+
 }
 
 .iconContainer {
@@ -12,5 +12,36 @@
 }
 
 .avatar-focused {
-  filter: grayscale(100%);
+
+  border: 2px solid #0095ff !important;
+}
+
+.itemImage {
+  position: relative;
+  animation: animatetop 0.8s
+}
+
+
+
+.avatarAlt {
+  padding: 6px;
+  box-sizing: border-box;
+  height: 57px;
+  width: 57px;
+  border-radius: 100%;
+  border: 2px solid transparent;
+}
+
+
+
+@keyframes animatetop {
+  from {
+    left: -80px;
+    opacity: 0
+  }
+
+  to {
+    right: 0;
+    opacity: 1
+  }
 }

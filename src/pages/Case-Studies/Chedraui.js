@@ -1,7 +1,7 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import Layout from "../../components/layout";
 import GetStarted from "../../components/GetStarted/GetStarted";
+import Layout from "../../components/layout";
 import styles from "../../theme/index.module.css";
 
 export default function Chedraui() {
@@ -10,6 +10,7 @@ export default function Chedraui() {
       <Container
         style={{
           paddingTop: "90px",
+          marginBottom: "5%",
         }}
       >
         <h1 className="title">Chedraui</h1>
@@ -121,6 +122,9 @@ export default function Chedraui() {
         <Row className="">
           <Col sm="12" md="12" lg="12" className="">
             <img
+              style={{
+                borderRadius: "2%",
+              }}
               className="img-fluid"
               src={require("../../../static/chedraui6.png")}
               alt={require("../../../static/chedraui6.png")}
@@ -129,9 +133,7 @@ export default function Chedraui() {
           </Col>
         </Row>
       </Container>
-      <Container style={{ marginTop: "5%" }}>
-        <GetStarted />
-      </Container>
+      <GetStarted />
     </Layout>
   );
 }

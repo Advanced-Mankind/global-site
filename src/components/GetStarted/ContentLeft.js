@@ -3,28 +3,18 @@ import CircleImage from "../CircleImage/CircleImage";
 import "./GetStarted.css";
 const data = [
   {
-    name: "Test Name 0",
-    text: `"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book"`,
+    name: "Kelly Rader",
+    text: `“We value our partnership with Advncd Manknd. Their team is
+    always responsive to our needs and provide extraordinary
+    service on every engagement.”`,
     company: "Object Edge",
-    img: require("../../../static/profile1.png"),
+    img: require("../../../static/profile3.png"),
   },
   {
-    name: "Test Name 1",
-    text: `"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"`,
-    company: "Object Edge",
-    img: require("../../../static/profile1.png"),
-  },
-  {
-    name: "Test Name 2",
-    text: `"Lorem Ipsum is simply dummy text of the printing and typesetting industry"`,
-    company: "Object Edge",
-    img: require("../../../static/profile1.png"),
-  },
-  {
-    name: "Test Name 3",
-    text: `"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"`,
-    company: "Object Edge",
-    img: require("../../../static/profile1.png"),
+    name: "Chris Giametta",
+    text: `"Working with the teams at AM has been a true pleasure. A combination of talented graphical artists and technology experts was crucial in designing & deploying our sports management platform AnyClub. Our continued partnership has allowed us to focus on our business while they make the pixels perfect." `,
+    company: "CEO AnyClub",
+    img: require("../../../static/chris.png"),
   },
 ];
 const ContentLeft = () => {
