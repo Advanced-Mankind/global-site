@@ -23,6 +23,7 @@ const SignupSchema = Yup.object().shape({
   lastName: Yup.string().required("Required"),
   role: Yup.string().required("Required"),
 });
+
 const FormGetStarted = () => {
   return (
     <div className="formContainer">
@@ -39,7 +40,7 @@ const FormGetStarted = () => {
             country: "",
           }}
           validationSchema={SignupSchema}
-          onSubmit={(values, { setSubmitting }) => {
+          onSubmit={(values, { setSubmitting })  => {
             axios
               .post(
                 "https://us-central1-advanced-global-site.cloudfunctions.net/app/sendForm",
@@ -52,7 +53,7 @@ const FormGetStarted = () => {
                     message: "information sent correctly",
                     type: "success",
                     insert: "top",
-                    container: "top-right",
+                    container: "center",
                     animationIn: ["animate__animated", "animate__fadeIn"],
                     animationOut: ["animate__animated", "animate__fadeOut"],
                     dismiss: {
@@ -80,6 +81,7 @@ const FormGetStarted = () => {
             handleBlur,
             handleSubmit,
             isSubmitting,
+            handleReset
             /* and other goodies */
           }) => (
             <Form noValidate onSubmit={handleSubmit}>
@@ -200,8 +202,7 @@ const FormGetStarted = () => {
                     {errors.country}
                   </Form.Control.Feedback>
                 </Form.Group>
-              </Form.Row>
-              <Col sm="12" md="3" lg="4">
+                <Col sm="12" md="3" lg="4" className="ml-0">
                 <Button
                   style={{
                     borderRadius: "34px",
@@ -226,6 +227,8 @@ const FormGetStarted = () => {
                   )}
                 </Button>
               </Col>
+              </Form.Row>
+            
             </Form>
           )}
         </Formik>

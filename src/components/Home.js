@@ -110,10 +110,10 @@ export default function Home() {
             className="d-none d-sm-block text-center"
             style={{ position: "relative", top: "75px" }}
           >
-            <div className={styles.scrollIcon} onClick={() => scrollToBottom()}>
+            {/* <div className={styles.scrollIcon} onClick={() => scrollToBottom()}>
               <p className={styles.scroll}>SCROLL</p>
               <img src={require("../../static/arrowScroll.svg")} alt=""></img>
-            </div>
+            </div> */}
           </div>
           <Container id="scroll">
             <div className="col-12">
