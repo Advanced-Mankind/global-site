@@ -40,7 +40,7 @@ const FormGetStarted = () => {
             country: "",
           }}
           validationSchema={SignupSchema}
-          onSubmit={(values, { setSubmitting })  => {
+          onSubmit={(values, { setSubmitting, resetForm })  => {
             axios
               .post(
                 "https://us-central1-advanced-global-site.cloudfunctions.net/app/sendForm",
@@ -63,12 +63,11 @@ const FormGetStarted = () => {
                   });
                 } else {
                 }
-
+                resetForm({values:''});
                 setSubmitting(false);
               })
               .catch(function (error) {
                 console.log(error);
-
                 setSubmitting(false);
               });
           }}
