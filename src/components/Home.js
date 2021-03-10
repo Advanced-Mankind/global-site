@@ -68,26 +68,27 @@ export default function Home() {
                       We deliver transformative interfaces.
                     </h1>
                   </div>
-                  <Carousel slide={false}>
-                    <Carousel.Item interval={5000}>
+                 <div  className={styles.carouselContainer}>
+                 <Carousel>
+                    <Carousel.Item interval={1000}>
                       <img
                         src={require("../../static/computerHome.svg")}
                         alt=""
                       />
                     </Carousel.Item>
-                    <Carousel.Item interval={5000}>
+                    <Carousel.Item interval={1000}>
                       <img src={require("../../static/iphone.svg")} alt="" />
                     </Carousel.Item>
-                    <Carousel.Item interval={5000}>
+                    <Carousel.Item interval={1000}>
                       <img src={require("../../static/ipad.svg")} alt="" />
                     </Carousel.Item>
-                    <Carousel.Item interval={5000}>
+                    <Carousel.Item interval={1000}>
                       <img
                         src={require("../../static/apple-watch.svg")}
                         alt=""
                       />
                     </Carousel.Item>
-                    <Carousel.Item interval={5000}>
+                    <Carousel.Item interval={1000}>
                       <img
                         src={require("../../static/macbookPro.svg")}
                         alt=""
@@ -115,6 +116,7 @@ export default function Home() {
                       />
                     </TabletImg> */}
                   </Carousel>
+                 </div>
                 </div>
               </div>
               <div className="col-12">

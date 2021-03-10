@@ -160,6 +160,11 @@ input::placeholder {
   -webkit-animation: down 1.5s infinite;
 }
 
+.carouselContainer{
+position: absolute;
+left: 305px;
+}
+
 @keyframes down {
   0% {
     transform: translate(0);
