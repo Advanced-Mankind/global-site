@@ -69,7 +69,7 @@ export default function Home() {
                     </h1>
                   </div>
                  <div  className={styles.carouselContainer}>
-                 <Carousel>
+                 <Carousel  controls={false} indicators={false}>
                     <Carousel.Item interval={1000}>
                       <img
                         src={require("../../static/computerHome.svg")}
