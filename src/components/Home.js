@@ -46,7 +46,7 @@ export default function Home() {
 
   const CarouselImg = () => {
     data.map((item) => (
-      <Carousel.Item interval={5000}>
+      <Carousel.Item interval={1000}>
         <img src={item.img} alt="" />
       </Carousel.Item>
     ));
@@ -68,33 +68,89 @@ export default function Home() {
                       We deliver transformative interfaces.
                     </h1>
                   </div>
-                 <div  className={styles.carouselContainer}>
-                 <Carousel  controls={false} indicators={false}>
-                    <Carousel.Item interval={1000}>
-                      <img
-                        src={require("../../static/computerHome.svg")}
-                        alt=""
-                      />
-                    </Carousel.Item>
-                    <Carousel.Item interval={1000}>
-                      <img src={require("../../static/iphone.svg")} alt="" />
-                    </Carousel.Item>
-                    <Carousel.Item interval={1000}>
-                      <img src={require("../../static/ipad.svg")} alt="" />
-                    </Carousel.Item>
-                    <Carousel.Item interval={1000}>
-                      <img
-                        src={require("../../static/apple-watch.svg")}
-                        alt=""
-                      />
-                    </Carousel.Item>
-                    <Carousel.Item interval={1000}>
-                      <img
-                        src={require("../../static/macbookPro.svg")}
-                        alt=""
-                      />
-                    </Carousel.Item>
-                    {/* <DesktopImg>
+                  <div className={styles.carouselContainer}>
+                    <Carousel controls={false} indicators={false}>
+                      <Carousel.Item interval={1000}>
+                        <div
+                          style={{
+                            minWidth: 60,
+                          }}
+                        >
+                          <img
+                            style={{
+                              display: "flex",
+                              margin: "auto",
+                            }}
+                            src={require("../../static/computerHome.svg")}
+                            alt=""
+                          />
+                        </div>
+                      </Carousel.Item>
+                      <Carousel.Item interval={1000}>
+                        <div
+                          style={{
+                            minWidth: 60,
+                          }}
+                        >
+                          <img
+                            style={{
+                              display: "flex",
+                              margin: "auto",
+                            }}
+                            src={require("../../static/iphone.svg")}
+                            alt=""
+                          />
+                        </div>
+                      </Carousel.Item>
+                      <Carousel.Item interval={1000}>
+                        <div
+                          style={{
+                            minWidth: 60,
+                          }}
+                        >
+                          <img
+                            style={{
+                              display: "flex",
+                              margin: "auto",
+                            }}
+                            src={require("../../static/ipad.svg")}
+                            alt=""
+                          />
+                        </div>
+                      </Carousel.Item>
+                      <Carousel.Item interval={1000}>
+                        <div
+                          style={{
+                            minWidth: 60,
+                          }}
+                        >
+                          <img
+                            style={{
+                              display: "flex",
+                              margin: "auto",
+                            }}
+                            src={require("../../static/apple-watch.svg")}
+                            alt=""
+                          />
+                        </div>
+                      </Carousel.Item>
+                      <Carousel.Item interval={1000}>
+                        <div
+                          style={{
+                            minWidth: 60,
+                          }}
+                        >
+                          <img
+                            style={{
+                              display: "flex",
+                              margin: "auto",
+                            }}
+                            src={require("../../static/macbookPro.svg")}
+                            alt=""
+                          />
+                        </div>
+                      </Carousel.Item>
+                      {/* <DesktopImg>
                       <img
                         style={{ marginLeft: "5px" }}
                         src={require("../../static/computerHome.svg")}
@@ -115,8 +171,8 @@ export default function Home() {
                         alt=""
                       />
                     </TabletImg> */}
-                  </Carousel>
-                 </div>
+                    </Carousel>
+                  </div>
                 </div>
               </div>
               <div className="col-12">
