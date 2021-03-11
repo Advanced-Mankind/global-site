@@ -56,31 +56,31 @@ const OneSizeDoesNotFill = ({
       </Container>
 
       <Container className="stylesDesktop">
-        <Row className="col Container">
-          <Col md="6" lg="6">
+        <Row>
+        <Col lg="6">
+            <img
+              src={require("../../../static/homeHouseDesktop.png")}
+              alt="homeMobile"
+            />
             <div>
               <h1 className="titleContainer"> {firstTitle} </h1>
               <p className="paragraph"> {firstParagraph} </p>
             </div>
           </Col>
-          <Col md="6" lg="6">
-            <img
-              src={require("../../../static/homeHouseDesktop.png")}
-              alt="homeMobile"
-            />
-          </Col>
-          <Col md="6" lg="6" style={{ paddingTop: "3%" }}>
+         
+          <Col lg="6" style={{ paddingTop: "3%" }}>
             <img
               src={require("../../../static/reviewGraphDesktop.png")}
               alt="homeMobile"
             />
-          </Col>
-          <Col md="6" lg="6" style={{ paddingTop: "3%" }}>
+            
             <div>
               <h1 className="titleContainer"> {secondTitle} </h1>
               <p className="paragraph"> {secondParagraph} </p>
             </div>
           </Col>
+         
+          
         </Row>
       </Container>
     </Container>

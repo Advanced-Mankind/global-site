@@ -9,6 +9,7 @@ export default function Logicalis() {
       <Container
         style={{
           paddingTop: "90px",
+          marginBottom: "5%",
         }}
       >
         <h1 className="title">Logicalis</h1>
@@ -118,7 +119,7 @@ export default function Logicalis() {
           </Col>
         </Row>
       </Container>
-      <Container style={{ marginTop: "5%" }}>
+      <Container fluid>
         <GetStarted />
       </Container>
     </Layout>

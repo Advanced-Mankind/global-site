@@ -133,7 +133,9 @@ export default function Chedraui() {
           </Col>
         </Row>
       </Container>
-      <GetStarted />
+      <Container fluid>
+        <GetStarted />
+      </Container>
     </Layout>
   );
 }

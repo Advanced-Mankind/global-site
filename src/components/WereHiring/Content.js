@@ -37,18 +37,16 @@ const Content = () => {
           <Col xs={10} md={10} xl={9}>
             <Row>
               <Col xs={12} xl={7}>
-                <p className="QuoteCaption m-0 mb-2">
+                <p className="QuoteCaption">
                   “Would love to have a quote here from a staff memeber talking
                   about how great it was to work with us. Lorem upsum dolor un
                   met lorem ipsum dolor un met.”
                 </p>
               </Col>
-              <Col xs={12}>
                 <div className="w-100 d-flex">
-                  <h4 className="QuoteCaptionBold m-0">Shaun Davis</h4>
+                  <h4 className="QuoteCaptionBold">Shaun Davis</h4>
                   <h4 className="caption">, Senior UI Designer</h4>
                 </div>
-              </Col>
             </Row>
           </Col>
         </Row>

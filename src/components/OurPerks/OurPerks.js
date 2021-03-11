@@ -44,9 +44,9 @@ const OurPerks = () => {
           />
         </Col>
       </Row>
-      <Row>
+      <Container fluid>
         <OurPerkQuote />
-      </Row>
+      </Container>
       <Row style={{ marginTop: "5%" }}>
         <Col sm="12" md="6" lg="6" className="my-5 ">
           <OurPerksCard

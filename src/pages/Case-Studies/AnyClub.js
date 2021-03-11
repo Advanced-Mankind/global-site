@@ -128,7 +128,7 @@ export default function AnyClub() {
           </Col>
         </Row>
       </Container>
-      <Container style={{ marginTop: "5%" }}>
+      <Container fluid>
         <GetStarted />
       </Container>
     </Layout>

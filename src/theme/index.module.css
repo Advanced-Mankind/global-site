@@ -104,7 +104,6 @@ input::placeholder {
   font-weight: bold;
   letter-spacing: 0;
   line-height: 48px;
-  word-break: break-word;
 }
 
 .title32px {
@@ -159,6 +158,11 @@ input::placeholder {
   position: relative;
   animation: down 1.5s infinite;
   -webkit-animation: down 1.5s infinite;
+}
+
+.carouselContainer{
+position: absolute;
+left: 305px;
 }
 
 @keyframes down {
