@@ -125,6 +125,40 @@ input::placeholder {
   line-height: 32px;
 }
 
+.imgContainer{
+  margin: 30px 0px;
+}
+.discovery{
+  font-size: 18px;
+  font-family: "Open Sans";
+  font-weight: bold;
+  line-height: 24px;
+  color: #222B45;
+  max-width: 102px;
+  text-align: center;
+  margin: 0% 17%;
+  white-space: break-spaces;
+}
+
+.containerBackground{
+  margin-top: 50%;
+  margin-bottom: 40%;
+}
+.backgroundGuidex{
+  background-image:url('../../static/BackgroundShape.svg');
+  background-repeat: no-repeat; 
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 21%;
+  position: absolute;
+  width: 100%;
+  top: 24%;
+  z-index: -1;
+}
+
 .footer {
   height: 13vh;
   position: absolute;
@@ -277,6 +311,14 @@ left: 305px;
   font-size: 15px;
   letter-spacing: 0;
   line-height: 20px;
+}
+
+.subtitle15 {
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: 24px;
 }
 
 .background_mobile {
