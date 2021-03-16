@@ -191,25 +191,19 @@ export default function Chedraui() {
           className="justify-content-center"
           style={{ display: "flex", alignItems: "center" }}
         >
-          <Col
-            className="justify-content-center w-100"
-            xs="12"
-            sm="12"
-            md="4"
-            lg="4"
-          >
+          <Col className="my-5" xs="12" sm="12" md="4" lg="4">
             <div className={styles.performanceDot}>
               <p className={styles.performanceText}>+73%</p>
             </div>
             <p className={styles.performance}>Daily Active Users</p>
           </Col>
-          <Col xs="12" sm="12" md="4" lg="4">
+          <Col className="my-5" xs="12" sm="12" md="4" lg="4">
             <div className={styles.performanceDot}>
               <p className={styles.performanceText}>+57%</p>
             </div>
             <p className={styles.performance}>Monthly Conversion Rate</p>
           </Col>
-          <Col xs="12" sm="12" md="4" lg="4">
+          <Col className="my-5" xs="12" sm="12" md="4" lg="4">
             <div className={styles.performanceDot}>
               <p className={styles.performanceText}>+35%</p>
             </div>
