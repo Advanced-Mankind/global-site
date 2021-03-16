@@ -93,7 +93,7 @@ export default function Chedraui() {
             <ul className="paragraph mb-5">{goalsItems}</ul>
           </Col>
         </Row>
-        <Row className="">
+        <Row className="mt-4">
           <Col sm="12" md="12" lg="12" className="">
             <img
               className="img-fluid"
@@ -106,7 +106,7 @@ export default function Chedraui() {
         <Row className="">
           <Col sm="12" md="12" lg="12" className="">
             <img
-              className="img-fluid"
+              className="img-fluid mb-4"
               src={require("../../../static/chedraui3.png")}
               alt={require("../../../static/chedraui3.png")}
               key={require("../../../static/chedraui3.png")}
@@ -151,7 +151,7 @@ export default function Chedraui() {
         <Row className="">
           <Col xs="12" sm="12" md="6" lg="6">
             <img
-              className="img-fluid"
+              className="d-none d-sm-block img-fluid"
               src={require("../../../static/chedraui4.png")}
               alt={require("../../../static/chedraui4.png")}
               key={require("../../../static/chedraui4.png")}
@@ -159,7 +159,7 @@ export default function Chedraui() {
           </Col>
           <Col xs="12" sm="12" md="6" lg="6">
             <img
-              className="img-fluid"
+             className="d-none d-sm-block img-fluid"
               src={require("../../../static/chedraui5.png")}
               alt={require("../../../static/chedraui5.png")}
               key={require("../../../static/chedraui5.png")}
@@ -187,30 +187,32 @@ export default function Chedraui() {
             <h2 className={styles.subtitle22px}>Performance</h2>
           </Col>
         </Row>
-        <Row>
-          <Col xs="12" sm="12" md="4" lg="4">
-            <img
-              className={styles.performanceImg}
-              src={require("../../../static/Oval.svg")}
-              alt=""
-            />
-            <p>+73%</p>
+        <Row
+          className="justify-content-center"
+          style={{ display: "flex", alignItems: "center" }}
+        >
+          <Col
+            className="justify-content-center w-100"
+            xs="12"
+            sm="12"
+            md="4"
+            lg="4"
+          >
+            <div className={styles.performanceDot}>
+              <p className={styles.performanceText}>+73%</p>
+            </div>
             <p className={styles.performance}>Daily Active Users</p>
           </Col>
           <Col xs="12" sm="12" md="4" lg="4">
-            <img
-              className={styles.performanceImg}
-              src={require("../../../static/Oval.svg")}
-              alt=""
-            />
+            <div className={styles.performanceDot}>
+              <p className={styles.performanceText}>+57%</p>
+            </div>
             <p className={styles.performance}>Monthly Conversion Rate</p>
           </Col>
           <Col xs="12" sm="12" md="4" lg="4">
-            <img
-              className={styles.performanceImg}
-              src={require("../../../static/Oval.svg")}
-              alt=""
-            />
+            <div className={styles.performanceDot}>
+              <p className={styles.performanceText}>+35%</p>
+            </div>
             <p className={styles.performance}>Daily User Engagement</p>
           </Col>
         </Row>

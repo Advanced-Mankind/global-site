@@ -11,7 +11,7 @@ export default function AnyClub() {
         style={{
           paddingTop: "90px",
           marginBottom: "5%",
-          marginTop: "80px"
+          marginTop: "80px",
         }}
       >
         <h1 className={styles.title}>
@@ -100,7 +100,7 @@ export default function AnyClub() {
             />
           </Col>
         </Row>
-        
+
         <Row className="mt-5">
           <Col xs={12} md={4}>
             <h2 className={styles.subtitle22px}>Product Development</h2>
@@ -132,20 +132,18 @@ export default function AnyClub() {
           </Col>
           <Col xs={12} md={8}>
             <p className="paragraph mb-5">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-              ante ante, blandit ut euismod sagittis, facilisis ac ante.
-              Phasellus semper leo eget urna gravida, nec tempor dui consequat.
-              Mauris consectetur ligula id justo pellentesque, et maximus ligula
-              aliquet. Nam at elit elit. Fusce sollicitudin sollicitudin felis,
-              semper tincidunt massa vehicula ut. Pellentesque habitant morbi
-              tristique senectus et netus et malesuada fames ac turpis egestas.
+              Following multiple rounds of iterations in the user interface,
+              task flows as well as polishing up the backend/frontend of their
+              system, we are proud and confident to deliver this digital
+              solution that will facilitate the experience for many coaches,
+              players and managers in the junior soccer league.
             </p>
           </Col>
         </Row>
         <Row className="">
-          <Col sm="12" md="12" lg="12" className="">
+          <Col sm="12" md="12" lg="12">
             <img
-              className="img-fluid"
+              className="img-fluid mt-5"
               src={require("../../../static/anyclub3.png")}
               alt={require("../../../static/anyclub3.png")}
               key={require("../../../static/anyclub3.png")}
