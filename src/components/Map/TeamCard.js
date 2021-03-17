@@ -6,22 +6,18 @@ const TeamCard = ({ title, name, imgDesktop, imgTablet, imgMobile }) => {
     <Col xs={12} md={6} lg={4}>
       <div className="cardMobile mt-4">
         <div>
-          <div className="img-Team">
-            <img src={imgDesktop} className="img-fluid" alt={imgDesktop} />
-          </div>
-          <div className=" mx-0 mt-3  containerName">
+          <img src={imgMobile} className="img-fluid" alt={imgMobile} />
+          <div className=" mx-4 mt-3  containerName">
             <p className="title-Position mb-0">{title}</p>
-            <p className="name mw-100">{name}</p>
+            <p className="name w-100 mb-5">{name}</p>
           </div>
         </div>
       </div>
 
       <div className="cardTablet">
         <div>
-          <div className="img-Team">
-            <img src={imgDesktop} className="img-fluid" alt={imgDesktop} />
-          </div>
-          <div className=" mx-0 mt-3  containerName">
+          <img src={imgTablet} className="img-fluid" alt={imgTablet} />
+          <div className=" mx-5 mt-3  containerName">
             <p className="title-Position mb-0">{title}</p>
             <p className="name mw-100">{name}</p>
           </div>
@@ -30,10 +26,8 @@ const TeamCard = ({ title, name, imgDesktop, imgTablet, imgMobile }) => {
 
       <div className="cardDesktop ">
         <div className="w-100 ">
-          <div className="img-Team">
-            <img src={imgDesktop} className="img-fluid" alt={imgDesktop} />
-          </div>
-          <div className=" mx-0 mt-3  containerName">
+          <img src={imgDesktop} className="img-fluid" alt={imgDesktop} />
+          <div className=" mx-5 mt-3  containerName">
             <p className="title-Position mb-0">{title}</p>
             <p className="name mw-100">{name}</p>
           </div>
