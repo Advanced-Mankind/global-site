@@ -108,36 +108,6 @@ export default function Positions() {
               <CandidateCard setShow={setModalShow} />
             </div>
           </Col>
-          <Col sm="12" md="12" lg="12" className="cardDesktop">
-            <div className="textCard">
-              <CandidateCard setShow={setModalShow} />
-            </div>
-          </Col>
-          <Col sm="12" md="12" lg="12" className="cardTablet">
-            <div className="textCard">
-              <CandidateCard setShow={setModalShow} />
-            </div>
-          </Col>
-          <Col sm="12" md="12" lg="12" className="cardMobile">
-            <div className="textCard">
-              <CandidateCard setShow={setModalShow} />
-            </div>
-          </Col>
-          <Col sm="12" md="12" lg="12" className="cardDesktop">
-            <div className="textCard">
-              <CandidateCard setShow={setModalShow} />
-            </div>
-          </Col>
-          <Col sm="12" md="12" lg="12" className="cardTablet">
-            <div className="textCard">
-              <CandidateCard setShow={setModalShow} />
-            </div>
-          </Col>
-          <Col sm="12" md="12" lg="12" className="cardMobile">
-            <div className="textCard">
-              <CandidateCard />
-            </div>
-          </Col>
         </Container>
         <ContainerPopup
           show={modalShow}
