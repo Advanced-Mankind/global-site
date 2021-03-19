@@ -68,7 +68,7 @@ const OneSizeDoesNotFill = ({
             </div>
           </Col>
          
-          <Col lg="6" style={{ paddingTop: "3%" }}>
+          <Col lg="6">
             <img
               src={require("../../../static/reviewGraphDesktop.png")}
               alt="homeMobile"
@@ -79,8 +79,6 @@ const OneSizeDoesNotFill = ({
               <p className="paragraph"> {secondParagraph} </p>
             </div>
           </Col>
-         
-          
         </Row>
       </Container>
     </Container>

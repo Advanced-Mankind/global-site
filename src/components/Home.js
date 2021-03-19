@@ -345,7 +345,7 @@ export default function Home() {
             </Row>
           </Container>
         </div>
-        <div style={{ marginTop: "5%" }}>
+        <div style={{ marginTop: "5%", marginLeft: "3%", marginRight:"3%" }}>
           <StartsWithWhy />
         </div>
         <div style={{ marginTop: "5%" }}>
@@ -375,7 +375,7 @@ export default function Home() {
           />
         </div>
 
-        <div style={{ marginTop: "5%" }}>
+        <div style={{ marginTop: "5%", marginLeft: "3%", marginRight:"3%" }}>
           <WereHirin />
         </div>
         <div style={{ marginTop: "5%" }}>
@@ -464,7 +464,7 @@ export default function Home() {
             </Row>
           </Container>
         </div>
-        <div ref={messagesEndRef} style={{ marginTop: "5%" }}>
+        <div ref={messagesEndRef} style={{ marginTop: "5%", marginLeft: "3%", marginRight:"3%"}}>
           <GetStarted />
         </div>
       </div>

@@ -285,6 +285,10 @@ input::placeholder {
   letter-spacing: 0;
   line-height: 24px;
 }
+.containerAny {
+ position: absolute;
+ top: 20%
+}
 
 .description26 {
   font-family: "Open Sans";
@@ -301,7 +305,7 @@ input::placeholder {
   line-height: 24px;
   color: #222b45;
   text-align: center;
-  margin: 0% 28%;
+  margin: 10% 28% 0%;
   white-space: break-spaces;
 }
 .performanceDot {

@@ -25,8 +25,14 @@ const TeamCard = ({ title, name, imgDesktop, imgTablet, imgMobile }) => {
       </div>
 
       <div className="cardDesktop ">
-        <div className="w-100 ">
-          <img src={imgDesktop} className="img-fluid" alt={imgDesktop} />
+        <div className="w-100">
+          <div
+            style={{
+              minHeight: "280px",
+            }}
+          >
+            <img src={imgDesktop} className="img-fluid" alt={imgDesktop} />
+          </div>
           <div className=" mx-5 mt-3  containerName">
             <p className="title-Position mb-0">{title}</p>
             <p className="name mw-100">{name}</p>

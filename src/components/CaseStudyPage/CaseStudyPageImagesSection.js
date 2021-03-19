@@ -44,7 +44,7 @@ const CaseStudyPageImagesSection = () => {
             </Col>
           </Row>
         </Col>
-        <Col sm="12" md="12" lg="12" className="mb-3">
+        {/* <Col sm="12" md="12" lg="12" className="mb-3">
           <Link to="/Case-Studies/Chedraui">
             <CaseStudyCard
               text="Chedraui E-commerce Platform"
@@ -54,7 +54,7 @@ const CaseStudyPageImagesSection = () => {
               imgsTablet={[require("../../../static/ImageChedrauiDesktop.png")]}
             />
           </Link>
-        </Col>
+        </Col> */}
       </Row>
     </Container>
   );
