@@ -39,11 +39,11 @@
 @keyframes animatetop {
   
 
-  0% {  left: -80px;}
+  0% {  left: -80px; opacity: 0;}
   /* 25%{  left: -50px;}
   50%{ left: -25px;}
   75%{ left: -10px;}
   85%{ left: -5px;}
   95%{ left: -2px;} */
-  100%{  left: 0;}
+  100%{  left: 0; opacity: 1;}
 }
