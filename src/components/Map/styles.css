@@ -145,6 +145,7 @@
 
   .cardTablet {
     display: flex;
+    margin-bottom: 40px;
   }
 }
 
@@ -159,6 +160,7 @@
 
   .cardDesktop {
     display: flex;
+    margin-bottom: 40px;
   }
 }
 
