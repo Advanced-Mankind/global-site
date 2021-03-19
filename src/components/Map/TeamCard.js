@@ -14,7 +14,12 @@ const TeamCard = ({ title, name, imgDesktop, imgTablet, imgMobile }) => {
         </div>
       </div>
 
-      <div className="cardTablet">
+      <div
+        style={{
+          marginBottom: "40px",
+        }}
+        className="cardTablet"
+      >
         <div>
           <img src={imgTablet} className="img-fluid" alt={imgTablet} />
           <div className=" mx-5 mt-3  containerName">
@@ -24,7 +29,12 @@ const TeamCard = ({ title, name, imgDesktop, imgTablet, imgMobile }) => {
         </div>
       </div>
 
-      <div className="cardDesktop ">
+      <div
+        style={{
+          marginBottom: "40px",
+        }}
+        className="cardDesktop "
+      >
         <div className="w-100">
           <div
             style={{

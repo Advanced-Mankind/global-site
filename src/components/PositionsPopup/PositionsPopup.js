@@ -9,10 +9,10 @@ import * as Yup from "yup";
 import "./stylesPopup.css";
 const positionsOptions = [
   { value: "UI/UX", label: "UI/UX Designer" },
-  { value: "Project Manager", label: "Project Manager" },
-  { value: "Copy Writer", label: "CopyWriter" },
-  { value: "Creative Director", label: "Creative Director" },
-  { value: "Business Analytics", label: "Business Analytics" },
+  // { value: "Project Manager", label: "Project Manager" },
+  // { value: "Copy Writer", label: "CopyWriter" },
+  { value: "Mobile Developer", label: "Mobile Developer" },
+  { value: "Web Developers", label: "Web Developer" },
 ];
 const salaryOptions = [
   { value: "10", label: "$10,000" },
@@ -25,8 +25,6 @@ const SignupSchema = Yup.object().shape({
   firstName: Yup.string().required("Required"),
   lastName: Yup.string().required("Required"),
   email: Yup.string().email("Invalid email").required("Required"),
-  website: Yup.string().required("Required"),
-  linkedIn: Yup.string().required("Required"),
   applying: Yup.string().required("Required"),
   salary: Yup.string().required("Required"),
 

@@ -4,7 +4,7 @@ import Navbar from "react-bootstrap/Navbar";
 import { useMediaQuery } from "react-responsive";
 import btnMenuClose from "../../static/Button_ Menu.png";
 import btnMenuOpen from "../../static/Button_ Menu_Open.png";
-import logo from "../../static/svg.png";
+import logo from "../../static/AM_Logo_header.svg";
 import styles from "../theme/index.module.css";
 import "./layout.css";
 const Header = (props) => {
@@ -22,7 +22,6 @@ const Header = (props) => {
           <div className={`${styles.header} pl-3 ${open ? "zindex" : ""}`}>
             <Navbar className="p-0">
               <Navbar.Brand href="/">
-                {" "}
                 <div className="col-4 col-lg-8">
                   <img src={logo} alt="Logo" />
                 </div>
@@ -55,7 +54,7 @@ const Header = (props) => {
             <Navbar.Brand href="/">
               {" "}
               <div className="col-4 col-lg-8">
-                <img style={{ width: "200%" }} src={logo} alt="Logo" />
+                <img src={logo} alt="Logo" />
               </div>
             </Navbar.Brand>
             <Navbar.Collapse>

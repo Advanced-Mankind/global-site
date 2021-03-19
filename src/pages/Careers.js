@@ -106,8 +106,8 @@ export default function Careers() {
                     <Button
                       style={{
                         borderRadius: "34px",
-                        backgroundColor: "#DEE2E8",
-                        color: "#222B45",
+                        backgroundColor: "#FFFFFF",
+                        color: "#3333FF",
                         marginTop: "28px",
                         marginBottom: "30px",
                         padding: "16px",

@@ -51,7 +51,7 @@ input::placeholder {
   width: 100%;
   z-index: 1000;
   top: 0;
-  padding: 24px 24px 24px 40px;
+  padding: 24px 24px 24px 10px;
   min-height: 90px;
   border: 1px solid #fbfbfb;
   background-color: #ffffff;
@@ -320,7 +320,7 @@ input::placeholder {
 }
 
 .performanceText {
-  font-size: 80px;
+  font-size: 60px;
   font-family: "Open Sans";
   font-weight: bold;
   line-height: 24px;
