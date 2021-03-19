@@ -6,7 +6,7 @@ import "./styles.css";
 const WereHiring = () => {
   return (
     <>
-      <Container className="p-0 m-0">
+      <Container fluid className="p-0 m-0">
         <Row className="mx-0 wereHiringMobile">
           <Col sm={4}></Col>
           <Col sm={8}>
