@@ -4,12 +4,13 @@ import "./styles.css";
 import CandidateList from "../Positions/candidateList";
 
 const CandidateCard = (props) => {
+  const { info } = props;
   const [open, setOpen] = useState(false);
 
   return (
     <Container>
       <Row>
-        <h1 className="title">UI/UX Designer</h1>
+        <h1 className="title">{info.area}</h1>
         <Button
           style={{
             backgroundColor: "#FFFFFF",
@@ -26,6 +27,7 @@ const CandidateCard = (props) => {
         </Button>
         <Collapse in={open}>
           <Container>
+            <p>{info.description}</p>
             <p
               style={{
                 fontFamily: "Open Sans",
@@ -34,10 +36,20 @@ const CandidateCard = (props) => {
                 lineHeight: "20px",
               }}
             >
-              About the ideal candidate:
+              Responsibilities
             </p>
-            <Row>
-              <CandidateList />
+              <CandidateList data={info.responsibilities} />
+              <p
+                style={{
+                  fontFamily: "Open Sans",
+                  fontSize: "15px",
+                  fontWeight: "bold",
+                  lineHeight: "20px",
+                }}
+              >
+                Requirements
+              </p>
+              <CandidateList data={info.requirements} />
               <Col className="cardMobile" sm="12">
                 <Button
                   onClick={() => props.setShow(true)}
@@ -104,7 +116,6 @@ const CandidateCard = (props) => {
                   APPLY
                 </Button>
               </Col>
-            </Row>
           </Container>
         </Collapse>
       </Row>
