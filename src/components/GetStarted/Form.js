@@ -19,9 +19,7 @@ const SignupSchema = Yup.object().shape({
   tel: Yup.string().required("Required"),
   company: Yup.string().required("Required"),
   firstName: Yup.string().required("Required"),
-
   lastName: Yup.string().required("Required"),
-  role: Yup.string().required("Required"),
 });
 
 const FormGetStarted = () => {

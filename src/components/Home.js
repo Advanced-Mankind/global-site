@@ -345,7 +345,7 @@ export default function Home() {
             </Row>
           </Container>
         </div>
-        <div style={{ marginTop: "5%", marginLeft: "3%", marginRight:"3%" }}>
+        <div style={{ marginTop: "5%"}}>
           <StartsWithWhy />
         </div>
         <div style={{ marginTop: "5%" }}>
@@ -365,17 +365,18 @@ export default function Home() {
             imgs={[
               require("../../static/Hyundai.png"),
               require("../../static/Canon.png"),
-              require("../../static/Motorola.png"),
+              require("../../static/Guidex.png"),
               require("../../static/ACS.png"),
               require("../../static/E.png"),
               require("../../static/coreLogic.png"),
               require("../../static/coxmedia.png"),
               require("../../static/chedrahui.png"),
+              require("../../static/AnyClub.png"),
             ]}
           />
         </div>
 
-        <div style={{ marginTop: "5%", marginLeft: "3%", marginRight:"3%" }}>
+        <div style={{ marginTop: "5%"}}>
           <WereHirin />
         </div>
         <div style={{ marginTop: "5%" }}>
@@ -464,7 +465,7 @@ export default function Home() {
             </Row>
           </Container>
         </div>
-        <div ref={messagesEndRef} style={{ marginTop: "5%", marginLeft: "3%", marginRight:"3%"}}>
+        <div ref={messagesEndRef} style={{ marginTop: "5%"}}>
           <GetStarted />
         </div>
       </div>

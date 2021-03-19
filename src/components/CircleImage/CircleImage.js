@@ -11,7 +11,7 @@ const CircleImage = (props) => {
     } else {
       setCurrent(0);
     }
-  }, 7000);
+  }, 12000);
 
   return (
     <div style={{ minHeight: "165px" }}>
