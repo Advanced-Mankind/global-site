@@ -62,7 +62,7 @@
   font-weight: 300;
   letter-spacing: 0;
   line-height: 16px;
-  margin-left: 20px;
+  margin-left: 8%;
   font-style: italic;
 }
 
@@ -73,7 +73,7 @@
   font-weight: bold;
   letter-spacing: 0;
   line-height: 16px;
-  margin-left: 37px;
+  margin-left: 12%;
 }
 
 .imageMobile {
@@ -159,6 +159,26 @@
 
   .imageDesktop {
     display: flex !important;
+  }
+  .QuoteCaption {
+    color: white;
+    font-family: "Open Sans";
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 0;
+    line-height: 16px;
+    margin-left: 10%;
+    font-style: italic;
+  }
+  
+  .QuoteCaptionBold {
+    color: white;
+    font-family: "Open Sans";
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 16px;
+    margin-left: 13%;
   }
 
   /* .stylesContentRightDesktop{
