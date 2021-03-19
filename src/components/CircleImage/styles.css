@@ -17,8 +17,10 @@
 }
 
 .itemImage {
+  animation-timing-function: linear;
   position: relative;
-  animation: animatetop 0.8s
+  animation:   0.8s linear  animatetop
+  
 }
 
 
@@ -35,13 +37,13 @@
 
 
 @keyframes animatetop {
-  from {
-    left: -80px;
-    opacity: 0
-  }
+  
 
-  to {
-    right: 0;
-    opacity: 1
-  }
+  0% {  left: -80px;}
+  /* 25%{  left: -50px;}
+  50%{ left: -25px;}
+  75%{ left: -10px;}
+  85%{ left: -5px;}
+  95%{ left: -2px;} */
+  100%{  left: 0;}
 }
