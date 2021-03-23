@@ -11,6 +11,7 @@
   transition: 0.5s;
   z-index: 999;
 }
+
 .nav-link-am {
   color: #222b45 !important;
   font-family: "Open Sans";
@@ -19,6 +20,7 @@
   letter-spacing: 0;
   line-height: 16px;
 }
+
 .overlay-content {
   position: relative;
   top: 8%;
@@ -53,25 +55,30 @@
   right: 45px;
   font-size: 60px;
 }
+
 #menuButton,
 .navbar-brand {
   z-index: 998;
   cursor: pointer;
 }
+
 .zindex {
   z-index: 1000;
-  position: relative;
 }
+
 .hide-overflow {
   overflow: hidden !important;
 }
+
 @media screen and (max-height: 450px) {
   .overlay {
     overflow-y: hidden;
   }
+
   .overlay a {
     font-size: 20px;
   }
+
   .overlay .closebtn {
     font-size: 40px;
     top: 15px;

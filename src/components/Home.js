@@ -5,7 +5,6 @@ import "normalize.css";
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import Carousel from "react-bootstrap/Carousel";
-import { useMediaQuery } from "react-responsive";
 import Partners from "../components/Partners/Partners";
 import styles from "../theme/index.module.css";
 import CaseStudyCard from "./CaseStudyCard/CaseStudyCard";
@@ -345,7 +344,7 @@ export default function Home() {
             </Row>
           </Container>
         </div>
-        <div style={{ marginTop: "5%"}}>
+        <div style={{ marginTop: "5%" }}>
           <StartsWithWhy />
         </div>
         <div style={{ marginTop: "5%" }}>
@@ -376,7 +375,7 @@ export default function Home() {
           />
         </div>
 
-        <div style={{ marginTop: "5%"}}>
+        <div style={{ marginTop: "5%" }}>
           <WereHirin />
         </div>
         <div style={{ marginTop: "5%" }}>
@@ -465,7 +464,7 @@ export default function Home() {
             </Row>
           </Container>
         </div>
-        <div ref={messagesEndRef} style={{ marginTop: "5%"}}>
+        <div ref={messagesEndRef} style={{ marginTop: "5%" }}>
           <GetStarted />
         </div>
       </div>

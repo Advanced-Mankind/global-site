@@ -1,55 +1,50 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import { useMediaQuery } from "react-responsive";
+import logo from "../../static/AM_Logo_header.svg";
 import btnMenuClose from "../../static/Button_ Menu.png";
 import btnMenuOpen from "../../static/Button_ Menu_Open.png";
-import logo from "../../static/AM_Logo_header.svg";
 import styles from "../theme/index.module.css";
 import "./layout.css";
 const Header = (props) => {
   const { open, setOpen } = props;
-  const isTabletOrMobile = useMediaQuery({ maxWidth: 1224 });
-  useEffect(() => {
-    if (!isTabletOrMobile) {
-      setOpen(false);
-    }
-  }, [isTabletOrMobile]);
+
   return (
     <>
-      {isTabletOrMobile ? (
-        <>
-          <div className={`${styles.header} pl-3 ${open ? "zindex" : ""}`}>
-            <Navbar className="p-0">
-              <Navbar.Brand href="/">
-                <div className="col-4 col-lg-8">
-                  <img src={logo} alt="Logo" />
-                </div>
-              </Navbar.Brand>
-              <Navbar.Collapse>
-                <Nav className="ml-auto">
-                  <span id="menuButton" onClick={() => setOpen(!open)}>
-                    {open ? (
-                      <img src={btnMenuClose} alt="btnMenuOpen" />
-                    ) : (
-                      <img src={btnMenuOpen} alt="btnMenuClose" />
-                    )}
-                  </span>
-                </Nav>
-              </Navbar.Collapse>
-            </Navbar>
-          </div>
-          <div id="myNav" className={`overlay ${open ? "h-100" : "h-0"}`}>
-            <div className="overlay-content">
-              <a href="/Who-We-Are">Who We Are</a>
-              <a href="/Our-Approach">Our Approach</a>
-              <a href="/Case-Studies">Our Work</a>
-              <a href="/Careers">Careers</a>
+      <div
+        className={`${styles.header} d-md-block d-lg-none pl-3 ${
+          open ? "zindex" : ""
+        }`}
+      >
+        <Navbar className="p-0">
+          <Navbar.Brand href="/">
+            <div className="col-4 col-lg-8">
+              <img src={logo} alt="Logo" />
             </div>
-          </div>
-        </>
-      ) : (
-        <div className={` ${styles.header}`}>
+          </Navbar.Brand>
+          <Navbar.Collapse>
+            <Nav className="ml-auto">
+              <span id="menuButton" onClick={() => setOpen(!open)}>
+                {open ? (
+                  <img src={btnMenuClose} alt="btnMenuOpen" />
+                ) : (
+                  <img src={btnMenuOpen} alt="btnMenuClose" />
+                )}
+              </span>
+            </Nav>
+          </Navbar.Collapse>
+        </Navbar>
+      </div>
+      <div id="myNav" className={`overlay ${open ? "h-100" : "h-0"}`}>
+        <div className="overlay-content">
+          <a href="/Who-We-Are">Who We Are</a>
+          <a href="/Our-Approach">Our Approach</a>
+          <a href="/Case-Studies">Our Work</a>
+          <a href="/Careers">Careers</a>
+        </div>
+      </div>
+      <>
+        <div className={` ${styles.header} d-lg-block d-none`}>
           <Navbar className={`p-0 `}>
             <Navbar.Brand href="/">
               {" "}
@@ -75,7 +70,7 @@ const Header = (props) => {
             </Navbar.Collapse>
           </Navbar>
         </div>
-      )}
+      </>
     </>
   );
 };
