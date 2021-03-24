@@ -8,7 +8,7 @@ const GetStarted = () => {
   return (
     <div className="GetStarterContainer">
       <Container>
-        <Row>
+        <Row className="">
           <Col sm="12" md="12" lg="6">
             <ContentLeft />
           </Col>
@@ -20,9 +20,10 @@ const GetStarted = () => {
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
+              padding:"0px"
             }}
           >
-            <FormGetStarted />
+          <FormGetStarted/>
           </Col>
         </Row>
       </Container>

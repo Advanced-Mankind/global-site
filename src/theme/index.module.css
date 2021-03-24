@@ -3,6 +3,8 @@
 .body {
   min-height: 100vh;
   position: relative;
+  overflow: hidden;
+  max-width: 100%;
 }
 
 input::placeholder {
@@ -162,7 +164,7 @@ input::placeholder {
 
 .carouselContainer {
   position: absolute;
-  left: 305px;
+  left: 263px;
 }
 
 @keyframes down {
@@ -266,10 +268,10 @@ input::placeholder {
 
 .title {
   font-family: "Open Sans";
-  font-size: 36px;
+  font-size: 30px;
   font-weight: bold;
   letter-spacing: 0;
-  line-height: 48px;
+  line-height: 40px;
 }
 
 .paragraph {
@@ -415,6 +417,10 @@ input::placeholder {
     float: right;
     bottom: 0;
   }
+  .carouselContainer {
+    position: absolute;
+    left: 265px;
+  }
 }
 
 /* 
@@ -478,6 +484,7 @@ input::placeholder {
     width: 60px;
     height: 60px;
   }
+  
 }
 
 /* 
@@ -509,7 +516,11 @@ input::placeholder {
   }
 
   .title {
+    font-family: "Open Sans";
     font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 48px;
   }
 
   .leftContent {
@@ -534,6 +545,10 @@ input::placeholder {
     line-height: 32px;
     margin: 80px 15px;
     text-align: center;
+  }
+  .carouselContainer {
+    position: absolute;
+    left: 305px;
   }
 }
 

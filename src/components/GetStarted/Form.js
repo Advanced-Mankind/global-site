@@ -34,7 +34,6 @@ const FormGetStarted = () => {
             company: "",
             firstName: "",
             lastName: "",
-            role: "",
             country: "",
           }}
           validationSchema={SignupSchema}
@@ -83,7 +82,7 @@ const FormGetStarted = () => {
           }) => (
             <Form noValidate onSubmit={handleSubmit}>
               <Form.Row>
-                <Form.Group as={Col} xs="12" sm="6">
+                <Form.Group as={Col} xs="12" sm="6"  className="mt-3">
                   <Form.Control
                     size="lg"
                     type="email"
@@ -99,7 +98,7 @@ const FormGetStarted = () => {
                     {errors.email}
                   </Form.Control.Feedback>
                 </Form.Group>
-                <Form.Group as={Col} xs="12" sm="6">
+                <Form.Group as={Col} xs="12" sm="6" className="mt-3">
                   <Form.Control
                     size="lg"
                     type="tel"
@@ -166,24 +165,7 @@ const FormGetStarted = () => {
                     {errors.lastName}
                   </Form.Control.Feedback>
                 </Form.Group>
-
-                <Form.Group as={Col} xs="12" sm="8" className="mt-3">
-                  <Form.Control
-                    size="lg"
-                    type="text"
-                    name="role"
-                    placeholder="Job role"
-                    onBlur={handleBlur}
-                    value={values.role}
-                    onChange={handleChange}
-                    isValid={touched.role && !errors.role}
-                    isInvalid={!!errors.role}
-                  />
-                  <Form.Control.Feedback type="invalid">
-                    {errors.role}
-                  </Form.Control.Feedback>
-                </Form.Group>
-                <Form.Group as={Col} xs="12" sm="4" className="mt-3">
+                <Form.Group as={Col} xs="12" sm="6" className="mt-3">
                   <Select
                     styles={customStyles}
                     placeholder="Country"
@@ -199,7 +181,9 @@ const FormGetStarted = () => {
                     {errors.country}
                   </Form.Control.Feedback>
                 </Form.Group>
-                <Col sm="12" md="3" lg="4" className="ml-0">
+                
+              </Form.Row>
+              <Col sm="12" md="3" lg="4" className="ml-0 my-3">
                 <Button
                   style={{
                     borderRadius: "34px",
@@ -224,8 +208,6 @@ const FormGetStarted = () => {
                   )}
                 </Button>
               </Col>
-              </Form.Row>
-            
             </Form>
           )}
         </Formik>

@@ -46,7 +46,7 @@ export default function Careers() {
                 <Col sm="12" md="8" lg="5" className="px-0">
                   <Link to="/Positions">
                     <Button
-                      className="w-100"
+                      className="w-100 d-none d-md-block"
                       style={{
                         borderRadius: "34px",
                         backgroundColor: "#3333FF",
@@ -65,8 +65,8 @@ export default function Careers() {
                   </Link>
                 </Col>
               </Col>
-              <Col className="d-none d-md-block" sm="6" md="7">
-                <Row className="img-Container .d-sm-none .d-md-block mx-auto">
+              <Col sm="6" md="7">
+                <Row className="img-Container mx-auto">
                   <img
                     className="img-fluid"
                     src={require("../../static/Group.png")}
@@ -74,6 +74,27 @@ export default function Careers() {
                   />
                 </Row>
               </Col>
+              <Col sm="12" md="8" lg="5" className="d-block d-sm-none d-none d-sm-block d-md-none">
+                  <Link to="/Positions">
+                    <Button
+                      className="w-100"
+                      style={{
+                        borderRadius: "34px",
+                        backgroundColor: "#3333FF",
+                        marginTop: "20px",
+                        maxWidth:"289px",
+                        padding: "16px",
+                        alignItems: "center",
+                        fontFamily: "Open Sans",
+                        fontSize: "18px",
+                        fontWeight: "bold",
+                        lineHeight: "24px",
+                      }}
+                    >
+                      See Positions
+                    </Button>
+                  </Link>
+                </Col>
             </Row>
           </Container>
         </div>
@@ -82,9 +103,7 @@ export default function Careers() {
             Our Benefits
           </p>
         </Col>
-        <div>
-          <OurPerks />
-        </div>
+          <OurPerks/>
         <div style={{ marginTop: "5%", marginLeft: "5%" }}>
           <div className={styles.getContainer}>
             <Container>

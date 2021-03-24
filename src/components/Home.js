@@ -54,15 +54,16 @@ export default function Home() {
     <div
       style={{
         paddingTop: "90px",
+       
       }}
     >
       <div className="row align-items-center">
-        <div className="col col-sm-6 p-0">
+        <div className="col col-sm-6 p-0 pt-5">
           <div className={`${styles.leftContent}`}>
             <div className={styles.titleContainer}>
               <div className="col-12 mt-3">
                 <div className={"row align-items-center"}>
-                  <div className="col-10">
+                  <div className="col-8">
                     <h1 className={styles.title}>
                       We deliver transformative interfaces.
                     </h1>
@@ -175,7 +176,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="col-12">
-                <p className={`${styles.subTitle} mb-0`}>
+                <p className={`${styles.subTitle} mb-3`}>
                   We harness UX design principles with imaginative problem
                   solving to deliver tomorrow's digital experiences. We inspire,
                   innovate, and inform, leaving mediocre and boring behind.
@@ -375,9 +376,9 @@ export default function Home() {
           />
         </div>
 
-        <div style={{ marginTop: "5%" }}>
+        <Container fluid style={{ marginTop: "5%" }}>
           <WereHirin />
-        </div>
+        </Container>
         <div style={{ marginTop: "5%" }}>
           <Container>
             <div>

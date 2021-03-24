@@ -96,7 +96,7 @@ export default function WhoWeAre() {
     <Layout>
       <Container
         fluid
-        className="bg-white px-0"
+        className="backgroudWhoWeAre"
         style={{
           paddingTop: "130px",
         }}
@@ -129,7 +129,7 @@ export default function WhoWeAre() {
       <Container className="my-sm-5 my-5">
         <p className="WhoTitle">Our Team</p>
       </Container>
-      <Container className="my-5">
+      <Container className="my-3">
         <Row>
           {team.map((pp, index) => {
             return (
@@ -145,7 +145,9 @@ export default function WhoWeAre() {
           })}
         </Row>
       </Container>
-      <WereHirin />
+      <Container fluid>
+      <WereHirin/>
+      </Container>
     </Layout>
   );
 }

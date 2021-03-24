@@ -73,9 +73,17 @@
   font-weight: bold;
   letter-spacing: 0;
   line-height: 16px;
+  margin-left: 9%;
+}
+.QuoteCaptionBoldKelly {
+  color: white;
+  font-family: "Open Sans";
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 16px;
   margin-left: 12%;
 }
-
 .imageMobile {
   display: flex;
   width: 100%;
@@ -172,6 +180,15 @@
   }
   
   .QuoteCaptionBold {
+    color: white;
+    font-family: "Open Sans";
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 16px;
+    margin-left: 9%;
+  }
+  .QuoteCaptionBoldKelly {
     color: white;
     font-family: "Open Sans";
     font-size: 12px;
