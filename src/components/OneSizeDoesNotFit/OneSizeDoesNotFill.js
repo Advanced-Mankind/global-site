@@ -10,7 +10,7 @@ const OneSizeDoesNotFill = ({
 }) => {
   return (
     <Container fluid className="backgroundContainer">
-      <Container className="stylesMobile">
+      <div className="stylesMobile">
         <Row>
           <Col className="my-4">
             <img
@@ -30,7 +30,7 @@ const OneSizeDoesNotFill = ({
             <p className="paragraph"> {secondParagraph} </p>
           </Col>
         </Row>
-      </Container>
+      </div>
 
       <Container className="stylesTablet">
         <Row>

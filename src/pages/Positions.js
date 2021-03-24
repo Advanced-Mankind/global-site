@@ -187,7 +187,7 @@ export default function Positions() {
               <CandidateCard info={position} setShow={setModalShow} />
             </div>
           </Col>
-          <Col sm="12" md="12" lg="12" className="cardMobile">
+          <Col sm="12" md="12" lg="12" className="cardMobile p-0">
             <div className="textCard">
               <CandidateCard info={position} setShow={setModalShow} />
             </div>

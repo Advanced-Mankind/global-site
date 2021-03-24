@@ -4,7 +4,7 @@ import { Col } from "react-bootstrap";
 const ContentLeft = () => {
   return (
     <>
-      <Col className="imageMobile" xs={12} md={6}>
+      <Col className="imageMobile" xs={12} md={6} style={{marginTop:"40px", marginBottom:"45px"}}>
         <img
           src={require("../../../static/illustrationMobile.png")}
           alt="Ilustration"

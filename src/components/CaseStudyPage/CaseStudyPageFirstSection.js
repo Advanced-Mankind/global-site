@@ -17,17 +17,17 @@ const CaseStudyPageFirstSection = ({ imgs }) => {
             alignItems: "center",
           }}
         >
-          <Col sm="12" md="8" lg="6">
-            <h1 className="title">Let’s build together.</h1>
+          <Col xs="12" sm="12" md="6" lg="6" xl="6">
+            <h1 className="titleCase">Let’s build together.</h1>
             <p>
               We don’t do band-aids but we don’t like to break the bank either.
               We value high quality and lasting relationships.
             </p>
           </Col>
-          <Col className="imgDesktop">
+          <Col  md="6" lg="6" xl="6" className="imgDesktop">
             <img src={imgs[0]} alt="imgDesktop" />
           </Col>
-          <Col sm="12" md="4" lg="6" className="imgTabMob">
+          <Col sm="12" md="6" lg="6" xl="6" className="imgTabMob">
             <img src={imgs[1]} alt="imgMT" className="imgTabMob" />
           </Col>
         </Row>
@@ -44,7 +44,7 @@ const CaseStudyPageFirstSection = ({ imgs }) => {
             <img src={imgs[1]} alt="imgMT" className="imgTabMob" />
           </Col>
           <Col sm="12" md="6">
-            <h1 className="title">Let’s build together.</h1>
+            <h1 className="titleCase">Let’s build together.</h1>
             <p>
               We don’t do band-aids but we don’t like to break the bank either.
               We value high quality and lasting relationships.

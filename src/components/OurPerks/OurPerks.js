@@ -7,7 +7,7 @@ const OurPerks = () => {
   return (
     <Container>
       <Row>
-        <Col sm="12" md="6" lg="6" className="my-5 ">
+        <Col sm="12" md="6" lg="6" className="my-3 ">
           <OurPerksCard
             icon={require("../../../static/globe-2.svg")}
             headline={"Work From Anywhere"}
@@ -16,7 +16,7 @@ const OurPerks = () => {
             }
           />
         </Col>
-        <Col sm="12" md="6" lg="6" className="my-5 ">
+        <Col sm="12" md="6" lg="6" className="my-3 ">
           <OurPerksCard
             icon={require("../../../static/shield.svg")}
             headline={"Benefits & Perks"}
@@ -25,7 +25,7 @@ const OurPerks = () => {
             }
           />
         </Col>
-        <Col sm="12" md="6" lg="6" className="my-5 ">
+        <Col sm="12" md="6" lg="6" className="my-3 ">
           <OurPerksCard
             icon={require("../../../static/book-open.svg")}
             headline={"Continuing Education"}
@@ -34,7 +34,7 @@ const OurPerks = () => {
             }
           />
         </Col>
-        <Col sm="12" md="6" lg="6" className="my-5 ">
+        <Col sm="12" md="6" lg="6" className="my-3 ">
           <OurPerksCard
             icon={require("../../../static/weight.svg")}
             headline={"Wellness Programs"}
@@ -44,11 +44,9 @@ const OurPerks = () => {
           />
         </Col>
       </Row>
-      <Container fluid>
         <OurPerkQuote />
-      </Container>
       <Row style={{ marginTop: "5%" }}>
-        <Col sm="12" md="6" lg="6" className="my-5 ">
+        <Col sm="12" md="6" lg="6" className="my-3 ">
           <OurPerksCard
             icon={require("../../../static/pie-chart.svg")}
             headline={"401K"}
@@ -57,7 +55,7 @@ const OurPerks = () => {
             }
           />
         </Col>
-        <Col sm="12" md="6" lg="6" className="my-5 ">
+        <Col sm="12" md="6" lg="6" className="my-3 ">
           <OurPerksCard
             icon={require("../../../static/monitor.svg")}
             headline={"Sweet Tech"}
@@ -66,7 +64,7 @@ const OurPerks = () => {
             }
           />
         </Col>
-        <Col sm="12" md="6" lg="6" className="my-5 ">
+        <Col sm="12" md="6" lg="6" className="my-3 ">
           <OurPerksCard
             icon={require("../../../static/briefcase.svg")}
             headline={"Unlimited Vacation"}
@@ -75,7 +73,7 @@ const OurPerks = () => {
             }
           />
         </Col>
-        <Col sm="12" md="6" lg="6" className="my-5 ">
+        <Col sm="12" md="6" lg="6" className="my-3 ">
           <OurPerksCard
             icon={require("../../../static/calendar.svg")}
             headline={"Yearly Retreats"}

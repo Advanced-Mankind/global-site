@@ -1,3 +1,7 @@
+.backgroudWhoWeAre{
+  background-color:#FFFFFF;
+  padding: 0px;
+}
 .WhoTitle {
   color: #222b45;
   font-family: "Open Sans";
@@ -7,3 +11,4 @@
   line-height: 48px;
   text-align: center;
 }
+

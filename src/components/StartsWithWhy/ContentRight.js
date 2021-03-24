@@ -45,7 +45,7 @@ const ContentRight = () => {
                 </p>
               </Col>
               <div className="w-100 d-flex">
-                <h4 className="QuoteCaptionBold">Kelly Rader</h4>
+                <h4 className="QuoteCaptionBoldKelly">Kelly Rader</h4>
                 <h4 className="caption">, Object Edge</h4>
               </div>
             </Row>

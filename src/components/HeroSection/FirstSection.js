@@ -7,7 +7,7 @@ const FirsSection = () => {
         <Container>
             <Row>
                 <Col sm="12" md="7" lg="6">
-                    <h1 className="title">Simple Approach & Uncomplicated Process</h1>
+                    <h1 className="titleOur">Simple Approach & Uncomplicated Process</h1>
                     <p className="paragraph">
                         The Advanced Mankind approach is no nonsense. We aim to understand our partners business, learn through research what it will take to get to the next level, and build tools and website features that go beyond today’s expectations.
                     </p>
