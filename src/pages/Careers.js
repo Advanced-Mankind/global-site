@@ -82,7 +82,6 @@ export default function Careers() {
                         borderRadius: "34px",
                         backgroundColor: "#3333FF",
                         marginTop: "20px",
-                        maxWidth:"289px",
                         padding: "16px",
                         alignItems: "center",
                         fontFamily: "Open Sans",

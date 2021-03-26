@@ -54,7 +54,7 @@ export default function Home() {
     <div
       style={{
         paddingTop: "90px",
-       
+        overflow: "hidden"
       }}
     >
       <div className="row align-items-center">
@@ -379,10 +379,10 @@ export default function Home() {
         <Container fluid style={{ marginTop: "5%" }}>
           <WereHirin />
         </Container>
-        <div style={{ marginTop: "5%" }}>
+        <div>
           <Container>
             <div>
-              <h1 className={styles.title} style={{ textAlign: "center" }}>
+              <h1 className={styles.title} style={{ textAlign: "center", marginTop: "15%"  }}>
                 Simple, smart, stellar work.
               </h1>
               <p

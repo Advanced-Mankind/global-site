@@ -100,6 +100,8 @@ export default function Positions() {
       >
         <div className="col col-sm-6 p-0">
           <div className={`${styles.leftContent}`}>
+            <div style={{marginTop:"20px"
+              }}>
             <Link
               to="/Careers/"
               style={{
@@ -109,10 +111,12 @@ export default function Positions() {
                 fontWeight: "600",
                 letterSpacing: "0",
                 lineHeight: "16px",
+                marginTop:"10px"
               }}
             >
               Back to Careers
             </Link>
+            </div>
             <div className="row">
               <div className="col-12 mt-3">
                 <h1 className={styles.title}>

@@ -19,7 +19,7 @@ const ContainerPopup = (props) => {
           <p className="title-form mb-0 ml-3">Apply.</p>
         </Modal.Title>
       </Modal.Header>
-      <Modal.Body>
+      <Modal.Body style={{margin:" 15px 0px"}}>
         {/* <Container
           fluid
           className="popContainer"
@@ -27,7 +27,7 @@ const ContainerPopup = (props) => {
         >
           
         </Container> */}
-        <Container>
+        <div>
           <Row>
             <Col sm="12" md="12" lg="12"></Col>
             <Col
@@ -38,12 +38,13 @@ const ContainerPopup = (props) => {
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
+                margin:"0px"
               }}
             >
               <PositionsPopup setShow={props.setShow} />
             </Col>
           </Row>
-        </Container>
+        </div>
       </Modal.Body>
     </Modal>
   );
