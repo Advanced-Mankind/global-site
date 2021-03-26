@@ -38,15 +38,15 @@ const Content = () => {
             <Row>
               <Col xs={12} xl={7}>
                 <p className="QuoteCaption">
-                  “Would love to have a quote here from a staff memeber talking
-                  about how great it was to work with us. Lorem upsum dolor un
-                  met lorem ipsum dolor un met.”
+                  “Working at Advanced Mankind starts with good people. The
+                  knowledge and skill they have represent the fuel that drives
+                  the heart of this company.”
                 </p>
               </Col>
-                <div className="w-100 d-flex">
-                  <h4 className="QuoteCaptionBold">Shaun Davis</h4>
-                  <h4 className="caption">, Senior UI Designer</h4>
-                </div>
+              <div className="w-100 d-flex">
+                <h4 className="QuoteCaptionBold">Scott Prather</h4>
+                <h4 className="caption">, Creative Director</h4>
+              </div>
             </Row>
           </Col>
         </Row>
