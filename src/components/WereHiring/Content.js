@@ -30,7 +30,7 @@ const Content = () => {
           <Col xs={2} md={2} xl={1}>
             <img
               className="avatar"
-              src={require("../../../static/profile2.png")}
+              src={require("../../../static/Scott_profile.png")}
               alt="Ilustration"
             />
           </Col>

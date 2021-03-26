@@ -62,7 +62,7 @@ const Step2 = ({ title, paragraph }) => {
             <h1 className="titleTabletMobile"> {title} </h1>
             <p className="paragraph"> {paragraph} </p>
             <img
-              src={require("../../../static/curveChartMobile.png")}
+              src={require("../../../static/curveChartMobile.svg")}
               alt="chartMobile"
             />
           </Col>

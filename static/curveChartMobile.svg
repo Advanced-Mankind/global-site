@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="538px" height="201px" viewBox="0 0 538 201" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Curve Chart</title>
+    <g id="Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="D---Our-Approach" transform="translate(-159.000000, -2457.000000)">
+            <g id="Section-3:-Process" transform="translate(149.000000, 1931.000000)">
+                <g id="Section-2" transform="translate(1.000000, 364.000000)">
+                    <g id="Curve-Chart" transform="translate(10.500000, 162.000000)">
+                        <path d="M40.5,171.539816 C97.4880094,169.406342 144.543953,151.744113 181.66783,118.553131 C237.353646,68.7666562 255.997807,59 285.63571,59 C315.273612,59 355.264681,98.745405 411.974646,139.376164 C449.781289,166.463337 490.623074,177.184554 534.5,171.539816" id="Path-3" stroke="#3333FF" stroke-width="5"></path>
+                        <line x1="0.5" y1="199.5" x2="534.5" y2="199.5" id="Line" stroke="#3333FF" stroke-width="3" opacity="0.398135231" stroke-linecap="square"></line>
+                        <line x1="64" y1="199.51506" x2="64" y2="39.4849398" id="Line-2" stroke="#3333FF" stroke-width="2" opacity="0.4" stroke-linecap="square" stroke-dasharray="4"></line>
+                        <line x1="163" y1="199.51506" x2="163" y2="39.4849398" id="Line-2" stroke="#3333FF" stroke-width="2" opacity="0.4" stroke-linecap="square" stroke-dasharray="4"></line>
+                        <line x1="422" y1="199.51506" x2="422" y2="39.4849398" id="Line-2" stroke="#3333FF" stroke-width="2" opacity="0.4" stroke-linecap="square" stroke-dasharray="4"></line>
+                        <text id="Innovators" font-family="OpenSans-Regular, Open Sans" font-size="12" font-weight="normal" line-spacing="16" fill="#222B45">
+                            <tspan x="0.5" y="188">Innovators</tspan>
+                        </text>
+                        <text id="Early-Adopters" font-family="OpenSans-Regular, Open Sans" font-size="12" font-weight="normal" line-spacing="16" fill="#222B45">
+                            <tspan x="72.5" y="188">Early Adopters</tspan>
+                        </text>
+                        <text id="Early-Majority" font-family="OpenSans-Regular, Open Sans" font-size="12" font-weight="normal" line-spacing="16" fill="#222B45">
+                            <tspan x="184.5" y="188">Early Majority</tspan>
+                        </text>
+                        <text id="Late-Majority" font-family="OpenSans-Regular, Open Sans" font-size="12" font-weight="normal" line-spacing="16" fill="#222B45">
+                            <tspan x="316.5" y="188">Late Majority</tspan>
+                        </text>
+                        <text id="Laggards" font-family="OpenSans-Regular, Open Sans" font-size="12" font-weight="normal" line-spacing="16" fill="#222B45">
+                            <tspan x="444.5" y="188">Laggards</tspan>
+                        </text>
+                        <text id="Law-of-diffusion-of" font-family="OpenSans-Regular, Open Sans" font-size="12" font-weight="normal" line-spacing="16" fill="#222B45">
+                            <tspan x="184.5" y="13">Law of diffusion of innovation</tspan>
+                        </text>
+                        <path id="Line-3" d="M74.5121951,146 L83.5121951,150.5 L74.5121951,155 L74.512,151 L43.4878049,151 L43.4878049,150 L74.512,150 L74.5121951,146 Z" fill="#3333FF" fill-rule="nonzero"></path>
+                        <path id="Line-3" d="M173.512195,104 L182.512195,108.5 L173.512195,113 L173.512,109 L142.487805,109 L142.487805,108 L173.512,108 L173.512195,104 Z" fill="#3333FF" fill-rule="nonzero"></path>
+                        <line x1="284" y1="199.51506" x2="284" y2="39.4849398" id="Line-2" stroke="#3333FF" stroke-width="2" opacity="0.4" stroke-linecap="square" stroke-dasharray="4"></line>
+                        <path id="Line-3" d="M298.512195,44 L307.512195,48.5 L298.512195,53 L298.512,49 L267.487805,49 L267.487805,48 L298.512,48 L298.512195,44 Z" fill="#3333FF" fill-rule="nonzero"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
