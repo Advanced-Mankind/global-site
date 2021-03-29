@@ -14,13 +14,6 @@ const team = [
     imgMobile:require("../../static/EmilyMobile.png"),
   },
   {
-    name: "Fernando Higuera",
-    title: "Co-Owner",
-    imgDesktop: require("../../static/FernandoDesktop.png"),
-    imgTablet: require("../../static/FernandoTablet.png"),
-    imgMobile: require("../../static/FernandoMobile.png"),
-  },
-  {
     name: "Miguel Angel Franco",
     title: "Full stack Developer",
     imgDesktop: require("../../static/MiguelDesktop.png"),
