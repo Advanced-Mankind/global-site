@@ -103,8 +103,8 @@ const PositionsPopup = (props) => {
         }) => (
           <Form noValidate onSubmit={handleSubmit}>
             <Form.Row>
-              <Form.Group as={Col} xs="12" sm="6">
-                <Form.Control
+              <Form.Group as={Col} xs="12" sm="6" className="mt-3">
+                <Form.Control  
                   type="text"
                   size="lg"
                   name="firstName"
@@ -119,7 +119,7 @@ const PositionsPopup = (props) => {
                   {errors.firstName}
                 </Form.Control.Feedback>
               </Form.Group>
-              <Form.Group as={Col} xs="12" sm="6">
+              <Form.Group as={Col} xs="12" sm="6" className="mt-3">
                 <Form.Control
                   type="text"
                   size="lg"

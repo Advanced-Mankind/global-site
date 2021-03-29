@@ -169,9 +169,9 @@ export default function AnyClub() {
           </Col>
         </Row>
       </Container>
-      <Container fluid>
+      <div>
         <GetStarted />
-      </Container>
+      </div>
     </Layout>
   );
 }

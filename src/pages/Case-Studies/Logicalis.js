@@ -128,9 +128,9 @@ export default function Logicalis() {
           </Col>
         </Row>
       </Container>
-      <Container fluid>
+      <div>
         <GetStarted />
-      </Container>
+      </div>
     </Layout>
   );
 }
