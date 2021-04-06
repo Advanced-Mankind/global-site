@@ -20,7 +20,7 @@ const Content = () => {
       <Col xs={12}>
         <button className="Button">LEARN MORE</button>
       </Col>
-      <Col xs={12}>
+      <Col xs={12} className="pr-0">
         <Row>
           <i className="divider-line"></i>
         </Row>

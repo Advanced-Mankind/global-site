@@ -18,6 +18,7 @@ input::placeholder {
   padding: 0px;
   position: relative;
 }
+
 .leftContentPosition {
   z-index: 10;
   padding-left: 10%;
@@ -121,6 +122,7 @@ input::placeholder {
   line-height: 40px;
   text-align: center;
 }
+
 .titleSmart {
   color: #222b45;
   font-family: "Open Sans";
@@ -294,6 +296,7 @@ input::placeholder {
   letter-spacing: 0;
   line-height: 20px;
 }
+
 .subtitle15 {
   font-family: "Open Sans";
   font-weight: 600;
@@ -301,9 +304,10 @@ input::placeholder {
   letter-spacing: 0;
   line-height: 24px;
 }
+
 .containerAny {
- position: absolute;
- top: 20%
+  position: absolute;
+  top: 20%
 }
 
 .description26 {
@@ -314,6 +318,7 @@ input::placeholder {
   line-height: 32px;
   margin: 50px 15px;
 }
+
 .performance {
   font-size: 18px;
   font-family: "Open Sans";
@@ -324,6 +329,7 @@ input::placeholder {
   margin: 10% 28% 0%;
   white-space: break-spaces;
 }
+
 .performanceDot {
   height: 223px;
   width: 223px;
@@ -332,7 +338,7 @@ input::placeholder {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin:auto;
+  margin: auto;
 }
 
 .performanceText {
@@ -356,7 +362,6 @@ input::placeholder {
 .background_tabletHome {
   z-index: 10;
   max-width: 100%;
-  position: relative;
 }
 
 .curveBackground {
@@ -437,12 +442,9 @@ input::placeholder {
     float: right;
     bottom: 0;
   }
-  .background_tabletHome {
-    max-width: 400px;
-    position: relative;
-    float: right;
-    bottom: 0;
-  }
+
+  .background_tabletHome {}
+
   .carouselContainer {
     position: absolute;
     left: 265px;
@@ -472,6 +474,7 @@ input::placeholder {
   .footerText {
     text-align: right;
   }
+
   .description26 {
     font-family: "Open Sans";
     font-weight: bold;
@@ -510,6 +513,7 @@ input::placeholder {
     width: 60px;
     height: 60px;
   }
+
   .titleSmart {
     color: #222b45;
     font-family: "Open Sans";
@@ -520,7 +524,7 @@ input::placeholder {
     margin-top: 10%;
     text-align: center;
   }
-  
+
 }
 
 /* 
@@ -558,6 +562,7 @@ input::placeholder {
     letter-spacing: 0;
     line-height: 48px;
   }
+
   .titleSmart {
     color: #222b45;
     font-family: "Open Sans";
@@ -568,7 +573,8 @@ input::placeholder {
     margin-top: 10%;
     text-align: center;
   }
-/* 
+
+  /* 
   .leftContent {
     width: 54%;
     margin: auto;
@@ -579,15 +585,13 @@ input::placeholder {
     position: relative;
     float: right;
   }
-  .background_tabletHome {
-    max-width: 550px;
-    position: relative;
-    float: right;
-  }
+
+  .background_tabletHome {}
 
   .footerText {
     text-align: right;
   }
+
   .description26 {
     font-family: "Open Sans";
     font-weight: bold;
@@ -597,6 +601,7 @@ input::placeholder {
     margin: 80px 15px;
     text-align: center;
   }
+
   .carouselContainer {
     position: absolute;
     left: 305px;
