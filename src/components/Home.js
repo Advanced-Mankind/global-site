@@ -57,11 +57,12 @@ export default function Home() {
         overflow: "hidden"
       }}
     >
+      <Container>
       <div className="row align-items-center">
         <div className="col col-sm-6 p-0 pt-5">
           <div className={`${styles.leftContent}`}>
             <div className={styles.titleContainer}>
-              <div className="col-12 mt-3">
+              <div className="col-12 mt-3 justify-content-between">
                 <div className={"row align-items-center"}>
                   <div className="col-8">
                     <h1 className={styles.title}>
@@ -175,7 +176,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="col-12">
+              <div className="col col-sm-12 col-lg-8">
                 <p className={`${styles.subTitle} mb-3`}>
                   We harness UX design principles with imaginative problem
                   solving to deliver tomorrow's digital experiences. We inspire,
@@ -184,7 +185,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="col-12">
+          <div className="col-12 p-0">
             <img
               className={styles.background_mobile}
               src={require("../../static/background_mobile.png")}
@@ -192,19 +193,22 @@ export default function Home() {
             />
           </div>
         </div>
-        <div className="d-none d-sm-block col-sm-6 p-0 align-self-end">
+        <div className="d-none d-sm-block col-sm-6 p-0 align-self-end"
+        style={{position:"absolute", top:"75px", right:"0px"}}
+        >
           <img
             src={require("../../static/background.png")}
-            className={styles.background_tablet}
+            className={styles.background_tabletHome}
             alt=""
           />
         </div>
       </div>
+      </Container>
       <div>
         <div className={styles.curveBackground}>
           <div
             className="d-none d-sm-block text-center"
-            style={{ position: "relative", top: "75px" }}
+            style={{ position: "relative", top: "-160px" }}
           >
             {/* <div className={styles.scrollIcon} onClick={() => scrollToBottom()}>
               <p className={styles.scroll}>SCROLL</p>
@@ -297,7 +301,8 @@ export default function Home() {
             </Row>
           </Container>
         </div>
-        <div style={{ marginTop: "30px" }}>
+        
+        <div style={{ marginTop: "7%" }}>
           <Container className="col-12">
             <h1 className={styles.title32px} style={{ textAlign: "center" }}>
               Case Studies
@@ -382,7 +387,7 @@ export default function Home() {
         <div>
           <Container>
             <div>
-              <h1 className={styles.title} style={{ textAlign: "center", marginTop: "15%"  }}>
+              <h1 className={styles.titleSmart}>
                 Simple, smart, stellar work.
               </h1>
               <p

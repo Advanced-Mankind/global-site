@@ -99,7 +99,7 @@ export default function Positions() {
         }}
       >
         <div className="col col-sm-6 p-0">
-          <div className={`${styles.leftContent}`}>
+          <div className={`${styles.leftContentPosition}`}>
             <div style={{marginTop:"20px"
               }}>
             <Link
@@ -118,12 +118,12 @@ export default function Positions() {
             </Link>
             </div>
             <div className="row">
-              <div className="col-12 mt-3">
+              <div className="col-12 col-lg-8 mt-3">
                 <h1 className={styles.title}>
                   We are looking for our next team members!{" "}
                 </h1>
               </div>
-              <div className="col-12">
+              <div className="col-12 col-lg-8">
                 <p className={`${styles.subTitle} mb-0`}>
                   If you see a position that you are interested in please email
                   us your resume and we will get back to you to start the

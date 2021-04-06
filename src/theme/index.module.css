@@ -15,7 +15,12 @@ input::placeholder {
 
 .leftContent {
   z-index: 10;
-  padding: 0px 15px;
+  padding: 0px;
+  position: relative;
+}
+.leftContentPosition {
+  z-index: 10;
+  padding-left: 10%;
   position: relative;
 }
 
@@ -52,7 +57,7 @@ input::placeholder {
   width: 100%;
   z-index: 1000;
   top: 0;
-  padding: 24px 24px 0px 10px;
+  padding: 20px 24px 0px 10px;
   min-height: 90px;
   border: 1px solid #fbfbfb;
   background-color: #ffffff;
@@ -114,6 +119,16 @@ input::placeholder {
   font-weight: bold;
   letter-spacing: 0;
   line-height: 40px;
+  text-align: center;
+}
+.titleSmart {
+  color: #222b45;
+  font-family: "Open Sans";
+  font-size: 36px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 48px;
+  margin-top: 15%;
   text-align: center;
 }
 
@@ -338,6 +353,12 @@ input::placeholder {
   position: relative;
 }
 
+.background_tabletHome {
+  z-index: 10;
+  max-width: 100%;
+  position: relative;
+}
+
 .curveBackground {
   padding-top: 5%;
 }
@@ -416,6 +437,12 @@ input::placeholder {
     float: right;
     bottom: 0;
   }
+  .background_tabletHome {
+    max-width: 400px;
+    position: relative;
+    float: right;
+    bottom: 0;
+  }
   .carouselContainer {
     position: absolute;
     left: 265px;
@@ -483,6 +510,16 @@ input::placeholder {
     width: 60px;
     height: 60px;
   }
+  .titleSmart {
+    color: #222b45;
+    font-family: "Open Sans";
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 48px;
+    margin-top: 10%;
+    text-align: center;
+  }
   
 }
 
@@ -499,7 +536,7 @@ input::placeholder {
     justify-content: center;
     flex-direction: column;
     padding-top: 15%;
-    top: -120px;
+    top: 10px;
   }
 
   .scroll {
@@ -521,14 +558,29 @@ input::placeholder {
     letter-spacing: 0;
     line-height: 48px;
   }
-
+  .titleSmart {
+    color: #222b45;
+    font-family: "Open Sans";
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 48px;
+    margin-top: 10%;
+    text-align: center;
+  }
+/* 
   .leftContent {
     width: 54%;
     margin: auto;
-  }
+  } */
 
   .background_tablet {
     max-width: 70%;
+    position: relative;
+    float: right;
+  }
+  .background_tabletHome {
+    max-width: 550px;
     position: relative;
     float: right;
   }
