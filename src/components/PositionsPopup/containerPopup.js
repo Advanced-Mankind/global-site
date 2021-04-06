@@ -19,7 +19,7 @@ const ContainerPopup = (props) => {
           <p className="title-form mb-0 ml-3">Apply.</p>
         </Modal.Title>
       </Modal.Header>
-      <Modal.Body style={{margin:" 15px 0px"}}>
+      <Modal.Body>
         {/* <Container
           fluid
           className="popContainer"

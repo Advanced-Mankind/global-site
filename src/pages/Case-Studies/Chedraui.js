@@ -225,9 +225,9 @@ export default function Chedraui() {
           </Col>
         </Row>
       </Container>
-      <Container fluid>
+      <div>
         <GetStarted />
-      </Container>
+      </div>
     </Layout>
   );
 }

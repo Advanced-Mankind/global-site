@@ -71,7 +71,7 @@ export default function Home() {
                   </div>
                   <div className={styles.carouselContainer}>
                     <Carousel controls={false} indicators={false}>
-                      <Carousel.Item interval={1000}>
+                      <Carousel.Item interval={1500}>
                         <div
                           style={{
                             minWidth: 60,
@@ -87,7 +87,7 @@ export default function Home() {
                           />
                         </div>
                       </Carousel.Item>
-                      <Carousel.Item interval={1000}>
+                      <Carousel.Item interval={1500}>
                         <div
                           style={{
                             minWidth: 60,
@@ -103,7 +103,7 @@ export default function Home() {
                           />
                         </div>
                       </Carousel.Item>
-                      <Carousel.Item interval={1000}>
+                      <Carousel.Item interval={1500}>
                         <div
                           style={{
                             minWidth: 60,
@@ -119,7 +119,7 @@ export default function Home() {
                           />
                         </div>
                       </Carousel.Item>
-                      <Carousel.Item interval={1000}>
+                      <Carousel.Item interval={1500}>
                         <div
                           style={{
                             minWidth: 60,
@@ -135,7 +135,7 @@ export default function Home() {
                           />
                         </div>
                       </Carousel.Item>
-                      <Carousel.Item interval={1000}>
+                      <Carousel.Item interval={1500}>
                         <div
                           style={{
                             minWidth: 60,

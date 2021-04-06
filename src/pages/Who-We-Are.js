@@ -8,17 +8,10 @@ import "../components/who-whe-are.css";
 const team = [
   {
     name: "Emily Allamon",
-    title: "CEO",
+    title: "Team Manager and Designer",
     imgDesktop: require("../../static/EmilyDesktop.png"),
     imgTablet: require("../../static/EmilyTablet.png"),
     imgMobile:require("../../static/EmilyMobile.png"),
-  },
-  {
-    name: "Fernando Higuera",
-    title: "Co-Owner",
-    imgDesktop: require("../../static/FernandoDesktop.png"),
-    imgTablet: require("../../static/FernandoTablet.png"),
-    imgMobile: require("../../static/FernandoMobile.png"),
   },
   {
     name: "Miguel Angel Franco",
