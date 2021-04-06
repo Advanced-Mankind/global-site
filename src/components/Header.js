@@ -12,13 +12,13 @@ const Header = (props) => {
   return (
     <>
       <div
-        className={`${styles.header} d-md-block d-lg-none pl-3 ${
+        className={`${styles.header} d-md-block d-lg-none ${
           open ? "zindex" : ""
         }`}
       >
         <Navbar className="p-0">
           <Navbar.Brand href="/">
-            <div className="col-4 col-lg-8">
+            <div className="col-4 col-lg-8 pl-0">
               <img src={logo} alt="Logo" />
             </div>
           </Navbar.Brand>

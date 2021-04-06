@@ -122,6 +122,7 @@ export default function Careers() {
                 <Col sm="12" md="4" lg="3">
                   <Link to="/Positions">
                     <Button
+                     className="w-100"
                       style={{
                         borderRadius: "34px",
                         backgroundColor: "#FFFFFF",

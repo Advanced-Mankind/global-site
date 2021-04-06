@@ -9,7 +9,7 @@
 
 .contentLeftContainer {
   /* background-color: red; */
-  padding: 5% 5%;
+  padding: 5% 0%;
 }
 
 .titleGetStarted {
@@ -100,7 +100,7 @@
 }
 
 .formContainer {
-  width: 90%;
+
   margin: 5% 0%;
   padding: 20px;
   box-sizing: border-box;

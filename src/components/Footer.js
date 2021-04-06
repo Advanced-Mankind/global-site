@@ -1,5 +1,5 @@
 import { Link } from "gatsby";
-import React, { Component } from "react";
+import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import LogoFooter from "../../static/AM_Logo_fullcolor.svg";
 import styles from "../theme/index.module.css";
@@ -9,7 +9,7 @@ const Footer = () => {
 
   return (
     <footer className={`${styles.footer} mt-5`}>
-      <Container fluid className="bg-white py-4">
+      <Container fluid className="bg-white py-5 px-5">
         <Row>
           <Col className="mb-4 mb-sm-0">
             <img src={LogoFooter} />

@@ -15,7 +15,13 @@ input::placeholder {
 
 .leftContent {
   z-index: 10;
-  padding: 0px 15px;
+  padding: 0px;
+  position: relative;
+}
+
+.leftContentPosition {
+  z-index: 10;
+  padding-left: 10%;
   position: relative;
 }
 
@@ -52,7 +58,7 @@ input::placeholder {
   width: 100%;
   z-index: 1000;
   top: 0;
-  padding: 24px 24px 0px 10px;
+  padding: 15px;
   min-height: 90px;
   border: 1px solid #fbfbfb;
   background-color: #ffffff;
@@ -114,6 +120,17 @@ input::placeholder {
   font-weight: bold;
   letter-spacing: 0;
   line-height: 40px;
+  text-align: center;
+}
+
+.titleSmart {
+  color: #222b45;
+  font-family: "Open Sans";
+  font-size: 36px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 48px;
+  margin-top: 15%;
   text-align: center;
 }
 
@@ -279,6 +296,7 @@ input::placeholder {
   letter-spacing: 0;
   line-height: 20px;
 }
+
 .subtitle15 {
   font-family: "Open Sans";
   font-weight: 600;
@@ -286,9 +304,10 @@ input::placeholder {
   letter-spacing: 0;
   line-height: 24px;
 }
+
 .containerAny {
- position: absolute;
- top: 20%
+  position: absolute;
+  top: 20%
 }
 
 .description26 {
@@ -299,6 +318,7 @@ input::placeholder {
   line-height: 32px;
   margin: 50px 15px;
 }
+
 .performance {
   font-size: 18px;
   font-family: "Open Sans";
@@ -309,6 +329,7 @@ input::placeholder {
   margin: 10% 28% 0%;
   white-space: break-spaces;
 }
+
 .performanceDot {
   height: 223px;
   width: 223px;
@@ -317,7 +338,7 @@ input::placeholder {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin:auto;
+  margin: auto;
 }
 
 .performanceText {
@@ -336,6 +357,11 @@ input::placeholder {
   z-index: 10;
   max-width: 100%;
   position: relative;
+}
+
+.background_tabletHome {
+  z-index: 10;
+  max-width: 100%;
 }
 
 .curveBackground {
@@ -416,6 +442,9 @@ input::placeholder {
     float: right;
     bottom: 0;
   }
+
+  .background_tabletHome {}
+
   .carouselContainer {
     position: absolute;
     left: 265px;
@@ -445,6 +474,7 @@ input::placeholder {
   .footerText {
     text-align: right;
   }
+
   .description26 {
     font-family: "Open Sans";
     font-weight: bold;
@@ -483,7 +513,18 @@ input::placeholder {
     width: 60px;
     height: 60px;
   }
-  
+
+  .titleSmart {
+    color: #222b45;
+    font-family: "Open Sans";
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 48px;
+    margin-top: 10%;
+    text-align: center;
+  }
+
 }
 
 /* 
@@ -499,7 +540,7 @@ input::placeholder {
     justify-content: center;
     flex-direction: column;
     padding-top: 15%;
-    top: -120px;
+    top: 10px;
   }
 
   .scroll {
@@ -522,10 +563,22 @@ input::placeholder {
     line-height: 48px;
   }
 
+  .titleSmart {
+    color: #222b45;
+    font-family: "Open Sans";
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 48px;
+    margin-top: 10%;
+    text-align: center;
+  }
+
+  /* 
   .leftContent {
     width: 54%;
     margin: auto;
-  }
+  } */
 
   .background_tablet {
     max-width: 70%;
@@ -533,9 +586,12 @@ input::placeholder {
     float: right;
   }
 
+  .background_tabletHome {}
+
   .footerText {
     text-align: right;
   }
+
   .description26 {
     font-family: "Open Sans";
     font-weight: bold;
@@ -545,6 +601,7 @@ input::placeholder {
     margin: 80px 15px;
     text-align: center;
   }
+
   .carouselContainer {
     position: absolute;
     left: 305px;

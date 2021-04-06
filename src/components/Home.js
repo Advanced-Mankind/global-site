@@ -54,103 +54,120 @@ export default function Home() {
     <div
       style={{
         paddingTop: "90px",
-        overflow: "hidden"
+        overflow: "hidden",
       }}
     >
-      <div className="row align-items-center">
-        <div className="col col-sm-6 p-0 pt-5">
-          <div className={`${styles.leftContent}`}>
-            <div className={styles.titleContainer}>
-              <div className="col-12 mt-3">
-                <div className={"row align-items-center"}>
-                  <div className="col-8">
-                    <h1 className={styles.title}>
-                      We deliver transformative interfaces.
-                    </h1>
-                  </div>
-                  <div className={styles.carouselContainer}>
-                    <Carousel controls={false} indicators={false}>
-                      <Carousel.Item interval={1500}>
-                        <div
-                          style={{
-                            minWidth: 60,
-                          }}
-                        >
-                          <img
+      <div
+        className="d-none d-sm-block "
+        style={{
+          position: "absolute",
+
+          right: "0px",
+          zIndex: 10,
+          maxWidth: "37%",
+        }}
+      >
+        <img
+          src={require("../../static/background.png")}
+          className={styles.background_tabletHome}
+          alt=""
+        />
+      </div>
+      <Container className="position-relative mt-5">
+        <div className="row align-items-center position-relative">
+          <div className="col col-sm-6 p-0 pt-5">
+            <div className={`${styles.leftContent}`}>
+              <div className={styles.titleContainer}>
+                <div className="col-12 mt-3 justify-content-between">
+                  <div className={"row align-items-center"}>
+                    <div className="col-8">
+                      <h1 className={styles.title}>
+                        We deliver transformative interfaces.
+                      </h1>
+                    </div>
+                    <div className={styles.carouselContainer}>
+                      <Carousel controls={false} indicators={false}>
+                        <Carousel.Item interval={1500}>
+                          <div
                             style={{
-                              display: "flex",
-                              margin: "auto",
+                              minWidth: 60,
                             }}
-                            src={require("../../static/computerHome.svg")}
-                            alt=""
-                          />
-                        </div>
-                      </Carousel.Item>
-                      <Carousel.Item interval={1500}>
-                        <div
-                          style={{
-                            minWidth: 60,
-                          }}
-                        >
-                          <img
+                          >
+                            <img
+                              style={{
+                                display: "flex",
+                                margin: "auto",
+                              }}
+                              src={require("../../static/computerHome.svg")}
+                              alt=""
+                            />
+                          </div>
+                        </Carousel.Item>
+                        <Carousel.Item interval={1500}>
+                          <div
                             style={{
-                              display: "flex",
-                              margin: "auto",
+                              minWidth: 60,
                             }}
-                            src={require("../../static/iphone.svg")}
-                            alt=""
-                          />
-                        </div>
-                      </Carousel.Item>
-                      <Carousel.Item interval={1500}>
-                        <div
-                          style={{
-                            minWidth: 60,
-                          }}
-                        >
-                          <img
+                          >
+                            <img
+                              style={{
+                                display: "flex",
+                                margin: "auto",
+                              }}
+                              src={require("../../static/iphone.svg")}
+                              alt=""
+                            />
+                          </div>
+                        </Carousel.Item>
+                        <Carousel.Item interval={1500}>
+                          <div
                             style={{
-                              display: "flex",
-                              margin: "auto",
+                              minWidth: 60,
                             }}
-                            src={require("../../static/ipad.svg")}
-                            alt=""
-                          />
-                        </div>
-                      </Carousel.Item>
-                      <Carousel.Item interval={1500}>
-                        <div
-                          style={{
-                            minWidth: 60,
-                          }}
-                        >
-                          <img
+                          >
+                            <img
+                              style={{
+                                display: "flex",
+                                margin: "auto",
+                              }}
+                              src={require("../../static/ipad.svg")}
+                              alt=""
+                            />
+                          </div>
+                        </Carousel.Item>
+                        <Carousel.Item interval={1500}>
+                          <div
                             style={{
-                              display: "flex",
-                              margin: "auto",
+                              minWidth: 60,
                             }}
-                            src={require("../../static/apple-watch.svg")}
-                            alt=""
-                          />
-                        </div>
-                      </Carousel.Item>
-                      <Carousel.Item interval={1500}>
-                        <div
-                          style={{
-                            minWidth: 60,
-                          }}
-                        >
-                          <img
+                          >
+                            <img
+                              style={{
+                                display: "flex",
+                                margin: "auto",
+                              }}
+                              src={require("../../static/apple-watch.svg")}
+                              alt=""
+                            />
+                          </div>
+                        </Carousel.Item>
+                        <Carousel.Item interval={1500}>
+                          <div
                             style={{
-                              display: "flex",
-                              margin: "auto",
+                              minWidth: 60,
                             }}
-                            src={require("../../static/macbookPro.svg")}
-                            alt=""
-                          />
-                        </div>
-                      </Carousel.Item>
-                      {/* <DesktopImg>
+                          >
+                            <img
+                              style={{
+                                display: "flex",
+                                margin: "auto",
+                              }}
+                              src={require("../../static/macbookPro.svg")}
+                              alt=""
+                            />
+                          </div>
+                        </Carousel.Item>
+                        {/* <DesktopImg>
                       <img
                         style={{ marginLeft: "5px" }}
                         src={require("../../static/computerHome.svg")}
@@ -171,40 +188,45 @@ export default function Home() {
                         alt=""
                       />
                     </TabletImg> */}
-                    </Carousel>
+                      </Carousel>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className="col-12">
-                <p className={`${styles.subTitle} mb-3`}>
-                  We harness UX design principles with imaginative problem
-                  solving to deliver tomorrow's digital experiences. We inspire,
-                  innovate, and inform, leaving mediocre and boring behind.
-                </p>
+                <div className="col col-sm-12 col-lg-8">
+                  <p className={`${styles.subTitle} mb-3`}>
+                    We harness UX design principles with imaginative problem
+                    solving to deliver tomorrow's digital experiences. We
+                    inspire, innovate, and inform, leaving mediocre and boring
+                    behind.
+                  </p>
+                </div>
               </div>
             </div>
+            <div className="col-12 p-0">
+              <img
+                className={styles.background_mobile}
+                src={require("../../static/background_mobile.png")}
+                alt="backgroundImage"
+              />
+            </div>
           </div>
-          <div className="col-12">
+          {/* <div
+            className="d-none d-sm-block col-sm-6 p-0 align-self-end"
+            style={{ position: "absolute", top: "75px", right: "0px" }}
+          >
             <img
-              className={styles.background_mobile}
-              src={require("../../static/background_mobile.png")}
-              alt="backgroundImage"
+              src={require("../../static/background.png")}
+              className={styles.background_tabletHome}
+              alt=""
             />
-          </div>
+          </div> */}
         </div>
-        <div className="d-none d-sm-block col-sm-6 p-0 align-self-end">
-          <img
-            src={require("../../static/background.png")}
-            className={styles.background_tablet}
-            alt=""
-          />
-        </div>
-      </div>
+      </Container>
       <div>
         <div className={styles.curveBackground}>
           <div
             className="d-none d-sm-block text-center"
-            style={{ position: "relative", top: "75px" }}
+            style={{ position: "relative", top: "-160px" }}
           >
             {/* <div className={styles.scrollIcon} onClick={() => scrollToBottom()}>
               <p className={styles.scroll}>SCROLL</p>
@@ -225,7 +247,12 @@ export default function Home() {
             </div>
             <Carousel className="d-block d-md-none">
               <Carousel.Item className="mb-5">
-                <Col sm="12" md="4" lg="4" /*className={styles.backgroundred}*/>
+                <Col
+                  sm="12"
+                  md="4"
+                  lg="4"
+                  className="px-0" /*className={styles.backgroundred}*/
+                >
                   <YourDreamCards
                     title="LOOK SHARP"
                     subtitle="Web Design & E-Commerce"
@@ -239,7 +266,8 @@ export default function Home() {
                 <Col
                   sm="12"
                   md="4"
-                  lg="4" /*className={styles.backgroundblue}*/
+                  lg="4"
+                  className="px-0" /*className={styles.backgroundblue}*/
                 >
                   <YourDreamCards
                     title="WORK SMART"
@@ -254,7 +282,8 @@ export default function Home() {
                 <Col
                   sm="12"
                   md="4"
-                  lg="4" /*className={styles.backgroundgreen}*/
+                  lg="4"
+                  className="px-0" /*className={styles.backgroundgreen}*/
                 >
                   <YourDreamCards
                     title="GROW FAST"
@@ -297,8 +326,9 @@ export default function Home() {
             </Row>
           </Container>
         </div>
-        <div style={{ marginTop: "30px" }}>
-          <Container className="col-12">
+
+        <div style={{ marginTop: "7%" }}>
+          <Container className="">
             <h1 className={styles.title32px} style={{ textAlign: "center" }}>
               Case Studies
             </h1>
@@ -348,7 +378,7 @@ export default function Home() {
         <div style={{ marginTop: "5%" }}>
           <StartsWithWhy />
         </div>
-        <div style={{ marginTop: "5%" }}>
+        <Container style={{ marginTop: "5%" }}>
           <div>
             <h1 className={styles.title} style={{ textAlign: "center" }}>
               Partner up.
@@ -374,7 +404,7 @@ export default function Home() {
               require("../../static/AnyClub.png"),
             ]}
           />
-        </div>
+        </Container>
 
         <Container fluid style={{ marginTop: "5%" }}>
           <WereHirin />
@@ -382,7 +412,7 @@ export default function Home() {
         <div>
           <Container>
             <div>
-              <h1 className={styles.title} style={{ textAlign: "center", marginTop: "15%"  }}>
+              <h1 className={styles.titleSmart}>
                 Simple, smart, stellar work.
               </h1>
               <p

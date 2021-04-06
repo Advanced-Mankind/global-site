@@ -5,7 +5,14 @@ const Partners = ({ imgs }) => {
   return (
     <Row>
       {imgs.map((img, index) => (
-        <Col style={{ maxHeight: "232px", marginBottom:"10%" }}key={index} xs="6" sm="4" md="4" lg="4">
+        <Col
+          style={{ marginBottom: "10%" }}
+          key={index}
+          xs="6"
+          sm="4"
+          md="4"
+          lg="4"
+        >
           <img className="d-flex w-100" src={img} alt={index} key={index} />
         </Col>
       ))}

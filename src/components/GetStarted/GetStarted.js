@@ -20,10 +20,9 @@ const GetStarted = () => {
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              padding:"0px"
             }}
           >
-          <FormGetStarted/>
+            <FormGetStarted />
           </Col>
         </Row>
       </Container>
