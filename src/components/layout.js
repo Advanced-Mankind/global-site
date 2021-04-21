@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import CookieConsent from "react-cookie-consent";
+import ReactNotification from "react-notifications-component";
+import "react-notifications-component/dist/theme.css";
 import { ThemeProvider } from "styled-components";
 import { GlobalStyles, GlobalStylesOverFlow } from "../theme/global";
 import styles from "../theme/index.module.css";
@@ -7,21 +10,44 @@ import { useDarkMode } from "../theme/useDarkMode";
 import { AuthContext } from "./Authprovider";
 import Footer from "./Footer";
 import Header from "./Header";
-import CookieConsent from "react-cookie-consent";
 import "./layout.css";
-import ReactNotification from "react-notifications-component";
-import "react-notifications-component/dist/theme.css";
+
+// function _ScrollToTop(props) {
+//   const { pathname } = useLocation();
+//   useEffect(() => {
+//     window.scrollTo(0, 0);
+//   }, [pathname]);
+//   return props.children;
+// }
+
 const Layout = ({ children }) => {
   const [theme] = useDarkMode();
   const [open, setOpen] = useState(false);
   const themeMode = theme === "dark" ? lightTheme : lightTheme;
-  React.useEffect(() => window.scrollTo(0, 0), []);
+  // const ScrollToTop = withRouter(_ScrollToTop);
+  // const [scrollPosition, setScrollPosition] = useState(0);
+  // const handleScroll = () => {
+  //   const position = window.pageYOffset;
+  //   setScrollPosition(position);
+  // };
+
   // useEffect(() => {
-  //   if (isDesktopOrLaptop) setOpen(false);
-  // }, [isDesktopOrLaptop]);
+  //   window.addEventListener("scroll", handleScroll, { passive: true });
+  //   if (scrollPosition !== 0) {
+  //     console.log("abajo");
+  //   }
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
+
+  // useEffect(() => {
+  //   console.log(scrollPosition);
+  // }, [scrollPosition]);
   return (
     <AuthContext>
       <ThemeProvider theme={themeMode}>
+        {/* <ScrollToTop /> */}
         <div className={`${styles.body} container-fluid p-0`}>
           <ReactNotification />
           <CookieConsent

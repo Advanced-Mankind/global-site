@@ -16,7 +16,7 @@ const OneSizeDoesNotFill = ({
             <img
               src={require("../../../static/homeHouseMobile.png")}
               alt="homeMobile"
-              className="m-0 d-flex"
+              className="m-0 d-flex "
             />
             <h1 className="titleMobile">{firstTitle}</h1>
             <p className="paragraph"> {firstParagraph} </p>
@@ -24,7 +24,7 @@ const OneSizeDoesNotFill = ({
               src={require("../../../static/reviewGraphMobile.png")}
               alt="reviewMobile"
               style={{ paddingTop: "3%" }}
-              className="m-0 d-flex"
+              className="m-0 d-flex "
             />
             <h1 className="titleMobile"> {secondTitle} </h1>
             <p className="paragraph"> {secondParagraph} </p>
@@ -57,25 +57,34 @@ const OneSizeDoesNotFill = ({
 
       <Container className="stylesDesktop">
         <Row>
-        <Col lg="6">
+          <Col lg="6">
             <img
               src={require("../../../static/homeHouseDesktop.png")}
               alt="homeMobile"
+              className=" w-50 "
+              style={{ minHeight: 283 }}
             />
             <div>
               <h1 className="titleContainer"> {firstTitle} </h1>
               <p className="paragraph"> {firstParagraph} </p>
             </div>
           </Col>
-         
+
           <Col lg="6">
             <img
               src={require("../../../static/reviewGraphDesktop.png")}
               alt="homeMobile"
+              className=" w-50"
             />
-            
+
             <div>
-              <h1 className="titleContainer"> {secondTitle} </h1>
+              <h1
+                className="titleContainer"
+                style={{ overflow: "hidden", whiteSpace: "nowrap" }}
+              >
+                {" "}
+                {secondTitle}{" "}
+              </h1>
               <p className="paragraph"> {secondParagraph} </p>
             </div>
           </Col>

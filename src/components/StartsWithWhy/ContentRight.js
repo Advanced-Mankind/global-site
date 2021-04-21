@@ -6,8 +6,12 @@ import "./StartsWithWhy.css";
 const ContentRight = () => {
   return (
     <Row>
-      <Col xs={12} md={12} xl={8}>
-        <h2 className="Title">We believe. We dream. We build.</h2>
+      <Col xs={12} md={12} xl={8} className="pt-4">
+        <h2 className="Title">
+          We believe.
+          <br /> We dream.
+          <br /> We build.
+        </h2>
       </Col>
       <Col xs={12} md={12} xl={8}>
         <p className="Paragraph">

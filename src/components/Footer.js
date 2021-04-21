@@ -52,7 +52,7 @@ const Footer = () => {
                   <Col className={`${styles.footersectiontext} mb-1`}>
                     <Link
                       className={`${styles.footersectiontext}`}
-                      to="/Positions/"
+                      to="/Who-We-Are/"
                     >
                       Team
                     </Link>

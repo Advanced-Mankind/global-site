@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import Layout from "../components/layout";
 import TeamCard from "../components/Map/TeamCard";
@@ -11,21 +11,21 @@ const team = [
     title: "Team Manager and Designer",
     imgDesktop: require("../../static/EmilyDesktop.png"),
     imgTablet: require("../../static/EmilyTablet.png"),
-    imgMobile:require("../../static/EmilyMobile.png"),
+    imgMobile: require("../../static/EmilyMobile.png"),
   },
   {
     name: "Miguel Angel Franco",
     title: "Full stack Developer",
     imgDesktop: require("../../static/MiguelDesktop.png"),
-    imgTablet:require("../../static/MiguelTablet.png"),
-    imgMobile:require("../../static/MiguelMobile.png"),
+    imgTablet: require("../../static/MiguelTablet.png"),
+    imgMobile: require("../../static/MiguelMobile.png"),
   },
   {
     name: "Adrián Gaeta",
     title: "Back End Developer Sr. ",
     imgDesktop: require("../../static/AdrianDesktop.png"),
     imgTablet: require("../../static/AdrianTablet.png"),
-    imgMobile:require("../../static/AdrianMobile.png"),
+    imgMobile: require("../../static/AdrianMobile.png"),
   },
   {
     name: "Yamel Garcia",
@@ -39,52 +39,56 @@ const team = [
     title: "UI/UX Designer",
     imgDesktop: require("../../static/KarinaDesktop.png"),
     imgTablet: require("../../static/KarinaTablet.png"),
-    imgMobile:require("../../static/KarinaMobile.png"),
+    imgMobile: require("../../static/KarinaMobile.png"),
   },
   {
     name: "Armando Nava",
     title: "Back End Developer Sr.",
-    imgDesktop:require("../../static/ArmandoDesktop.png"),
+    imgDesktop: require("../../static/ArmandoDesktop.png"),
     imgTablet: require("../../static/ArmandoTablet.png"),
-    imgMobile:require("../../static/ArmandoMobile.png"),
+    imgMobile: require("../../static/ArmandoMobile.png"),
   },
   {
     name: "Scott Prather",
     title: "Creative Director",
     imgDesktop: require("../../static/ScottDesktop.png"),
     imgTablet: require("../../static/ScottTablet.png"),
-    imgMobile:require("../../static/ScottMobile.png"),
+    imgMobile: require("../../static/ScottMobile.png"),
   },
   {
     name: "Alejandro Rodríguez",
     title: "Lead Front End Developer",
-    imgDesktop:require("../../static/AlejandroDesktop.png"),
+    imgDesktop: require("../../static/AlejandroDesktop.png"),
     imgTablet: require("../../static/AlejandroTablet.png"),
-    imgMobile:require("../../static/AlejandroMobile.png"),
+    imgMobile: require("../../static/AlejandroMobile.png"),
   },
   {
     name: "Fabiola Rodríguez",
     title: "Front End Developer",
-    imgDesktop:require("../../static/FabiolaDesktop.png"),
+    imgDesktop: require("../../static/FabiolaDesktop.png"),
     imgTablet: require("../../static/FabiolaTablet.png"),
-    imgMobile:require("../../static/FabiolaMobile.png"),
+    imgMobile: require("../../static/FabiolaMobile.png"),
   },
   {
     name: "Rodrigo Sabillon",
     title: "UI/UX Designer",
     imgDesktop: require("../../static/RodrigoDesktop.png"),
     imgTablet: require("../../static/RodrigoTablet.png"),
-    imgMobile:require("../../static/RodrigoMobile.png"),
+    imgMobile: require("../../static/RodrigoMobile.png"),
   },
   {
     name: "Daniel Zurita",
     title: "Lead Back End Developer",
     imgDesktop: require("../../static/DanielDesktop.png"),
     imgTablet: require("../../static/DanielTablet.png"),
-    imgMobile:require("../../static/DanielMobile.png"),
+    imgMobile: require("../../static/DanielMobile.png"),
   },
 ];
 export default function WhoWeAre() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <Layout>
       <Container
@@ -139,7 +143,7 @@ export default function WhoWeAre() {
         </Row>
       </Container>
       <Container fluid>
-      <WereHirin/>
+        <WereHirin />
       </Container>
     </Layout>
   );
