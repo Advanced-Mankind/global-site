@@ -68,6 +68,7 @@ export default function Careers() {
               <Col sm="6" md="7" className="px-0">
                 <Row className="img-Container mx-auto">
                   <img
+                    style={{ maxHeight: "100%" }}
                     className="img-fluid"
                     src={require("../../static/Group.png")}
                     alt="Ilustrations1"
