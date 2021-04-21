@@ -65,7 +65,7 @@ export default function Careers() {
                   </Link>
                 </Col>
               </Col>
-              <Col sm="6" md="7">
+              <Col sm="6" md="7" className="px-0">
                 <Row className="img-Container mx-auto">
                   <img
                     className="img-fluid"
@@ -74,26 +74,31 @@ export default function Careers() {
                   />
                 </Row>
               </Col>
-              <Col sm="12" md="8" lg="5" className="d-block d-sm-none d-none d-sm-block d-md-none">
-                  <Link to="/Positions">
-                    <Button
-                      className="w-100"
-                      style={{
-                        borderRadius: "34px",
-                        backgroundColor: "#3333FF",
-                        marginTop: "20px",
-                        padding: "16px",
-                        alignItems: "center",
-                        fontFamily: "Open Sans",
-                        fontSize: "18px",
-                        fontWeight: "bold",
-                        lineHeight: "24px",
-                      }}
-                    >
-                      See Positions
-                    </Button>
-                  </Link>
-                </Col>
+              <Col
+                sm="12"
+                md="8"
+                lg="5"
+                className="d-block d-sm-none d-none d-sm-block d-md-none"
+              >
+                <Link to="/Positions">
+                  <Button
+                    className="w-100"
+                    style={{
+                      borderRadius: "34px",
+                      backgroundColor: "#3333FF",
+                      marginTop: "20px",
+                      padding: "16px",
+                      alignItems: "center",
+                      fontFamily: "Open Sans",
+                      fontSize: "18px",
+                      fontWeight: "bold",
+                      lineHeight: "24px",
+                    }}
+                  >
+                    See Positions
+                  </Button>
+                </Link>
+              </Col>
             </Row>
           </Container>
         </div>
@@ -102,7 +107,7 @@ export default function Careers() {
             Our Benefits
           </p>
         </Col>
-          <OurPerks/>
+        <OurPerks />
         <div style={{ marginTop: "5%", marginLeft: "5%" }}>
           <div className={styles.getContainer}>
             <Container>
@@ -122,7 +127,7 @@ export default function Careers() {
                 <Col sm="12" md="4" lg="3">
                   <Link to="/Positions">
                     <Button
-                     className="w-100"
+                      className="w-100"
                       style={{
                         borderRadius: "34px",
                         backgroundColor: "#FFFFFF",

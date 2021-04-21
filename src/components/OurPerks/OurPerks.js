@@ -34,7 +34,7 @@ const OurPerks = () => {
             }
           />
         </Col>
-        <Col sm="12" md="6" lg="6" className="my-3 ">
+        {/* <Col sm="12" md="6" lg="6" className="my-3 ">
           <OurPerksCard
             icon={require("../../../static/weight.svg")}
             headline={"Wellness Programs"}
@@ -42,9 +42,9 @@ const OurPerks = () => {
               " Healthy means mind, body, and soul. Our health benefits are accompanied by Plush Care, Classpass, Maven, Calm, and Ginger for overall wellness."
             }
           />
-        </Col>
+        </Col> */}
       </Row>
-        <OurPerkQuote />
+      <OurPerkQuote />
       <Row style={{ marginTop: "5%" }}>
         <Col sm="12" md="6" lg="6" className="my-3 ">
           <OurPerksCard
