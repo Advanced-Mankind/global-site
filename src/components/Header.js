@@ -18,8 +18,8 @@ const Header = (props) => {
       >
         <Navbar className="p-0">
           <Navbar.Brand href="/">
-            <div className="col-4 col-lg-8 pl-0">
-              <img src={logo} alt="Logo" />
+            <div className="col-8">
+              <img src={logo} className="w-100" alt="Logo" />
             </div>
           </Navbar.Brand>
           <Navbar.Collapse>
@@ -48,8 +48,8 @@ const Header = (props) => {
           <Navbar className={`p-0 `}>
             <Navbar.Brand href="/">
               {" "}
-              <div className="col-4 col-lg-8">
-                <img src={logo} alt="Logo" />
+              <div className="col-8 ">
+                <img src={logo} className="w-100" alt="Logo" />
               </div>
             </Navbar.Brand>
             <Navbar.Collapse>

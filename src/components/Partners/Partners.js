@@ -9,14 +9,19 @@ const Partners = ({ imgs }) => {
         let currentStyle;
         if (index % 3 === 0) {
           currentStyle = {
-            marginRight: "-30px",
-            marginLeft: "30px",
+            marginRight: "-100px",
+            marginLeft: "100px",
+            marginBottom: "-100px",
           };
         } else if (index % 3 === 1) {
+          currentStyle = {
+            marginBottom: "-100px",
+          };
         } else if (index % 3 === 2) {
           currentStyle = {
-            marginRight: "30px",
-            marginLeft: "-30px",
+            marginRight: "100px",
+            marginLeft: "-100px",
+            marginBottom: "-100px",
           };
         }
         return (
